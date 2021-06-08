@@ -1,0 +1,58 @@
+import { Link } from 'react-scroll';
+import styled from 'styled-components';
+
+export const Review = {
+  Wrapper: styled.section`
+    padding: 10vh 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+  `,
+  Inner: styled.div`
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+};
+
+export const Card = {
+  Wrapper: styled.section`
+    width: 80%;
+    margin: 0 auto;
+  `,
+  CardCase: styled.ul`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  `,
+  CardItem: styled.li`
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2rem;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 1rem;
+  `,
+  CardTitle: styled.h2`
+    font-size: 1.5rem;
+  `,
+  CardDesc: styled.p`
+    font-size: 1.2rem;
+  `
+}
+
+export const ScrollUp = styled(Link)`
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    svg{
+      font-size: 4rem;
+    }
+`;
