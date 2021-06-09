@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './devices';
 
 
 export const Course = {
@@ -7,12 +8,14 @@ export const Course = {
     position: relative;
     width: 100%;
     background-color: #f7f7f7;
+    
   `,
   Inner: styled.div`
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    @media ${device.laptop}{
+      max-width: 1366px;
+      margin: 0 auto;
+    }
 `
 };
 
@@ -26,10 +29,17 @@ export const Card = {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    @media ${device.tabletSM}{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
   `,
   CardItem: styled.li`
     width: 100%;
-    height: 300px;
+    max-width: 290px;
+    min-width: 260px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     margin: 0 auto 2rem;
@@ -109,6 +119,7 @@ export const Card = {
   CourseReviews: styled.span`
     color: #ffffff;
     margin: 0 0 0 0.2rem;
+    font-size: 0.9rem;
   `,
   CourseStudents: styled.span`
     color: #ffffff;
@@ -120,6 +131,9 @@ export const Card = {
     color: #ffffff;
     cursor: pointer;
     position: relative;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    overflow: hidden;
     &::after{
         position: absolute;
         content: '';
@@ -137,5 +151,4 @@ export const Card = {
       }
     }
   `
-
 }

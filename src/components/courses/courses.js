@@ -6,10 +6,13 @@ import CourseCardComponent from './cards';
 const CourseComponent = () => {
   return(
     <Course.Wrapper name='courses'>
+      <Course.Inner>
       <HeadingComponent
         text='Courses'
       />
       <CourseCardComponent />
+      </Course.Inner>
+      
     </Course.Wrapper>
   )
 }

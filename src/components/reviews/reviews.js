@@ -7,6 +7,7 @@ import { BsChevronCompactUp } from 'react-icons/bs';
 const ReviewComponent = () => {
   return(
     <Review.Wrapper>
+      <Review.Inner>
       <HeadingComponent
         text='Testimonials'
       />
@@ -20,6 +21,8 @@ const ReviewComponent = () => {
       >
         <BsChevronCompactUp />
       </ScrollUp>
+      </Review.Inner>
+      
     </Review.Wrapper>
   )
 }

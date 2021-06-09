@@ -7,9 +7,12 @@ import MailListComponent from './mailing';
 const FooterComponent = () => {
   return(
     <Footer.Wrapper name='footer'>
-      <MailListComponent />
-      <SocialMediaComponent />
-      <CopyRightComponent /> 
+      <Footer.Inner>
+        <MailListComponent />
+        <SocialMediaComponent />
+        <CopyRightComponent /> 
+      </Footer.Inner>
+      
     </Footer.Wrapper>
   )
 }

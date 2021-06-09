@@ -1,14 +1,16 @@
 import { Social } from '../../styles/footer.style';
-import { FaFacebookSquare, FaYoutubeSquare, FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare, FaYoutubeSquare, FaLinkedin, FaTwitterSquare, FaMedium } from 'react-icons/fa';
 
 
 const SocialMediaComponent = () => {
   return(
     <>
     <Social.Wrapper>
-      <a href='https://www.udemy.com/user/srinathchalla/' target='_blank' rel="noreferrer"><FaFacebookSquare /></a>
+      <a href='https://github.com/srchalla' target='_blank' rel="noreferrer"><FaGithubSquare /></a>
       <a href='https://www.youtube.com/user/srinathrchalla1' target='_blank' rel="noreferrer"><FaYoutubeSquare /></a>
       <a href='https://www.linkedin.com/in/srinathchalla/' target='_blank' rel="noreferrer"><FaLinkedin /></a> 
+      <a href='https://twitter.com/srinathrchalla' target='_blank' rel="noreferrer"><FaTwitterSquare /></a>
+      <a href='https://medium.com/@srinathchalla' target='_blank' rel="noreferrer"><FaMedium /></a>
     </Social.Wrapper>
     </>
   )

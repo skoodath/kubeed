@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { device } from './devices';
 
 export const Landing = {
   Wrapper: styled.section`
@@ -8,6 +9,11 @@ export const Landing = {
     width: 100%;
     height: 100vh;
     background-color: #f9f9f9;
+    @media ${device.laptop}{
+      max-width: 1366px;
+      margin: 0 auto;
+      background-color: #ffffff;
+    }
   `,
   Inner: styled.div`
     width: 50%;
@@ -27,7 +33,8 @@ export const ScrollDown = styled(Link)`
     justify-content: center;
     cursor: pointer;
     svg{
-      font-size: 4rem;
+      font-size: 5rem;
+      font-weight: 400;
     }
 `;
 

@@ -5,8 +5,11 @@ import NavbarComponent from "./navigation";
 const HeaderSection = () => {
   return(
     <Header.Wrapper>
-      <BrandComponent />
-      <NavbarComponent />
+      <Header.Inner>
+        <BrandComponent />
+        <NavbarComponent />
+      </Header.Inner>
+      
     </Header.Wrapper>
   )
 }

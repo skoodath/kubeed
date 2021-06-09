@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import { device } from './devices';
 
 export const Review = {
   Wrapper: styled.section`
@@ -8,12 +9,14 @@ export const Review = {
     width: 100%;
     height: auto;
     background-color: #f9f9f9;
+    
   `,
   Inner: styled.div`
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    @media ${device.laptop}{
+      max-width: 1366px;
+      margin: 0 auto;
+    }
 `
 };
 
@@ -53,7 +56,11 @@ export const ScrollUp = styled(Link)`
     display: flex;
     justify-content: center;
     cursor: pointer;
+    
     svg{
       font-size: 4rem;
+      @media ${device.laptop}{
+        font-size: 5rem;
+    }
     }
 `;
