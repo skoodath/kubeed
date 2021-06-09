@@ -32,7 +32,7 @@ export const Card = {
     width: 100%;
     height: auto;
     margin: 0 auto 2rem;
-    background-color: #f1f1f1;
+    background-color: #f4f4f4;
     border-radius: 5px;
     padding: 1rem;
   `,
@@ -52,6 +52,7 @@ export const ScrollUp = styled(Link)`
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    cursor: pointer;
     svg{
       font-size: 4rem;
     }

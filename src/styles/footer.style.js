@@ -15,11 +15,10 @@ export const Footer = {
     align-items: center;
   `,
   FormWrapper: styled.div`
-    width: 100%;
-    margin: 4rem 0 0 0;
+    width: 80%;
+    margin: 4rem auto 0;
   `,
   FormHeader: styled.h2`
-    width: 80%;
     color: #ffffff;
     margin: 0 auto 1rem;
   `,
@@ -27,27 +26,26 @@ export const Footer = {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
     margin: 0 auto 1rem;
   `,
   Input: styled.input`
     outline: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #dddddd;
     padding: 0.3rem 0.4rem;
     width: 80%;
     max-width: 250px;
     margin: 0;
     border-radius: 3px 0 0 3px;
     background-color: #0b1935;
-    color: #ffffff;
+    color: #dddddd;
   `,
   Button: styled.button`
     width: 20%;
     max-width: 60px;
     padding: 0.3rem 0.2rem;
-    background-color: #ffffff;
+    background-color: #dddddd;
     outline: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #dddddd;
     color: #0b1935;
     text-transform: uppercase;
     border-radius: 0 3px 3px 0;
