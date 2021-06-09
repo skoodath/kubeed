@@ -5,12 +5,12 @@ export const Header = {
   Wrapper: styled.header`
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     top: 0;
     z-index: 1;
     background-color: #f9f9f9;
-    padding: 0 1rem;
+    padding: 0 10%;
   `,
 };
 

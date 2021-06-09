@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 export const Landing = {
   Wrapper: styled.section`
-    padding: 10vh 0;
+    padding: 10vh 0 5vh 0;
     position: relative;
     width: 100%;
     height: 100vh;

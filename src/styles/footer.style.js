@@ -66,6 +66,14 @@ export const Social = {
       font-size: 2rem;
       margin: 0 0.2rem;
     }
+    a{
+      text-decoration: none;
+    }
+  `,
+  Inner: styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
   `
 }
 
