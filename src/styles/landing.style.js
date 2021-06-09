@@ -25,6 +25,7 @@ export const ScrollDown = styled(Link)`
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    cursor: pointer;
     svg{
       font-size: 4rem;
     }
