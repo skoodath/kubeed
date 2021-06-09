@@ -7,7 +7,7 @@ export const Landing = {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #f9f9f1;
+    background-color: #f9f9f9;
   `,
   Inner: styled.div`
     width: 50%;
@@ -21,7 +21,7 @@ export const ScrollDown = styled(Link)`
     position: absolute;
     left: 50%;
     bottom: 0;
-    margin: 0;
+    margin: 0 0 3rem 0;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;

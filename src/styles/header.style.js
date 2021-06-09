@@ -47,4 +47,5 @@ export const Links = styled(Link)`
     border-radius: 3px;
     padding: 0.3rem 0.5rem;
     box-shadow: 0 0 1px #7b5d1e, 0 0 2px #ffcf6c inset;
+    cursor: pointer;
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Footer = {
   Wrapper: styled.section`
-    padding: 5vh 0 10vh 0;
+    padding: 5vh 0 0;
     position: relative;
     width: 100%;
     height: 60vh;
@@ -24,8 +24,6 @@ export const Footer = {
   `,
   Form: styled.form`
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto 1rem;
   `,
   Input: styled.input`
