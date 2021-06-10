@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import { device } from './devices';
 
