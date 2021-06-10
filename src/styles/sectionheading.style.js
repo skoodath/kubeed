@@ -5,9 +5,9 @@ export const SectionHeader = {
     font-size: 2.2rem;
     font-weight: 300;
     width: 80%;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
     position: relative;
-    padding: 0 0 0 5%;
+    padding: 0 0 0 20px;
     text-transform: uppercase;
     display: flex;
     align-items: center;

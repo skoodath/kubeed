@@ -4,11 +4,11 @@ import { device } from './devices';
 
 export const Review = {
   Wrapper: styled.section`
-    padding: 10vh 0;
+    padding: 15vh 0;
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #f9f9f9;
+    background-color: #fefefe;
     
   `,
   Inner: styled.div`
@@ -59,6 +59,7 @@ export const ScrollUp = styled(Link)`
     
     svg{
       font-size: 4rem;
+      fill: #E5AB32;
       @media ${device.laptop}{
         font-size: 5rem;
     }

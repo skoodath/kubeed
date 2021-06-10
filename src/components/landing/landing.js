@@ -1,11 +1,32 @@
 import { Landing, ScrollDown } from "../../styles/landing.style";
 import { BsChevronCompactDown } from 'react-icons/bs';
+import CtaComponent from "./cta";
+import kubexbg from '../../illustrations/kubexbg.svg';
 
 
 const LandingSection = () => {
   return(
     <Landing.Wrapper name='landing'>
-      <ScrollDown
+      <Landing.Inner>
+        <Landing.Text>
+          <Landing.Title>
+            <Landing.TitleOne>
+              Learn from
+            </Landing.TitleOne>
+            <Landing.TitleTwo>
+              kubernetes experts
+            </Landing.TitleTwo>
+          </Landing.Title>
+          <Landing.Subtitle>
+            Master kubernetes from industry experts and advance your career or manage your organizations infrastructure
+          </Landing.Subtitle>
+          <CtaComponent />
+        </Landing.Text>
+        <Landing.Image>
+          <img src={kubexbg} alt='background' />
+        </Landing.Image>
+      </Landing.Inner>
+      {/* <ScrollDown
         to="courses"
         spy={true} 
         smooth={true} 
@@ -13,7 +34,7 @@ const LandingSection = () => {
         duration={400}
       >
         <BsChevronCompactDown />
-      </ScrollDown>
+      </ScrollDown> */}
     </Landing.Wrapper>
   )
 }

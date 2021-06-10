@@ -23,6 +23,7 @@ export const Footer = {
       height: 100%;
       max-width: 1366px;
       margin: 0 auto;
+      padding: 0 5%;
       flex-direction: row;
     }
   `,
@@ -47,7 +48,12 @@ export const Footer = {
   `,
   Form: styled.form`
     display: flex;
+    flex-direction: column;
     margin: 0 auto 1rem;
+    position: relative;
+    p{
+      color: #ff0000;
+    }
     @media ${device.laptop}{
       margin: 0;
     }
@@ -76,6 +82,7 @@ export const Footer = {
     color: #0b1935;
     text-transform: uppercase;
     border-radius: 0 3px 3px 0;
+    cursor: pointer;
     @media ${device.tabletLG}{
       padding: 0.5rem 0.4rem;
     }
@@ -89,7 +96,7 @@ export const Footer = {
 export const Social = {
   Wrapper: styled.section`
     width: 80%;
-    margin: 8rem auto 0;
+    margin: 5rem auto 0;
     display: flex;
     padding: 0;
     @media ${device.laptop}{
@@ -99,12 +106,12 @@ export const Social = {
     }
     a{
       text-decoration: none;
+      margin: 0 0.2rem;
     }
     svg{
       fill: #ffffff;
       color: #000000;
       font-size: 2rem;
-      margin: 0 0.2rem;
       @media ${device.tabletLG}{
       font-size: 3rem;
     }

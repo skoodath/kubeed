@@ -1,13 +1,14 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 import { device } from './devices';
 
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 10vh 0 5vh;
+    padding: 15vh 0;
     position: relative;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: #fafafa;
     
   `,
   Inner: styled.div`
@@ -49,15 +50,15 @@ export const Card = {
     box-shadow: 0 0 15px -5px #dbdbdb;
   `,
   CardTopSection: styled.div`
-    background-color: ${({bgcolor}) => bgcolor};
-    background-size: 30%;
-    background-position: center center;
+    background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 1.6rem;
+    justify-content: flex-end;
+    padding: 1rem 1.6rem;
     position: relative;
     &::before{
       position: absolute;
@@ -78,10 +79,14 @@ export const Card = {
     height: 30px;
     margin: 0.5rem 0.5rem 0 0;
   `,
+  CardBottomsection: styled.div`
+    height: 50%;
+    position: relative;
+  `,
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
     font-weight: 600;
-    color: #FED47B;
+    color: #E5AB32;
     display: flex;
     align-items: center;
     mark{
@@ -93,14 +98,9 @@ export const Card = {
   CardCourseSubTitle: styled.h4`
     font-size: 1.2rem;
     font-weight: 300; 
-    color: #ffffff;
+    color: #326CE5;
   `,
-  CardBottomSection: styled.p`
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  `,
+
   CourseRatingContainer: styled.div`
     width: 100%;
     display: flex;
@@ -117,37 +117,42 @@ export const Card = {
     }
   `,
   CourseReviews: styled.span`
-    color: #ffffff;
+    color: #326CE5;
     margin: 0 0 0 0.2rem;
     font-size: 0.9rem;
   `,
   CourseStudents: styled.span`
-    color: #ffffff;
+    color: #326CE5;
     margin: 0 0 0 0.5rem;
   `,
-  CourseBotton: styled.a`
-    background-color: #326CE5;
-    padding: 0.5rem 1.5rem;
-    color: #ffffff;
+  CourseButton: styled.a`
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    padding: 0.2rem 0;
+    margin: 2rem 0 0;
+    color: #326CE5;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     letter-spacing: 1px;
-    border-radius: 3px;
     overflow: hidden;
+    font-weight: 600;
+    border-bottom: 2px solid;
     &::after{
         position: absolute;
         content: '';
         bottom: 0;
         left: 0;
         width: 0;
-        height: 4px;
-        background-color: #FED47B;
+        height:100%;
+        padding: 0.2rem 0;
+        border-bottom: 3px solid #FED47B;
         transition: width 0.5s linear;
+        z-index: 1;
       }
     &:hover{
       &::after{
         width: 100%;
-        
       }
     }
   `
