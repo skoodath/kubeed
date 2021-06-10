@@ -1,5 +1,4 @@
-import { Landing, ScrollDown } from "../../styles/landing.style";
-import { BsChevronCompactDown } from 'react-icons/bs';
+import { Landing } from "../../styles/landing.style";
 import CtaComponent from "./cta";
 import kubexbg from '../../illustrations/kubexbg.svg';
 
