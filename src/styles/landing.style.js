@@ -43,8 +43,8 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 50%;
-    margin: 0 0 2rem 0;
+    height: 40%;
+    margin: 0;
 
   `,
   Title:styled.h1`

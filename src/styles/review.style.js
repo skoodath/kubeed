@@ -30,14 +30,23 @@ export const Card = {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    @media ${device.tabletSM}{
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 600px;
+    }
   `,
   CardItem: styled.li`
     width: 100%;
+    max-width: 288px;
     height: auto;
     margin: 0 auto 2rem;
     background-color: #f4f4f4;
     border-radius: 5px;
     padding: 1rem;
+    @media ${device.tabletSM}{
+      margin: 5px;
+    }
   `,
   CardTitle: styled.h2`
     font-size: 1.5rem;

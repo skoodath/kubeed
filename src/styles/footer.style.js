@@ -6,7 +6,7 @@ export const Footer = {
     padding: 5vh 0 3vh;
     position: relative;
     width: 100%;
-    background-color: #0b1935;
+    background-color: rgb(42, 54, 76);
     @media ${device.laptop}{
       padding: 0;
       height: 40vh;
@@ -66,7 +66,7 @@ export const Footer = {
     max-width: 300px;
     margin: 0;
     border-radius: 3px 0 0 3px;
-    background-color: #0b1935;
+    background-color: rgb(42, 54, 76);
     color: #dddddd;
     @media ${device.tabletLG}{
       padding: 0.5rem 0.4rem;

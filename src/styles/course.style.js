@@ -32,6 +32,7 @@ export const Card = {
     @media ${device.tabletSM}{
       flex-direction: row;
       flex-wrap: wrap;
+      max-width: 600px;
     }
 
   `,
@@ -47,6 +48,9 @@ export const Card = {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 15px -5px #dbdbdb;
+    @media ${device.tabletSM}{
+      margin: 5px;
+    }
   `,
   CardTopSection: styled.div`
     background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
