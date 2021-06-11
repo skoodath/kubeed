@@ -17,7 +17,7 @@ const LandingSection = () => {
             </Landing.TitleTwo>
           </Landing.Title>
           <Landing.Subtitle>
-            Master kubernetes from industry experts and advance your career or manage your organizations infrastructure
+            Master kubernetes from industry experts and advance your career or manage your organization's infrastructure
           </Landing.Subtitle>
           <CtaComponent />
         </Landing.Text>
