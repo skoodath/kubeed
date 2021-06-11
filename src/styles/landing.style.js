@@ -31,9 +31,6 @@ export const Landing = {
     @media ${device.mobileSM}{
       padding: 5vh 0 0 0;
     }
-    @media ${device.tabletLG}{
-      padding: 0;
-    }
     @media ${device.laptop}{
       padding: 10vh 0 0 0;
       flex-direction: row;
@@ -67,16 +64,16 @@ export const Landing = {
     font-size: 1.1rem;
     color: #E5AB32;
     @media ${device.tabletSM}{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     @media ${device.tabletLG}{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   `,
   TitleTwo: styled.span`
     font-size: 2rem;
     @media ${device.mobileSM}{
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     @media ${device.tabletSM}{
       font-size: 3rem;
