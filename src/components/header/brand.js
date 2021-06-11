@@ -9,7 +9,7 @@ const BrandComponent = () => {
             smooth={true} 
             offset={-100} 
             duration={300}
-
+            tabIndex='0'
             >
               kubex
             </LogoLink>

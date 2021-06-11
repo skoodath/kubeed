@@ -29,6 +29,14 @@ const ReviewCardComponent = () => {
           One of the best course that I have come across covering such a breadth and depth of insights on k8s. So I can surely bet on @SrinathChalla on his full course.
           </Card.CardDesc>
         </Card.CardItem>
+        <Card.CardItem>
+          <Card.CardTitle>
+            Shravan J
+          </Card.CardTitle>
+          <Card.CardDesc>
+          Srinath is an excellent instructor. The course structuring is brilliant and very well organized. I can only imagine the amount of hard work that must have went in making this course. Thank you for making this my CKA journey an Incredible one. This is simply an amazing CKA course with lots of resources....keep creating courses like this. Thank you, Srinath!
+          </Card.CardDesc>
+        </Card.CardItem>
       </Card.CardCase>
 
     </Card.Wrapper>

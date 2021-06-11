@@ -31,14 +31,16 @@ const CourseCardComponent = () => {
                 <Card.CourseReviews>(1,857)</Card.CourseReviews>
                 <Card.CourseStudents>11,539 Enrolled</Card.CourseStudents>
               </Card.CourseRatingContainer>
-              <Card.CourseButton role='button'>
+              <Card.CourseButton 
+                href='https://www.udemy.com/course/kubernetes-made-easy/'
+                >
                 START COURSE
               </Card.CourseButton>
             </Card.CardBottomsection>
           </Card.CardTopSection>
         </Card.CardItem>
         <Card.CardItem>
-          <Card.CardTopSection bgimage={easy} gradone={'#FE5F64ab'}>
+          <Card.CardTopSection bgimage={easy} gradone={'#326CE5ab'}>
             <Card.CardLogo src={kubernetes} alt='kubernetes' />
             <Card.CardBottomsection>
               <Card.CardCourseTitle>
@@ -58,14 +60,16 @@ const CourseCardComponent = () => {
                 <Card.CourseReviews>(2,914)</Card.CourseReviews>
                 <Card.CourseStudents>43,098 Enrolled</Card.CourseStudents>
               </Card.CourseRatingContainer>
-              <Card.CourseButton role='button'>
+              <Card.CourseButton 
+                href='https://www.udemy.com/course/kubernetes-getting-started/'
+                >
                 START COURSE
               </Card.CourseButton>
             </Card.CardBottomsection>
           </Card.CardTopSection>
         </Card.CardItem>
         <Card.CardItem>
-          <Card.CardTopSection bgimage={cka} gradone={'#165C97ab'}>
+          <Card.CardTopSection bgimage={cka} gradone={'#326CE5ab'}>
             <Card.CardLogo src={kubernetes} alt='kubernetes' />
             <Card.CardBottomsection>
               <Card.CardCourseTitle>
@@ -86,8 +90,8 @@ const CourseCardComponent = () => {
                 <Card.CourseStudents>16 Enrolled</Card.CourseStudents>
               </Card.CourseRatingContainer>
               <Card.CourseButton 
-                href='https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/?couponCode=JUN2021'
-                role='button'>
+                href='https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/'
+                >
                 START COURSE
               </Card.CourseButton>
             </Card.CardBottomsection>
@@ -95,7 +99,7 @@ const CourseCardComponent = () => {
           </Card.CardTopSection>
         </Card.CardItem>
         <Card.CardItem>
-          <Card.CardTopSection bgimage={ckad} gradone={'#169782ab'}>
+          <Card.CardTopSection bgimage={ckad} gradone={'#326CE5ab'}>
           <Card.CardLogo src={kubernetes} alt='kubernetes' />
             <Card.CardBottomsection>
               <Card.CardCourseTitle>
@@ -111,7 +115,9 @@ const CourseCardComponent = () => {
                 <Card.CourseReviews>(0)</Card.CourseReviews>
                 <Card.CourseStudents>2 Enrolled</Card.CourseStudents>
               </Card.CourseRatingContainer>
-              <Card.CourseButton role='button'>
+              <Card.CourseButton 
+                href='https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/'
+                >
                 START COURSE
               </Card.CourseButton>
             </Card.CardBottomsection>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-scroll';
 import { device } from './devices';
 
@@ -57,6 +57,19 @@ export const Navbar = {
     justify-content: flex-end;
   `
 }
+
+const bounce = keyframes`
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+`
 export const Links = styled(Link)`
     display: flex;
     color: #326CE5;
@@ -69,6 +82,24 @@ export const Links = styled(Link)`
     text-transform: uppercase;
     font-size: 0.85rem;
     font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    svg{
+      visibility: hidden;
+      width: 0;
+      transform: translateY(-100%);
+      fill: #326CE5ab;
+      transition: transform 0.3s ease-in-out, width 0.5s ease-in-out;
+    }
+    &:hover{
+      color: #326CE5ab;
+      svg{
+        visibility: visible;
+        width: 100%;
+        transform: translateY(0);
+        color: #326CE5ab;
+        animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
+      }
+    }
     @media ${device.tabletLG}{
       align-items: center;
       height: 40px;

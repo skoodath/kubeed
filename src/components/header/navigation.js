@@ -1,3 +1,4 @@
+import { FaArrowDown } from 'react-icons/fa';
 import { Navbar, Links} from '../../styles/header.style';
 
 const NavbarComponent = () => {
@@ -9,8 +10,10 @@ const NavbarComponent = () => {
         smooth={true} 
         offset={-100} 
         duration={500}
+        role='button'
+        tabIndex='0'
       >
-        Subscribe
+        Subscribe <FaArrowDown />
       </Links>
     </Navbar.Wrapper>
   )

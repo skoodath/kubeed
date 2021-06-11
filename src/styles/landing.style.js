@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-scroll';
 import { device } from './devices';
 
@@ -13,11 +13,9 @@ export const Landing = {
       height: 100vh;
     }
     @media ${device.tabletSM}{
-      height: 100vh;
-    }
-    @media ${device.tabletLG}{
       height: auto;
     }
+
     @media ${device.laptop}{
       height: auto;
     }
@@ -29,6 +27,9 @@ export const Landing = {
     flex-direction: column;
     padding: 10vh 0 0 0;
     @media ${device.mobileSM}{
+      padding: 5vh 0 0 0;
+    }
+    @media ${device.tabletLG}{
       padding: 5vh 0 0 0;
     }
     @media ${device.laptop}{
@@ -124,6 +125,19 @@ export const ScrollDown = styled(Link)`
       font-weight: 400;
     }
 `;
+
+const bounce = keyframes`
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+`
 export const CtaLink = styled(Link)`
     display: flex;
     color: #326CE5;
@@ -138,6 +152,22 @@ export const CtaLink = styled(Link)`
     font-weight: 600;
     margin: 1rem 0 0 10%;
     width: 150px;
+    svg{
+      visibility: hidden;
+      width: 0;
+      transform: translateY(-100%);
+      fill: #326CE5ab;
+      transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+    }
+    &:hover{
+      svg{
+      visibility: visible;
+      width: 100%;
+      transform: translateY(0);
+      fill: #326CE5ab;
+      animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
+    }
+    }
     @media ${device.tabletLG}{
       align-items: center;
       height: 40px;

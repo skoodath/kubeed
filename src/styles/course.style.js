@@ -32,7 +32,10 @@ export const Card = {
     @media ${device.tabletSM}{
       flex-direction: row;
       flex-wrap: wrap;
-      max-width: 600px;
+      justify-content: center;
+    }
+    @media ${device.laptop}{
+      max-width: 768px;
     }
 
   `,
@@ -48,8 +51,15 @@ export const Card = {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 15px -5px #dbdbdb;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+      transform: scale3d(1.02, 1.02, 1.02);
+    }
     @media ${device.tabletSM}{
       margin: 5px;
+    }
+    @media ${device.tabletLG}{
+      margin: 10px;
     }
   `,
   CardTopSection: styled.div`
@@ -141,22 +151,8 @@ export const Card = {
     overflow: hidden;
     font-weight: 600;
     border-bottom: 2px solid;
-    &::after{
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height:100%;
-        padding: 0.2rem 0;
-        border-bottom: 3px solid #FED47B;
-        transition: width 0.5s linear;
-        z-index: 1;
-      }
     &:hover{
-      &::after{
-        width: 100%;
-      }
+      color: #326CE5b5;
     }
   `
 }

@@ -1,3 +1,4 @@
+import { FaArrowDown } from 'react-icons/fa';
 import { CtaLink } from '../../styles/landing.style';
 
 const CtaComponent = () => {
@@ -10,7 +11,7 @@ const CtaComponent = () => {
       duration={300}
       role='button'
       >
-        Courses
+        Courses <FaArrowDown />
       </CtaLink>
   )
 }
