@@ -69,7 +69,7 @@ export const Links = styled(Link)`
     text-transform: uppercase;
     font-size: 0.85rem;
     font-weight: 600;
-    @media ${device.laptop}{
+    @media ${device.tabletLG}{
       align-items: center;
       height: 40px;
       width: 150px;

@@ -43,9 +43,14 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 40%;
+    height: 50%;
     margin: 0;
-
+    @media ${device.tabletSM}{
+      padding: 0 0 2rem 0;
+    }
+    @media ${device.tabletLG}{
+      padding: 0 0 5rem 0;
+    }
   `,
   Title:styled.h1`
     width: 80%;
@@ -136,7 +141,7 @@ export const CtaLink = styled(Link)`
     font-weight: 600;
     margin: 1rem 0 0 10%;
     width: 150px;
-    @media ${device.laptop}{
+    @media ${device.tabletLG}{
       align-items: center;
       height: 40px;
       font-size: 1.2rem;
