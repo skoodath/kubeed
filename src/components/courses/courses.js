@@ -3,7 +3,9 @@ import HeadingComponent from '../sectionheading/sectionheading';
 import CourseCardComponent from './cards';
 
 
+
 const CourseComponent = () => {
+
   return(
     <Course.Wrapper name='courses'>
       <Course.Inner>

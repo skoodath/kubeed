@@ -6,10 +6,10 @@ export const Footer = {
     padding: 5vh 0 3vh;
     position: relative;
     width: 100%;
-    background-color: rgb(42, 54, 76);
+    background-color: #e9e9e9;
     @media ${device.laptop}{
       padding: 0;
-      height: 40vh;
+      height: 20vh;
     }
     
   `,
@@ -37,12 +37,12 @@ export const Footer = {
     }
   `,
   FormHeader: styled.h2`
-    color: #ffffff;
     margin: 0 auto 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
+    color: #0b1935;
     @media ${device.tabletLG}{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
   `,
@@ -60,34 +60,33 @@ export const Footer = {
   `,
   Input: styled.input`
     outline: none;
-    border: 1px solid #dddddd;
-    padding: 0.3rem 0.4rem;
-    width: 80%;
+    border: 1px solid;
+    padding: 0.2rem 0.4rem;
+    width: 70%;
     max-width: 300px;
     margin: 0;
     border-radius: 3px 0 0 3px;
-    background-color: rgb(42, 54, 76);
-    color: #dddddd;
+    background-color: #efefef;
     @media ${device.tabletLG}{
-      padding: 0.5rem 0.4rem;
+      padding: 0.3rem 0.4rem;
     }
   `,
   Button: styled.button`
     width: 20%;
     max-width: 100px;
-    padding: 0.3rem 0.2rem;
-    background-color: #dddddd;
+    padding: 0.2rem 0.1rem;
+    background-color: #0b1935;
     outline: none;
-    border: 1px solid #dddddd;
-    color: #0b1935;
+    border: 1px solid #0b1935;
+    color: #ffffff;
     text-transform: uppercase;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
     @media ${device.tabletLG}{
-      padding: 0.5rem 0.4rem;
+      padding: 0.3rem 0.2rem;
     }
     &:hover{
-      background-color: #E5AB32;
+      background-color: #0b1935e0;
       
     }
   `
@@ -109,8 +108,7 @@ export const Social = {
       margin: 0 0.2rem;
     }
     svg{
-      fill: #ffffff;
-      color: #000000;
+      fill: #0b1935;
       font-size: 2rem;
       @media ${device.tabletLG}{
       font-size: 3rem;
@@ -131,9 +129,9 @@ export const CopyRight = {
     margin: 1rem auto 1rem;
     display: flex;
     padding: 0;
-    color: #fff;
+    color: #0b1935;
     @media ${device.tabletLG}{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     @media ${device.laptop}{
       margin: 2.5rem 0 0 0;

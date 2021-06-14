@@ -5,7 +5,7 @@ const NavbarComponent = () => {
   return(
     <Navbar.Wrapper>
       <Links 
-        to="footer"
+        to="courses"
         spy={true} 
         smooth={true} 
         offset={-100} 
@@ -13,7 +13,7 @@ const NavbarComponent = () => {
         role='button'
         tabIndex='0'
       >
-        Subscribe <FaArrowDown />
+        Courses <FaArrowDown />
       </Links>
     </Navbar.Wrapper>
   )

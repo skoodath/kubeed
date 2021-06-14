@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './devices';
 
 export const SectionHeader = {
   Title: styled.h2`
@@ -19,6 +20,11 @@ export const SectionHeader = {
       width: 10px;
       left: 0;
       background-color: #326CE5;
+    }
+    @media ${device.laptop}{
+      width: 100%;
+      max-width: 1366px;
+      margin: 0 4rem 2rem;
     }
   `
 }

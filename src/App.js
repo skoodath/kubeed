@@ -1,5 +1,5 @@
 import GlobalStyle from './styles/global.style';
-import { Courses, Footer, Header, Landing, Reviews } from './components';
+import { Courses, Faq, Footer, Header, Landing } from './components';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <Header />
       <Landing />
       <Courses />
-      <Reviews />
+      <Faq />
       <Footer />
     </>
   );

@@ -12,6 +12,7 @@ export const Course = {
   `,
   Inner: styled.div`
     width: 100%;
+    height: 100%;
     @media ${device.laptop}{
       max-width: 1366px;
       margin: 0 auto;
@@ -21,39 +22,71 @@ export const Course = {
 
 export const Card = {
   Wrapper: styled.section`
-    width: 80%;
-    margin: 0 auto;
-  `,
-  CardCase: styled.ul`
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 0 auto;
+    position: relative;
+    width: 80%;
     @media ${device.tabletSM}{
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
+      .swiper-container{
+        width: 768px;
+      }
+    }
+    @media ${device.tabletLG}{
+      .swiper-container{
+        width: 992px;
+      }
     }
     @media ${device.laptop}{
-      max-width: 768px;
+      width: 1366px;
+      max-width: 1366px;
+      .swiper-container{
+        width: 1366px;
+        max-width: 1366px;
+        margin: 0 auto;
     }
-
+    }
+    .swiper-container{
+      width: 100%;
+      max-width: 100%;
+      height: 500px;
+    }
+    .swiper-slide{
+      width: 100%;
+      max-width: 280px;
+      min-width: 260px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    .swiper-button-prev{
+      bottom: 0 !important;
+      top: auto !important;
+    }
+    .swiper-button-next{
+      bottom: 0 !important;
+      top: auto !important;
+    }
   `,
-  CardItem: styled.li`
+   
+  CardItem: styled.div`
     width: 100%;
-    max-width: 290px;
+    max-width: 280px;
     min-width: 260px;
-    height: 350px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 2rem;
     background-color: #ffffff;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 15px -5px #dbdbdb;
     transition: transform 0.3s ease-in-out;
+    margin: 0 0 2rem 0;
     &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
+      box-shadow: 0 0 15px -5px #dbdbdb;
     }
     @media ${device.tabletSM}{
       margin: 5px;
@@ -65,7 +98,7 @@ export const Card = {
   CardTopSection: styled.div`
     background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
     display: flex;
@@ -114,36 +147,12 @@ export const Card = {
     color: #326CE5;
   `,
 
-  CourseRatingContainer: styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-  `,
-  CourseRating: styled.div`
-    color: gold;
-    display: flex;
-    span{
-      color: #FED47B;
-    }
-    svg{
-      fill: gold;
-    }
-  `,
-  CourseReviews: styled.span`
-    color: #326CE5;
-    margin: 0 0 0 0.2rem;
-    font-size: 0.9rem;
-  `,
-  CourseStudents: styled.span`
-    color: #326CE5;
-    margin: 0 0 0 0.5rem;
-  `,
   CourseButton: styled.a`
     display: inline-block;
     left: 0;
     bottom: 0;
     padding: 0.2rem 0;
-    margin: 2rem 0 0;
+    margin: 2rem 0 2rem;
     color: #326CE5;
     cursor: pointer;
     position: absolute;
@@ -154,5 +163,11 @@ export const Card = {
     &:hover{
       color: #326CE5b5;
     }
-  `
+    &::before{
+
+    }
+  `,
+
 }
+
+

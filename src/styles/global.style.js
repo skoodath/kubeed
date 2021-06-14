@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   line-height: 1.6;
   scroll-behavior: smooth;
   font-size: 14px;
-  color: #3a3838;
+  color: #0b1935;
 }
 
 body {

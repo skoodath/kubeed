@@ -1,6 +1,5 @@
 import { Landing } from "../../styles/landing.style";
-import CtaComponent from "./cta";
-import kubexbg from '../../illustrations/kubexbg.svg';
+import kubexbg from '../../illustrations/kubbgnew.svg';
 
 
 const LandingSection = () => {
@@ -10,16 +9,15 @@ const LandingSection = () => {
         <Landing.Text>
           <Landing.Title>
             <Landing.TitleOne>
-              Learn from
+              Learning
             </Landing.TitleOne>
             <Landing.TitleTwo>
-              kubernetes experts
+              kubernetes
             </Landing.TitleTwo>
+            <Landing.TitleThree>
+              made easy
+            </Landing.TitleThree>
           </Landing.Title>
-          <Landing.Subtitle>
-            Master kubernetes from industry experts and advance your career or manage your organization's infrastructure
-          </Landing.Subtitle>
-          <CtaComponent />
         </Landing.Text>
         <Landing.Image>
           <img src={kubexbg} alt='background' />

@@ -72,11 +72,11 @@ const bounce = keyframes`
 `
 export const Links = styled(Link)`
     display: flex;
-    color: #326CE5;
+    color: #1D51BF;
     justify-content: center;
     border-radius: 3px;
     padding: 0.3rem 0.5rem;
-    border: 1px solid #E5AB32;
+    border: 1px solid #CC9D3B;
     cursor: pointer;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -87,16 +87,16 @@ export const Links = styled(Link)`
       visibility: hidden;
       width: 0;
       transform: translateY(-100%);
-      fill: #326CE5ab;
+      fill: #326CE5;
       transition: transform 0.3s ease-in-out, width 0.5s ease-in-out;
     }
     &:hover{
-      color: #326CE5ab;
+      color: #326CE5;
       svg{
         visibility: visible;
         width: 100%;
         transform: translateY(0);
-        color: #326CE5ab;
+        color: #326CE5;
         animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
       }
     }

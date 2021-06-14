@@ -62,25 +62,37 @@ export const Landing = {
     }
   `,
   TitleOne: styled.span`
-    font-size: 1.1rem;
-    color: #E5AB32;
+    font-size: 1.3rem;
+    color: #CC9D3B;
     @media ${device.tabletSM}{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
     @media ${device.tabletLG}{
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   `,
   TitleTwo: styled.span`
-    font-size: 2rem;
+    font-size: 3rem;
+    @media ${device.mobileSM}{
+      font-size: 2.5rem;
+    }
+    @media ${device.tabletSM}{
+      font-size: 3.5rem;
+    }
+    @media ${device.tabletLG}{
+      font-size: 4.5rem;
+    }
+  `,
+  TitleThree: styled.span`
+    font-size: 2.3rem;
     @media ${device.mobileSM}{
       font-size: 2.2rem;
     }
     @media ${device.tabletSM}{
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
     @media ${device.tabletLG}{
-      font-size: 4rem;
+      font-size: 3.8rem;
     }
   `,
   Subtitle: styled.h2`
@@ -111,21 +123,6 @@ export const Landing = {
   `
 };
 
-export const ScrollDown = styled(Link)`
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin: 0 0 3rem 0;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    svg{
-      font-size: 5rem;
-      font-weight: 400;
-    }
-`;
-
 const bounce = keyframes`
       0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -140,11 +137,11 @@ const bounce = keyframes`
 `
 export const CtaLink = styled(Link)`
     display: flex;
-    color: #326CE5;
+    color: #1D51BF;
     justify-content: center;
     border-radius: 3px;
     padding: 0.3rem 0.5rem;
-    border: 1px solid #E5AB32;
+    border: 1px solid #CC9D3B;
     cursor: pointer;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -156,15 +153,16 @@ export const CtaLink = styled(Link)`
       visibility: hidden;
       width: 0;
       transform: translateY(-100%);
-      fill: #326CE5ab;
+      fill: #326CE5;
       transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
     }
     &:hover{
+      color: #326CE5;
       svg{
       visibility: visible;
       width: 100%;
       transform: translateY(0);
-      fill: #326CE5ab;
+      fill: #326CE5;
       animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
     }
     }
