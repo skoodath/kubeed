@@ -25,12 +25,16 @@ export const Card = {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 2rem 0;
     position: relative;
     width: 80%;
     @media ${device.tabletSM}{
       flex-direction: row;
       flex-wrap: wrap;
-      .swiper-container{
+     .swiper-container{
+        width: 768px;
+      }
+      .swiper-wrapper{
         width: 768px;
       }
     }
@@ -51,24 +55,55 @@ export const Card = {
     .swiper-container{
       width: 100%;
       max-width: 100%;
-      height: 500px;
+      height: 600px;
+      padding: 5rem 1rem;
     }
     .swiper-slide{
-      width: 100%;
-      max-width: 280px;
-      min-width: 260px;
+      width: 280px;
       height: 400px;
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 5px;
+      background-color: #ffffff;
+      transition: transform 0.3s ease-in-out;
+      &:hover{
+      transform: scale3d(1.02, 1.02, 1.02);
+      box-shadow: 0 0 15px -5px #dbdbdb;
+      }
+      @media ${device.tabletSM}{
+        max-width: 280px;
+      }
     }
     .swiper-button-prev{
-      bottom: 0 !important;
-      top: auto !important;
-    }
+      left: 40%;
+      top: 5%;
+      bottom: auto;
+      transform: translateX(-40%);
+      width: 44px;
+      display: flex;
+      background-color: #326CE5;
+      border-radius: 50%;
+      box-shadow: 0 0 10px -5px #aaa;
+      &::after{
+        font-size: 25px;
+        color: #ffffff;
+      }
+      }
     .swiper-button-next{
-      bottom: 0 !important;
-      top: auto !important;
+      left: 60%;
+      top: 5%;
+      bottom: auto;
+      transform: translateX(-60%);
+      width: 44px;
+      display: flex;
+      background-color: #326CE5;
+      border-radius: 50%;
+      box-shadow: 0 0 10px -5px #aaa;
+      &::after{
+        font-size: 25px;
+        color: #ffffff;
+      }
     }
   `,
    
@@ -96,26 +131,29 @@ export const Card = {
     }
   `,
   CardTopSection: styled.div`
-    background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
+    //background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
+    background-color: #326CE5;
+    //background-image: ${({bgimage}) => `url(${bgimage})` };
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: ${({height}) => height };
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 1rem 1.6rem;
+    justify-content: center;
     position: relative;
-    &::before{
+    img{
+      height: 100%;
+    }
+       /* &::before{
       position: absolute;
-      background-color: #651EFEab;
       content: '';
       height: 100%;
       width: 100%;
       top: 0;
       left: 0;
       z-index: -1;
-    }
+    } */
   `,
   CardLogo: styled.img`
     position: absolute;
@@ -126,8 +164,10 @@ export const Card = {
     margin: 0.5rem 0.5rem 0 0;
   `,
   CardBottomsection: styled.div`
-    height: 50%;
+    height: ${({height}) => height };
+    padding: 1rem;
     position: relative;
+    background-color: #326CE5;
   `,
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
@@ -144,7 +184,7 @@ export const Card = {
   CardCourseSubTitle: styled.h4`
     font-size: 1.2rem;
     font-weight: 300; 
-    color: #326CE5;
+    color: #ffffff;
   `,
 
   CourseButton: styled.a`
@@ -152,16 +192,36 @@ export const Card = {
     left: 0;
     bottom: 0;
     padding: 0.2rem 0;
-    margin: 2rem 0 2rem;
-    color: #326CE5;
+    margin: 2rem 0 0;
+    color: #ffffff;
     cursor: pointer;
     position: absolute;
     letter-spacing: 1px;
     overflow: hidden;
     font-weight: 600;
-    border-bottom: 2px solid;
+    background-color: #326CE5;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+      visibility: hidden;
+      width: 0;
+      transform: translateY(-100%);
+      fill: #ffffff;
+      transition: transform 0.3s ease-in-out, width 0.5s ease-in-out;
+      font-size: 20px;
+    }
     &:hover{
-      color: #326CE5b5;
+      svg{
+        visibility: visible;
+        width: 100%;
+        transform: translateY(-100%);
+        fill: #ffffff;
+        transition: transform 0.3s ease-in-out, width 0.5s ease-in-out;
+        font-size: 20px;
+    }
     }
     &::before{
 

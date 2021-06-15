@@ -8,7 +8,7 @@ export const Header = {
     width: 100%;
     height: 70px;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     background-color: #fcfdff;
     padding: 0 10%;
     @media ${device.laptop}{
@@ -88,7 +88,9 @@ export const Links = styled(Link)`
       width: 0;
       transform: translateY(-100%);
       fill: #326CE5;
+      color: #326CE5;
       transition: transform 0.3s ease-in-out, width 0.5s ease-in-out;
+      font-size: 20px;
     }
     &:hover{
       color: #326CE5;
@@ -99,6 +101,10 @@ export const Links = styled(Link)`
         color: #326CE5;
         animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
       }
+    }
+    @media ${device.tabletSM}{
+      font-size: 1.2rem;
+      width: 150px;
     }
     @media ${device.tabletLG}{
       align-items: center;

@@ -20,16 +20,25 @@ export const Faq = {
   FaqWrapper: styled.div`
     width: 80%;
     margin: 0 auto;
+    @media ${device.laptop}{
+      margin: 0;
+    }
   `,
   Question: styled.div`
     font-weight: 600;
     font-size: 1.3rem;
-    margin: 0 0 1rem 0;
+    margin: 0 auto 1rem;
+    @media ${device.tabletLG}{
+      font-size: 1.6rem;
+    }
   `,
   Answer: styled.div`
     font-weight: 300;
     font-size: 1.1rem;
-    margin: 0 0 2rem 0;
+    margin: 0 auto 1rem;
+    @media ${device.tabletLG}{
+      font-size: 1.4rem;
+    }
   `
 }
 

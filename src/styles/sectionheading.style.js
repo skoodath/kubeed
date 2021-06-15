@@ -24,7 +24,7 @@ export const SectionHeader = {
     @media ${device.laptop}{
       width: 100%;
       max-width: 1366px;
-      margin: 0 4rem 2rem;
+      margin: 0 auto 4rem;
     }
   `
 }

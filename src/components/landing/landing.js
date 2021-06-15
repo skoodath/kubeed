@@ -15,7 +15,7 @@ const LandingSection = () => {
               kubernetes
             </Landing.TitleTwo>
             <Landing.TitleThree>
-              made easy
+              made <Landing.TitleStrike>hard</Landing.TitleStrike> easy
             </Landing.TitleThree>
           </Landing.Title>
         </Landing.Text>

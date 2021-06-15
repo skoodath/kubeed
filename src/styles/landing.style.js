@@ -44,7 +44,7 @@ export const Landing = {
     height: 50%;
     margin: 0;
     @media ${device.tabletSM}{
-      padding: 0 0 2rem 0;
+      padding: 0 0 5rem 0;
     }
     @media ${device.tabletLG}{
       padding: 0 0 5rem 0;
@@ -95,6 +95,29 @@ export const Landing = {
       font-size: 3.8rem;
     }
   `,
+  TitleStrike: styled.span`
+    font-size: 2rem;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      background-color: red;
+      border-top: 4px solid red;
+      z-index: 1;
+      left: 0;
+      top: 50%;
+    }
+    @media ${device.mobileSM}{
+      font-size: 1.5rem;
+    }
+    @media ${device.tabletSM}{
+      font-size: 2.2rem;
+    }
+    @media ${device.tabletLG}{
+      font-size: 3rem;
+    }
+  `,
   Subtitle: styled.h2`
     margin: 0 auto;
     width: 80%;
@@ -114,11 +137,18 @@ export const Landing = {
     }
   `,
   Image: styled.div`
-    width: 100%;
+    width: 90%;
     height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     img{
-      width: 100%;
+      width: 95%;
+      max-width: 615px;
       height: 100%;
+      @media ${device.tabletSM}{
+        max-width: 550px;
+      }
     }
   `
 };

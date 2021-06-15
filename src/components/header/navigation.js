@@ -1,4 +1,4 @@
-import { FaArrowDown } from 'react-icons/fa';
+import { BsArrowDown } from 'react-icons/bs';
 import { Navbar, Links} from '../../styles/header.style';
 
 const NavbarComponent = () => {
@@ -13,7 +13,7 @@ const NavbarComponent = () => {
         role='button'
         tabIndex='0'
       >
-        Courses <FaArrowDown />
+        Courses <BsArrowDown />
       </Links>
     </Navbar.Wrapper>
   )
