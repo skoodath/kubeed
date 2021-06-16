@@ -176,17 +176,21 @@ export const Card = {
     font-weight: 600;
     color: #E5AB32;
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     mark{
       margin-left: 0.5rem;
       padding: 0 0.5rem;
       border-radius: 20px;
+      text-align: center;
     }
   `,
   CardCourseSubTitle: styled.h4`
     font-size: 1.2rem;
     font-weight: 300; 
     color: #ffffff;
+    text-align: center;
   `,
 
   CourseButton: styled.a`
