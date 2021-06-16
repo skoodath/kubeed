@@ -55,7 +55,7 @@ export const Card = {
     .swiper-container{
       width: 100%;
       max-width: 100%;
-      padding: 9rem 1rem 2rem;
+      padding: 2rem 0 7rem;
     }
     .swiper-slide{
       width: 280px;
@@ -75,30 +75,32 @@ export const Card = {
       }
     }
     .swiper-button-prev{
-      left: 40%;
-      top: 5%;
-      bottom: auto;
-      transform: translateX(-40%);
+      left: 5%;
+      right: auto;
+      top: auto;
+      bottom: 5%;
+      //transform: translateX(-40%);
       width: 44px;
       display: flex;
       background-color: #326CE5;
       border-radius: 50%;
-      box-shadow: 0 0 10px -5px #aaa;
+      box-shadow: 0 0 5px -2px #111111;
       &::after{
         font-size: 25px;
         color: #ffffff;
       }
       }
     .swiper-button-next{
-      left: 60%;
-      top: 5%;
-      bottom: auto;
-      transform: translateX(-60%);
+      right: 5%;
+      left: auto;
+      top: auto;
+      bottom: 5%;
+      //transform: translateX(-60%);
       width: 44px;
       display: flex;
       background-color: #326CE5;
       border-radius: 50%;
-      box-shadow: 0 0 10px -5px #aaa;
+      box-shadow: 0 0 8px -3px #111111;
       &::after{
         font-size: 25px;
         color: #ffffff;
@@ -143,6 +145,7 @@ export const Card = {
     position: relative;
     img{
       height: 100%;
+      object-fit: cover;
     }
        /* &::before{
       position: absolute;
