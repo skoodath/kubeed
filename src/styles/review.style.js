@@ -3,11 +3,11 @@ import { device } from './devices';
 
 export const Review = {
   Wrapper: styled.section`
-    padding: 15vh 0;
+    padding: 10vh 0;
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #fefefe;
+    background-color: #fcfdff;
     
   `,
   Inner: styled.div`
@@ -15,6 +15,7 @@ export const Review = {
     @media ${device.laptop}{
       max-width: 1366px;
       margin: 0 auto;
+      padding: 0 3vw;
     }
 `
 };

@@ -43,7 +43,7 @@ const MailListComponent = () => {
           })} 
           placeholder='Email Address'
         />
-        <Footer.Button type='submit'>Send</Footer.Button>
+        <Footer.Button type='submit'>Subscribe</Footer.Button>
         </div>
         {errors.email?.type === 'pattern' && <p>{errors.email.message}</p>}
         {errors.email?.type === 'required' && <p>{errors.email.message}</p>}

@@ -4,16 +4,17 @@ import { device } from './devices';
 
 export const Landing = {
   Wrapper: styled.section`
-    padding: 10vh 0 5vh 0;
+    padding: 5vh 0 10vh 0;
     position: relative;
     width: 100%;
     height: 100vh;
     background-color: #fcfdff;
     @media ${device.mobileSM}{
       height: 100vh;
+      padding: 5vh 0;
     }
     @media ${device.tabletSM}{
-      height: auto;
+      height: 70vh;
     }
 
     @media ${device.laptop}{
@@ -25,15 +26,20 @@ export const Landing = {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10vh 0 0 0;
+    padding: 0;
     @media ${device.mobileSM}{
       padding: 5vh 0 0 0;
     }
+    @media ${device.tabletSM}{
+      padding: 0;
+      height: 100%;
+    }
     @media ${device.tabletLG}{
       padding: 5vh 0 0 0;
-    }
+      flex-direction: row;
+      }
     @media ${device.laptop}{
-      padding: 10vh 0 0 0;
+      padding: 10vh 0;
       flex-direction: row;
       max-width: 1366px;
       margin: 0 auto;
@@ -41,13 +47,16 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 50%;
+    height: 30%;
     margin: 0;
     @media ${device.tabletSM}{
-      padding: 0 0 5rem 0;
+      padding: 0 0 3rem 0;
+      height: 45%;
     }
     @media ${device.tabletLG}{
       padding: 0 0 5rem 0;
+      height: 100%;
+      width: 50%;
     }
   `,
   Title:styled.h1`
@@ -65,10 +74,10 @@ export const Landing = {
     font-size: 1.3rem;
     color: #CC9D3B;
     @media ${device.tabletSM}{
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
     @media ${device.tabletLG}{
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   `,
   TitleTwo: styled.span`
@@ -77,10 +86,7 @@ export const Landing = {
       font-size: 2.5rem;
     }
     @media ${device.tabletSM}{
-      font-size: 3.5rem;
-    }
-    @media ${device.tabletLG}{
-      font-size: 4.5rem;
+      font-size: 5rem;
     }
   `,
   TitleThree: styled.span`
@@ -89,7 +95,7 @@ export const Landing = {
       font-size: 2.2rem;
     }
     @media ${device.tabletSM}{
-      font-size: 2.8rem;
+      font-size: 3rem;
     }
     @media ${device.tabletLG}{
       font-size: 3.8rem;
@@ -142,12 +148,18 @@ export const Landing = {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    @media ${device.tabletLG}{
+      height: 100%;
+    }
     img{
       width: 95%;
       max-width: 615px;
       height: 100%;
       @media ${device.tabletSM}{
         max-width: 550px;
+      }
+      @media ${device.tabletLG}{
+        width: 80%;
       }
     }
   `

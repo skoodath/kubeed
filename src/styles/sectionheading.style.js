@@ -3,7 +3,7 @@ import { device } from './devices';
 
 export const SectionHeader = {
   Title: styled.h2`
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     width: 80%;
     margin: 0 auto 2rem;
@@ -20,6 +20,9 @@ export const SectionHeader = {
       width: 10px;
       left: 0;
       background-color: #326CE5;
+    }
+    @media ${device.tabletLG}{
+      font-size: 2.2rem;
     }
     @media ${device.laptop}{
       width: 100%;

@@ -1,4 +1,5 @@
 import { Brand, LogoLink } from '../../styles/header.style';
+//import logo from '../../illustrations/kubexhorizontal.png';
 
 const BrandComponent = () => {
   return(
@@ -11,7 +12,7 @@ const BrandComponent = () => {
             duration={300}
             tabIndex='0'
             >
-              kubex
+              Kubex
             </LogoLink>
         </Brand.Wrapper>
   )

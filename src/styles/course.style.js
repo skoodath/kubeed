@@ -4,11 +4,11 @@ import { device } from './devices';
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 15vh 0;
+    padding: 10vh 0;
     position: relative;
     width: 100%;
     background-color: #fafafa;
-    
+    overflow: hidden;
   `,
   Inner: styled.div`
     width: 100%;
@@ -16,6 +16,7 @@ export const Course = {
     @media ${device.laptop}{
       max-width: 1366px;
       margin: 0 auto;
+      padding: 0 3vw;
     }
 `
 };
@@ -25,7 +26,7 @@ export const Card = {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
     width: 80%;
     @media ${device.tabletSM}{
@@ -55,11 +56,11 @@ export const Card = {
     .swiper-container{
       width: 100%;
       max-width: 100%;
-      padding: 2rem 0 7rem;
+      padding: 1rem 0 7rem;
     }
     .swiper-slide{
-      width: 280px;
-      height: 400px;
+      width: 270px;
+      height: 360px;
       display: flex;
       flex-direction: column;
       overflow: hidden;

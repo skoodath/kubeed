@@ -3,7 +3,7 @@ import { device } from './devices';
 
 export const Footer = {
   Wrapper: styled.section`
-    padding: 5vh 0 3vh;
+    padding: 5vh 0 10vh;
     position: relative;
     width: 100%;
     background-color: #fafafa;
@@ -23,7 +23,7 @@ export const Footer = {
       height: 100%;
       max-width: 1366px;
       margin: 0 auto;
-      padding: 0;
+      padding: 0 3vw;
       flex-direction: row;
     }
   `,
@@ -64,6 +64,7 @@ export const Footer = {
     padding: 0.2rem 0.4rem;
     width: 70%;
     max-width: 300px;
+    height: 30px;
     margin: 0;
     border-radius: 3px 0 0 3px;
     background-color: #efefef;
@@ -72,9 +73,10 @@ export const Footer = {
     }
   `,
   Button: styled.button`
-    width: 20%;
+    width: 30%;
     max-width: 100px;
-    padding: 0.2rem 0.1rem;
+    height: 30px;
+    padding: 0.3rem 0.1rem;
     background-color: #0b1935;
     outline: none;
     border: 1px solid #0b1935;
@@ -82,6 +84,7 @@ export const Footer = {
     text-transform: uppercase;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
+    font-size: 0.9rem;
     @media ${device.tabletLG}{
       padding: 0.3rem 0.2rem;
     }
