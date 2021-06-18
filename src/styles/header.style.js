@@ -7,11 +7,12 @@ export const Header = {
     width: 100%;
     height: 60px;
     top: 0;
-    z-index: 99;
-    background-color: transparent;
+    z-index: 99;  
+    background-color: #fcfdff;
     padding: 0 5%;
     @media ${device.laptop}{
-      background-color: #020056;
+      //background-color: #020056;
+      background-color: #152D34;
       padding: 0;
       position: fixed;
     }
@@ -63,6 +64,7 @@ export const Brand = {
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media ${device.tabletSM}{
       width: 70%;
     }
@@ -71,21 +73,44 @@ export const Brand = {
       justify-content: flex-start;
     }
   `,
+  ImageLarge: styled.img`
+    width: 100%;
+    display: none;
+    @media ${device.laptop}{
+      display: flex;
+    }
+  `,
+  ImageSmall: styled.img`
+    width: 100%;
+    display: flex;
+    @media ${device.laptop}{
+      display: none;
+    }
+`
 }
 export const LogoLink = styled(Link)`
     color: #326CE5;
     font-size: 2rem;
-    cursor: pointer; 
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
     &:visited{
       color: #326CE5;
     }
+    @media ${device.tabletSM}{
+      width: 140px;
+    }
+    @media ${device.tabletLG}{
+      width: 170px;
+    }
+
 `;
 
 export const Navbar = {
   Wrapper: styled.nav`
     height: 50px;
     position: fixed;
-    background-color: #020056;
+    background-color: #152D34;
     left: 0;
     width: 100%;
     bottom: 0;

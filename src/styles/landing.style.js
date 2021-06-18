@@ -16,6 +16,9 @@ export const Landing = {
     @media ${device.tabletSM}{
       height: 70vh;
     }
+    @media ${device.tabletLG}{
+      height: 50vh;
+    }
 
     @media ${device.laptop}{
       height: auto;
@@ -29,10 +32,12 @@ export const Landing = {
     padding: 0;
     @media ${device.mobileSM}{
       padding: 5vh 0 0 0;
+      flex-direction: row;
     }
     @media ${device.tabletSM}{
       padding: 0;
       height: 100%;
+      flex-direction: column;
     }
     @media ${device.tabletLG}{
       padding: 5vh 0 0 0;
@@ -49,14 +54,17 @@ export const Landing = {
     width: 100%;
     height: 30%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media ${device.tabletSM}{
       padding: 0 0 3rem 0;
-      height: 45%;
+      height: 90%;
     }
     @media ${device.tabletLG}{
       padding: 0 0 5rem 0;
       height: 100%;
-      width: 50%;
+      width: 70%;
     }
   `,
   Title:styled.h1`
@@ -75,9 +83,6 @@ export const Landing = {
     color: #CC9D3B;
     @media ${device.tabletSM}{
       font-size: 1.8rem;
-    }
-    @media ${device.tabletLG}{
-      font-size: 2rem;
     }
   `,
   TitleTwo: styled.span`
@@ -98,7 +103,7 @@ export const Landing = {
       font-size: 3rem;
     }
     @media ${device.tabletLG}{
-      font-size: 3.8rem;
+      font-size: 3.5rem;
     }
   `,
   TitleStrike: styled.span`
@@ -143,7 +148,7 @@ export const Landing = {
     }
   `,
   Image: styled.div`
-    width: 90%;
+    width: 70%;
     height: 50%;
     margin: 0 auto;
     display: flex;
@@ -159,7 +164,7 @@ export const Landing = {
         max-width: 550px;
       }
       @media ${device.tabletLG}{
-        width: 80%;
+        width: 75%;
       }
     }
   `

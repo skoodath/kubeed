@@ -13,7 +13,7 @@ const NavbarComponent = () => {
         role='button'
         tabIndex='0'
       >
-        Faq's
+        Faqs
       </Navs>
       <Navs 
         to="about"

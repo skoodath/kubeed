@@ -6,7 +6,7 @@ export const Footer = {
     padding: 5vh 0 10vh;
     position: relative;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #152d34;
     @media ${device.laptop}{
       padding: 0;
       height: 20vh;
@@ -61,7 +61,7 @@ export const Footer = {
   Input: styled.input`
     outline: none;
     border: 1px solid;
-    padding: 0.2rem 0.4rem;
+    padding: 0;
     width: 70%;
     max-width: 300px;
     height: 30px;
@@ -69,24 +69,24 @@ export const Footer = {
     border-radius: 3px 0 0 3px;
     background-color: #efefef;
     @media ${device.tabletLG}{
-      padding: 0.3rem 0.4rem;
+      padding: 0 0.5rem;
     }
   `,
   Button: styled.button`
     width: 30%;
     max-width: 100px;
     height: 30px;
-    padding: 0.3rem 0.1rem;
-    background-color: #0b1935;
+    padding: 0;
+    background-color: #152D34;
     outline: none;
-    border: 1px solid #0b1935;
+    border: none;
     color: #ffffff;
     text-transform: uppercase;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 2px 3px 0;
     cursor: pointer;
     font-size: 0.9rem;
     @media ${device.tabletLG}{
-      padding: 0.3rem 0.2rem;
+      padding: 0;
     }
     &:hover{
       background-color: #0b1935e0;
@@ -111,8 +111,7 @@ export const Social = {
       margin: 0 0.2rem;
     }
     svg{
-      fill: #0b1935;
-      font-size: 2rem;
+       font-size: 2rem;
       @media ${device.tabletLG}{
       font-size: 3rem;
     }

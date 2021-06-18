@@ -26,7 +26,7 @@ export const Faq = {
   `,
   Question: styled.div`
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0 auto 1rem;
     @media ${device.tabletLG}{
       font-size: 1.6rem;
@@ -34,7 +34,7 @@ export const Faq = {
   `,
   Answer: styled.div`
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0 auto 1rem;
     @media ${device.tabletLG}{
       font-size: 1.4rem;

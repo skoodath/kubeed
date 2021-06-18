@@ -7,20 +7,13 @@ export const Contact = {
   padding: 10vh 0;
   position: relative;
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f5f7fa;
 `,
 Inner: styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10vh 0 0 0;
-  @media ${device.mobileSM}{
-    padding: 5vh 0 0 0;
-  }
-  @media ${device.tabletLG}{
-    padding: 5vh 0 0 0;
-  }
   @media ${device.laptop}{
     padding: 0 3vw;
     max-width: 1366px;
@@ -32,17 +25,26 @@ Inner: styled.div`
 export const Form = {
   Wrapper: styled.div`
     display: flex;
+    width: 80%;
+    margin: 0 auto;
+    @media ${device.laptop}{
+      width: 100%;
+    }
   `,
   Form: styled.form`
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 615px;
   `,
   InputLabel: styled.label`
   color: #dddddd;
   margin: 0 1rem 0 0;
   width: 43px;
+  padding: 0.2rem;
+  @media ${device.tabletSM}{
+    padding: 0.5rem;
+  }
  `,
   FieldWrapper: styled.div`
     display: flex;
@@ -54,13 +56,16 @@ export const Form = {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    box-shadow: ${({shadow}) => shadow? '0 0 10px -5px #aaaaaa' : 'none'};
     `,
   
   InputName: styled.input`
     border: none;
     outline: none;
     width: 100%;
+    padding: 0.2rem;
+    @media ${device.tabletSM}{
+      padding: 0.5rem;
+    }
   `,
   InputEmail: styled.input`
     border: none;

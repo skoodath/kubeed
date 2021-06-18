@@ -7,7 +7,7 @@ export const About = {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #fafafa;
+  background-color: #f5f7fa;
   @media ${device.mobileSM}{
     height: 100vh;
   }
@@ -24,13 +24,6 @@ Inner: styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10vh 0 0 0;
-  @media ${device.mobileSM}{
-    padding: 5vh 0 0 0;
-  }
-  @media ${device.tabletLG}{
-    padding: 5vh 0 0 0;
-  }
   @media ${device.laptop}{
     padding: 0 3vw;
     flex-direction: row;

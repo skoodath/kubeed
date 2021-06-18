@@ -7,7 +7,7 @@ export const Course = {
     padding: 10vh 0;
     position: relative;
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f5f7fa;
     overflow: hidden;
   `,
   Inner: styled.div`
@@ -59,13 +59,15 @@ export const Card = {
       padding: 1rem 0 7rem;
     }
     .swiper-slide{
-      width: 270px;
-      height: 360px;
+      width: 260px;
+      max-width: 260px;
+      height: 370px;
       display: flex;
       flex-direction: column;
       overflow: hidden;
       border-radius: 5px;
       background-color: #ffffff;
+      margin: 0 58px 0 auto !important;
       transition: transform 0.3s ease-in-out;
       &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
@@ -73,6 +75,7 @@ export const Card = {
       }
       @media ${device.tabletSM}{
         max-width: 280px;
+        margin: 0 30px 0 0 !important;
       }
     }
     .swiper-button-prev{
