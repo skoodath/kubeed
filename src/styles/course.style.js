@@ -59,8 +59,6 @@ export const Card = {
       padding: 1rem 0 7rem;
     }
     .swiper-slide{
-      width: 260px;
-      max-width: 260px;
       height: 370px;
       display: flex;
       flex-direction: column;
