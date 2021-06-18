@@ -67,7 +67,6 @@ export const Card = {
       overflow: hidden;
       border-radius: 5px;
       background-color: #ffffff;
-      margin: 0 58px 0 auto !important;
       transition: transform 0.3s ease-in-out;
       &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
@@ -75,7 +74,6 @@ export const Card = {
       }
       @media ${device.tabletSM}{
         max-width: 280px;
-        margin: 0 30px 0 0 !important;
       }
     }
     .swiper-button-prev{
