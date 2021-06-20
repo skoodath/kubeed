@@ -1,85 +1,89 @@
+import elearning from '../../illustrations/elearning.png';
+import onboarding from '../../illustrations/onboarding.png';
+import onlinelearning from '../../illustrations/online-learning.png';
+import { Card } from '../../styles/card.style';
 
-const CourseCardComponent1 = () => {
+const CourseCardComponentNew = () => {
 
   return(
-    <section className='cardwrapper'>
-        <div className='carditem'>
-          <div className='cardtopsection'
+    <Card.Wrapper className='cardwrapper'>
+        <Card.CardItem className='carditem'>
+          <Card.CardTopSection className='cardtopsection'
           >
-          <img src={kubernetes} alt='kubernetes' className='cardlogo' />
-            <div>
-              <h3>
-                Kubernetes Made Easy: 
-              </h3>
-              <h4>
+          <Card.CardImageWrapper>
+            <Card.CardLogo src={elearning} alt='kubernetes' className='cardlogo' />
+          </Card.CardImageWrapper>
+          
+            <Card.CardBottomsection>
+              <Card.CardCourseTitle>
+                Kubernetes Made Easy
+              </Card.CardCourseTitle>
+              <Card.CardCourseSubTitle>
                 Learn Kubernetes From Scratch
-              </h4>
-              <a
+              </Card.CardCourseSubTitle>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <Card.CourseButton
                 href='https://www.udemy.com/course/kubernetes-made-easy/'
                 >
                 START COURSE
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className='carditem'>
-          <div className='cardtopsection'>
-            <img src={kubernetes} alt='kubernetes' className='cardlogo' />
-            <div>
-              <h3>
-                Kubernetes: 
-              </h3>
-              <h4>
-                Getting Started (2019)
-              </h4>
-              <a
-                href='https://www.udemy.com/course/kubernetes-getting-started/'
-                >
-                START COURSE
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className='carditem'>
-          <div className='cardtopsection'>
-            <img src={kubernetes} alt='kubernetes' className='cardlogo' />
-            <div>
-              <h3>
+              </Card.CourseButton>
+            </Card.CardBottomsection>
+          </Card.CardTopSection>
+        </Card.CardItem>
+        <Card.CardItem className='carditem'>
+          <Card.CardTopSection className='cardtopsection'>
+            <Card.CardImageWrapper>
+              <Card.CardLogo src={onboarding} alt='kubernetes' className='cardlogo' />
+            </Card.CardImageWrapper>
+            
+            <Card.CardBottomsection>
+              <Card.CardCourseTitle>
                 Ultimate CKA<mark>new</mark>
-              </h3>
-              <h4>
+              </Card.CardCourseTitle>
+              <Card.CardCourseSubTitle>
                 Certified Kubernetes Administrator
-              </h4>
-              <a
+              </Card.CardCourseSubTitle>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <Card.CourseButton
                 href='https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/'
                 >
                 START COURSE
-              </a>
-            </div>
+              </Card.CourseButton>
+            </Card.CardBottomsection>
             
-          </div>
-        </div>
-        <div className='carditem'>
-          <div className='cardtopsection'>
-          <img src={kubernetes} alt='kubernetes' className='cardlogo' />
-            <div>
-              <h3>
+          </Card.CardTopSection>
+        </Card.CardItem>
+        <Card.CardItem className='carditem'>
+          <Card.CardTopSection className='cardtopsection'>
+            <Card.CardImageWrapper>
+              <Card.CardLogo src={onlinelearning} alt='kubernetes' className='cardlogo' />
+            </Card.CardImageWrapper>
+          
+            <Card.CardBottomsection>
+              <Card.CardCourseTitle>
                 Ultimate CKAD<mark>new</mark>
-              </h3>
-              <h4>
+              </Card.CardCourseTitle>
+              <Card.CardCourseSubTitle>
                 Certified Kubernetes Application Developer
-              </h4>
-              <a
+              </Card.CardCourseSubTitle>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <Card.CourseButton
                 href='https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/'
                 >
                 START COURSE
-              </a>
-            </div>
+              </Card.CourseButton>
+            </Card.CardBottomsection>
             
-          </div>
-        </div>
-    </section>
+          </Card.CardTopSection>
+        </Card.CardItem>
+    </Card.Wrapper>
   )
 }
 
-export default CourseCardComponent1;
+export default CourseCardComponentNew;

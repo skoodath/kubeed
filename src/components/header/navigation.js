@@ -1,5 +1,4 @@
-import { Navbar, Navs, Links} from '../../styles/header.style';
-import { BsArrowDown } from 'react-icons/bs';
+import { Navbar, Navs} from '../../styles/header.style';
 
 const NavbarComponent = () => {
   return(
@@ -37,17 +36,6 @@ const NavbarComponent = () => {
       >
         Contact Us 
       </Navs>
-      <Links 
-        to="courses"
-        spy={true} 
-        smooth={true} 
-        offset={-100} 
-        duration={500}
-        role='button'
-        tabIndex='0'
-      >
-        Courses <BsArrowDown />
-      </Links>
     </Navbar.Wrapper>
   )
 }

@@ -9,10 +9,9 @@ export const Header = {
     top: 0;
     z-index: 99;  
     background-color: #fcfdff;
+    border-bottom: 1px solid #dddddd;
     padding: 0 5%;
     @media ${device.laptop}{
-      //background-color: #020056;
-      background-color: #152D34;
       padding: 0;
       position: fixed;
     }
@@ -63,19 +62,18 @@ export const Brand = {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 
     @media ${device.tabletSM}{
       width: 70%;
     }
     @media ${device.laptop}{
-      width: 100%;
+      width: 20%;
       justify-content: flex-start;
     }
   `,
   ImageLarge: styled.img`
     width: 100%;
-    display: none;
+    display: flex;
     @media ${device.laptop}{
       display: flex;
     }
@@ -84,7 +82,7 @@ export const Brand = {
     width: 100%;
     display: flex;
     @media ${device.laptop}{
-      display: none;
+      display: flex;
     }
 `
 }
@@ -110,10 +108,10 @@ export const Navbar = {
   Wrapper: styled.nav`
     height: 50px;
     position: fixed;
-    background-color: #152D34;
     left: 0;
     width: 100%;
     bottom: 0;
+    background-color: #fcfdff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +121,7 @@ export const Navbar = {
       position: relative;
       display: flex;
       width: 100%;
-      justify-content: flex-end;
+      justify-content: center;
     }
   `
 }
@@ -193,11 +191,11 @@ const bounce = keyframes`
 export const Links = styled(Link)`
     display: flex;
     color: #ffffff;
+    background-color: #326CE5;
     justify-content: center;
     border-radius: 3px;
     padding: 0.3rem 0.5rem;
     margin: 0;
-    border: 1px solid #CC9D3B;
     cursor: pointer;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -215,7 +213,7 @@ export const Links = styled(Link)`
       font-size: 20px;
     }
     &:hover{
-      color: #326CE5;
+      color: #ffffff;
       svg{
         visibility: visible;
         width: 40%;
@@ -238,7 +236,7 @@ export const Links = styled(Link)`
 `;
 export const Navs = styled(Link)`
     display: flex;
-    color: #00D871;
+    color: #888888;
     justify-content: center;
     border-radius: 3px;
     padding: 0.3rem 0.5rem;

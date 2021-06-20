@@ -1,5 +1,6 @@
 import { Landing } from "../../styles/landing.style";
 import kubexbg from '../../illustrations/kubbgnew.svg';
+import arrow from '../../illustrations/arrow.svg';
 
 
 const LandingSection = () => {
@@ -9,30 +10,24 @@ const LandingSection = () => {
         <Landing.Text>
           <Landing.Title>
             <Landing.TitleOne>
-              Learning
+              Learn
             </Landing.TitleOne>
             <Landing.TitleTwo>
               kubernetes
             </Landing.TitleTwo>
             <Landing.TitleThree>
-              made <Landing.TitleStrike>hard</Landing.TitleStrike> easy
+              The <Landing.TitleStrike>hard</Landing.TitleStrike> easy
             </Landing.TitleThree>
           </Landing.Title>
+          <Landing.Pointer src={arrow} alt='pointer arrow above subtitle' />
+          <Landing.Subtitle>Be a kubernetes Pro!</Landing.Subtitle>
         </Landing.Text>
         <Landing.Image>
           <img src={kubexbg} alt='background' />
         </Landing.Image>
       </Landing.Inner>
-      {/* <ScrollDown
-        to="courses"
-        spy={true} 
-        smooth={true} 
-        offset={-100} 
-        duration={400}
-      >
-        <BsChevronCompactDown />
-      </ScrollDown> */}
     </Landing.Wrapper>
+    
   )
 }
 

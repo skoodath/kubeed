@@ -4,6 +4,7 @@ import NavbarComponent from "./navigation";
 //import NavsmallComponent from './navsmall'
 import MyMenucontext from '../context';
 import { useContext } from 'react';
+import CtaComponent from './cta';
 
 const HeaderSection = () => {
 
@@ -14,6 +15,7 @@ const HeaderSection = () => {
       <Header.Inner>
         <BrandComponent />
         <NavbarComponent />
+        <CtaComponent />
         <Header.Hamburger onClick={() => setOpen(!open)}>
           <Header.HamburgerLines></Header.HamburgerLines>
           <Header.HamburgerLines></Header.HamburgerLines>

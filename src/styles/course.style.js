@@ -7,7 +7,8 @@ export const Course = {
     padding: 10vh 0;
     position: relative;
     width: 100%;
-    background-color: #f5f7fa;
+    //background-color: #f5f7fa;
+    background-color: #fcfdff;
     overflow: hidden;
   `,
   Inner: styled.div`
@@ -45,7 +46,7 @@ export const Card = {
       }
     }
     @media ${device.laptop}{
-      width: 1366px;
+      width: 1200px;
       max-width: 1366px;
       .swiper-container{
         width: 1366px;
@@ -62,13 +63,14 @@ export const Card = {
       height: 370px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
       border-radius: 5px;
-      background-color: #ffffff;
+      //background-color: #ffffff;
       transition: transform 0.3s ease-in-out;
       &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
-      box-shadow: 0 0 15px -5px #dbdbdb;
       }
       @media ${device.tabletSM}{
         max-width: 280px;
@@ -132,20 +134,21 @@ export const Card = {
     }
   `,
   CardTopSection: styled.div`
-    //background-image: ${({bgimage,gradone}) => `linear-gradient(${gradone}, #ffffff 50%), url(${bgimage})` };
-    background-color: #326CE5;
-    //background-image: ${({bgimage}) => `url(${bgimage})` };
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    width: 95%;
+    max-width: 276px;
     height: ${({height}) => height };
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
     img{
+      width: 95%;
+      display: inline-block;
       height: 100%;
-      object-fit: cover;
+      //margin: 0 auto;
     }
        /* &::before{
       position: absolute;
@@ -167,6 +170,8 @@ export const Card = {
   `,
   CardBottomsection: styled.div`
     height: ${({height}) => height };
+    width: 90%;
+    max-width: 261px;
     padding: 1rem;
     position: relative;
     background-color: #326CE5;

@@ -14,10 +14,10 @@ export const Landing = {
       padding: 5vh 0;
     }
     @media ${device.tabletSM}{
-      height: 70vh;
+      height: auto;
     }
     @media ${device.tabletLG}{
-      height: 50vh;
+      height: 60vh;
     }
 
     @media ${device.laptop}{
@@ -52,19 +52,25 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 30%;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0 10% 10%;
     @media ${device.tabletSM}{
-      padding: 0 0 3rem 0;
+      padding: 0 0 10% 10%;
       height: 90%;
     }
     @media ${device.tabletLG}{
-      padding: 0 0 5rem 0;
+      padding: 0 0 0 10%;
       height: 100%;
-      width: 70%;
+      width: 80%;
+    }
+    @media ${device.laptop}{
+      padding: 0 0 0 10%;
+      width: 50%;
     }
   `,
   Title:styled.h1`
@@ -73,16 +79,22 @@ export const Landing = {
     flex-direction: column;
     letter-spacing: 1px;
     line-height: 1;
-    margin: 0 auto;
+    margin: 0;
     @media ${device.mobileSM}{
-      margin: 0 auto;
+      margin: 0;
+    }
+    @media ${device.tabletLG}{
+      width: 100%;
     }
   `,
   TitleOne: styled.span`
-    font-size: 1.3rem;
-    color: #CC9D3B;
+    font-size: 3rem;
+    margin: 0 0 -15px 0;
+    @media ${device.mobileSM}{
+      font-size: 2.5rem;
+    }
     @media ${device.tabletSM}{
-      font-size: 1.8rem;
+      font-size: 5rem;
     }
   `,
   TitleTwo: styled.span`
@@ -114,7 +126,7 @@ export const Landing = {
       content: '';
       width: 100%;
       background-color: red;
-      border-top: 4px solid red;
+      border-top: 4px solid lightgreen;
       z-index: 1;
       left: 0;
       top: 50%;
@@ -129,8 +141,17 @@ export const Landing = {
       font-size: 3rem;
     }
   `,
+  Pointer: styled.img`
+    width: 250px;
+    height: 10px;
+    margin: 0 0 0 -15px;
+    @media ${device.tabletSM}{
+      height: 15px;
+      margin: 0 0 0 5px;
+    }
+  `,
   Subtitle: styled.h2`
-    margin: 0 auto;
+    margin: 0 0 0 4px;
     width: 80%;
     padding: 0 10vw 0 0;
     font-size: 0.9rem;
@@ -140,7 +161,7 @@ export const Landing = {
     }
     @media ${device.tabletLG}{
       font-size: 1.8rem;
-      padding: 0 20vw 0 0;
+      padding: 0;
     }
     @media ${device.laptop}{
       font-size: 1.8rem;
@@ -148,8 +169,8 @@ export const Landing = {
     }
   `,
   Image: styled.div`
-    width: 70%;
-    height: 50%;
+    width: 74%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -164,7 +185,7 @@ export const Landing = {
         max-width: 550px;
       }
       @media ${device.tabletLG}{
-        width: 75%;
+        width: 90%;
       }
     }
   `

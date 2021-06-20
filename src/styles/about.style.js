@@ -7,7 +7,7 @@ export const About = {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #f5f7fa;
+  background-color: #fcfdff;
   @media ${device.mobileSM}{
     height: 100vh;
   }

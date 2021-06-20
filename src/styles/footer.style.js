@@ -6,7 +6,7 @@ export const Footer = {
     padding: 5vh 0 10vh;
     position: relative;
     width: 100%;
-    background-color: #152d34;
+    background-color: #f5f7fa;
     @media ${device.laptop}{
       padding: 0;
       height: 20vh;
