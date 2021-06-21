@@ -8,17 +8,18 @@ const LandingSection = () => {
     <Landing.Wrapper name='landing'>
       <Landing.Inner>
         <Landing.Text>
-          <Landing.Title>
-            <Landing.TitleOne>
-              Learn
-            </Landing.TitleOne>
-            <Landing.TitleTwo>
-              kubernetes
-            </Landing.TitleTwo>
-            <Landing.TitleThree>
-              The <Landing.TitleStrike>hard</Landing.TitleStrike> easy
-            </Landing.TitleThree>
-          </Landing.Title>
+          <Landing.TitleOne>
+            Learn
+          </Landing.TitleOne>
+          <Landing.TitleOne>
+            Kubernetes
+          </Landing.TitleOne>
+          <Landing.TitleOne>
+            The <Landing.TitleStrike>Hard</Landing.TitleStrike> Easy
+          </Landing.TitleOne>
+          <Landing.TitleOne>
+            Way
+          </Landing.TitleOne>
           <Landing.Pointer src={arrow} alt='pointer arrow above subtitle' />
           <Landing.Subtitle>Be a kubernetes Pro!</Landing.Subtitle>
         </Landing.Text>

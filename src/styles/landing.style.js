@@ -88,14 +88,21 @@ export const Landing = {
     }
   `,
   TitleOne: styled.span`
-    font-size: 3rem;
-    margin: 0 0 -15px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 50px;
     @media ${device.mobileSM}{
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
     @media ${device.tabletSM}{
-      font-size: 5rem;
+      font-size: 4rem;
+      height: 60px;
     }
+    @media ${device.tabletSM}{
+      font-size: 4.5rem;
+      height: 75px;
+    }
+
   `,
   TitleTwo: styled.span`
     font-size: 3rem;
@@ -119,7 +126,7 @@ export const Landing = {
     }
   `,
   TitleStrike: styled.span`
-    font-size: 2rem;
+    font-size: 2.3rem;
     position: relative;
     &::before{
       position: absolute;

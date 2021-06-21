@@ -19,15 +19,15 @@ export const Faq = {
   `,
   FaqWrapper: styled.div`
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     @media ${device.laptop}{
-      margin: 0;
+      margin: 0 0 3rem;
     }
   `,
   Question: styled.div`
     font-weight: 600;
     font-size: 1.1rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto rem;
     @media ${device.tabletLG}{
       font-size: 1.6rem;
     }

@@ -9,7 +9,6 @@ export const SectionHeader = {
     margin: 0 auto 2rem;
     position: relative;
     padding: 0 0 0 20px;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     user-select: none;

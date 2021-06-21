@@ -8,12 +8,9 @@ export const Card = {
     margin: 0 auto;
     padding: 1rem 0;
     position: relative;
-    //width: 80%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    //box-shadow: 5px 0 10px -5px #57637c;
-    //background-image: linear-gradient(0deg, #edf3ff, #fcfdff );
     background-color: #326ce5;
     &::before{
       content: '';
@@ -46,21 +43,19 @@ export const Card = {
       }
     }
     @media ${device.laptop}{
-      width: 1200px;
+      width: 1240px;
       transform: translateX(20deg);
       &::before{
         background-image: linear-gradient(45deg, #edf3ff, #fcfdff );
         z-index: 0;
       }
-      //background-image: linear-gradient(45deg, #fcfdff, #edf3ff);
-      
+    
     }
     
   `,
    
   CardItem: styled.div`
     width: 310px;
-    //max-width: 280px;
     min-width: 260px;
     height: 420px;
     display: flex;
@@ -99,7 +94,7 @@ export const Card = {
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 0 20px -5px #aec1e8;
+      box-shadow: 0 0 20px -5px #183675;
   `,
   CardLogo: styled.img`
     width: 60%;

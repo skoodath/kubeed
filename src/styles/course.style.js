@@ -7,7 +7,6 @@ export const Course = {
     padding: 10vh 0;
     position: relative;
     width: 100%;
-    //background-color: #f5f7fa;
     background-color: #fcfdff;
     overflow: hidden;
   `,
