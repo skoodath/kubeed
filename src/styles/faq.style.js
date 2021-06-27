@@ -4,7 +4,8 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 
 export const Faq = {
   Wrapper: styled.section`
-    padding: 10vh 0 0;
+    padding: 10vh 0;
+    margin: 10vh 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;

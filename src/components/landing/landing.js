@@ -1,11 +1,16 @@
 import { Landing } from '../../styles/landing.style';
 import CtaComponent from './cta';
 import Typist from 'react-typist';
-import { useSpring} from 'react-spring';
+import { config, useSpring} from 'react-spring';
 
 const LandingSection = () => {
 
-  const props = useSpring({ to: { opacity: 1, scale: 1 }, from: { opacity: 0, scale: 0.9 }, delay: 3200 })
+  const props = useSpring({ 
+    to: { opacity: 1, scale: 1 }, 
+    from: { opacity: 0, scale: 0.9 }, 
+    delay: 3500,
+    config: config.stiff
+  })
 
   return(
     <Landing.Wrapper name='landing'>
@@ -13,6 +18,7 @@ const LandingSection = () => {
           <Landing.Text>
             <Typist
               className='mytypist'
+              avgTypingDelay = {50}
               cursor= {{
                 show: false,
                 hideWhenDone: true

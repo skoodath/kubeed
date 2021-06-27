@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { device } from './devices';
-import { GrAddCircle } from 'react-icons/gr';
+import { GrAddCircle, GrSubtractCircle } from 'react-icons/gr';
 
 export const About = {
   Wrapper: styled.section`
-  padding: 10vh 0 0;
-  margin: 2rem 0;
+  padding: 10vh 0;
+  margin: 10vh 0;
   position: relative;
   width: 100%;
   background-color: #ffffff;
@@ -98,6 +98,15 @@ LongTextListItem: styled.li`
   }
 `,
 PlusButton: styled(GrAddCircle)`
+  font-size: 32px;
+  color: #bfbfbf;
+  margin: 0.5rem auto 0;
+  cursor: pointer;
+  path{
+    stroke: #bfbfbf;
+  }
+`,
+MinusButton: styled(GrSubtractCircle)`
   font-size: 32px;
   color: #bfbfbf;
   margin: 0.5rem auto 0;

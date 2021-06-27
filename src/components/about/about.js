@@ -19,7 +19,8 @@ const AboutComponent = () => {
           <About.ShortText>
             Hi, I am <b>Srinath Challa</b>. I am the founder and trainer at <b>Kubex</b>.
           </About.ShortText>
-          <About.PlusButton onClick={handleShow} />
+          {!show && <About.PlusButton onClick={handleShow} />}
+          {show && <About.MinusButton onClick={handleShow} />}
           <About.LongTextContainer show={show}>
             <About.LongText>
             I've started “Kubex” with a passion for teaching Technology, especially Kubernetes. I've helped thousands of students learn Kubernetes and change their lives by becoming a DevOps Engineer/SREs with building a solid foundation in Kubernetes. 

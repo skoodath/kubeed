@@ -5,7 +5,8 @@ import { SiUdemy } from 'react-icons/si';
 
 export const Contact = {
   Wrapper: styled.section`
-  padding: 10vh 0 0;
+  padding: 10vh 0;
+  margin: 10vh 0;
   position: relative;
   width: 100%;
   height: 100vh;
