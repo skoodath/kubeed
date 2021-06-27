@@ -7,14 +7,14 @@ const faqs = [
     {
       id: 2,
       question: "Is Kubernetes tough?",
-      answer: `Anything that's worth doing is not easy, so Kubernetes is not easy but it's also not impossible. We've tried to make the proc
-      ess as easy as possible, but you need to put in the time and effort.
+      answer: `Anything that's worth doing is not easy, so Kubernetes is not easy but it's also not impossible. We've tried to make the 
+      process as easy as possible, but you need to put in the time and effort.
       Deal?`
       },
       {
         id: 3,
         question: "Where are these courses hosted?",
-        answer: "Currently all these courses are hosted only on Udemy."
+        answer: "Currently all these courses are hosted only on Udemy.com"
       },
       {
         id: 4,
@@ -40,7 +40,7 @@ const faqs = [
       },
       {
         id: 8,
-        question: "What's the difference between purchasing your courses directly from Udemy and from this website?",
+        question: "Purchasing courses from here (kubex) vs Udemy?",
         answer: `There are two advantages. One for you and other for us. If you click on any of the above course, It will directly take you to
         the course page on Udemy and automatically apply the
         "coupon" code. And for me, but if you go via one of the links here then we can save on the Udemy commission`

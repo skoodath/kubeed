@@ -1,9 +1,13 @@
-import { FaArrowDown } from 'react-icons/fa';
+import { useSpring, animated } from 'react-spring';
 import { CtaLink } from '../../styles/landing.style';
 
 const CtaComponent = () => {
+
+  const props = useSpring({ to: { opacity: 1, scale: 1 }, from: { opacity: 0, scale: 0.9 }, delay: 3200, duration: 1000 })
+
   return(
-    <CtaLink 
+    <animated.div style={props} >
+      <CtaLink
       to="courses"
       spy={true} 
       smooth={true} 
@@ -11,8 +15,10 @@ const CtaComponent = () => {
       duration={300}
       role='button'
       >
-        Courses <FaArrowDown />
+        Start Learning
       </CtaLink>
+    </animated.div>
+    
   )
 }
 

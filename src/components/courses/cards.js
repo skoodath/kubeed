@@ -3,10 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
-import easy from '../../illustrations/easy.png';
-import started from '../../illustrations/started.png';
-import cka from '../../illustrations/cka.png';
-import ckad from '../../illustrations/ckad.png';
 
 SwiperCore.use(Navigation);
 
@@ -42,14 +38,7 @@ const CourseCardComponent = (props) => {
             }}
           >
              <SwiperSlide>
-                <Card.CardTopSection
-                  height={'50%'}
-                >
-                  <img src={easy} alt='Kubernetes made easy' />
-                  </Card.CardTopSection>
-                  <Card.CardBottomsection
-                    height={'50%'}
-                  >
+                  <Card.CardBottomsection>
                     <Card.CardCourseTitle>
                       Kubernetes made easy 
                     </Card.CardCourseTitle>
@@ -59,41 +48,12 @@ const CourseCardComponent = (props) => {
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/kubernetes-made-easy/'
                       >
-                      START COURSE
+                      Start
                       </Card.CourseButton>
                     </Card.CardBottomsection>
                 </SwiperSlide>
                 <SwiperSlide>
-                <Card.CardTopSection
-                  height={'50%'}
-                >
-                  <img src={started} alt='Kubernetes getting started' />
-                  </Card.CardTopSection>
-                  <Card.CardBottomsection
-                    height={'50%'}
-                  >
-                    <Card.CardCourseTitle>
-                      Kubernetes
-                    </Card.CardCourseTitle>
-                    <Card.CardCourseSubTitle>
-                      Getting started (2019)
-                    </Card.CardCourseSubTitle>
-                    <Card.CourseButton 
-                      href='https://www.udemy.com/course/kubernetes-getting-started/'
-                      >
-                      START COURSE
-                      </Card.CourseButton>
-                    </Card.CardBottomsection>
-                </SwiperSlide>
-                <SwiperSlide>
-                <Card.CardTopSection
-                  height={'50%'}
-                >
-                  <img src={cka} alt='Kubernetes made easy' />
-                  </Card.CardTopSection>
-                  <Card.CardBottomsection
-                    height={'50%'}
-                  >
+                  <Card.CardBottomsection>
                     <Card.CardCourseTitle>
                       Ultimate CKA 
                     </Card.CardCourseTitle>
@@ -103,19 +63,12 @@ const CourseCardComponent = (props) => {
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/'
                       >
-                      START COURSE
+                      Start
                       </Card.CourseButton>
                     </Card.CardBottomsection>
                 </SwiperSlide>
                 <SwiperSlide>
-                <Card.CardTopSection
-                  height={'50%'}
-                >
-                  <img src={ckad} alt='Kubernetes made easy' />
-                  </Card.CardTopSection>
-                  <Card.CardBottomsection
-                    height={'50%'}
-                  >
+                  <Card.CardBottomsection>
                     <Card.CardCourseTitle>
                       Ultimate CKAD 
                     </Card.CardCourseTitle>
@@ -125,18 +78,12 @@ const CourseCardComponent = (props) => {
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/'
                       >
-                      START COURSE
+                      Start
                       </Card.CourseButton>
                     </Card.CardBottomsection>
                 </SwiperSlide>
                 <SwiperSlide>
-                <Card.CardTopSection
-                  height={'0%'}
-                >
-                  </Card.CardTopSection>
-                  <Card.CardBottomsection
-                    height={'100%'}
-                  >
+                  <Card.CardBottomsection>
                     <Card.CardCourseTitle>
                       New Courses 
                     </Card.CardCourseTitle>

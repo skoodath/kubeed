@@ -1,14 +1,17 @@
 import { Footer } from '../../styles/footer.style';
 import SocialMediaComponent from './social';
 import CopyRightComponent from './copy';
-import MailListComponent from './mailing';
+import kubexgrey from '../../illustrations/Kubexgrey.svg';
+
 
 
 const FooterComponent = () => {
   return(
     <Footer.Wrapper name='footer'>
       <Footer.Inner>
-        <MailListComponent />
+        <Footer.LogoWrapper>
+          <Footer.Logo src={kubexgrey} alt='Kubex logo in footer' />
+        </Footer.LogoWrapper>
         <SocialMediaComponent />
         <CopyRightComponent /> 
       </Footer.Inner>

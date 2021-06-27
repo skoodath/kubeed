@@ -4,11 +4,15 @@ import { device } from './devices';
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 10vh 0;
+    padding: 10vh 0 0;
     position: relative;
     width: 100%;
-    background-color: #fcfdff;
+    height: 100vh;
+    background-color: #ffffff;
     overflow: hidden;
+    @media ${device.laptop}{
+      max-height: 768px;
+    }
   `,
   Inner: styled.div`
     width: 100%;
@@ -66,7 +70,7 @@ export const Card = {
       align-items: center;
       overflow: hidden;
       border-radius: 5px;
-      //background-color: #ffffff;
+      padding: 0.5rem 0.2rem;
       transition: transform 0.3s ease-in-out;
       &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
@@ -80,15 +84,13 @@ export const Card = {
       right: auto;
       top: auto;
       bottom: 5%;
-      //transform: translateX(-40%);
       width: 44px;
       display: flex;
-      background-color: #326CE5;
+      background-color: #f5f5f5;
       border-radius: 50%;
-      box-shadow: 0 0 5px -2px #111111;
       &::after{
         font-size: 25px;
-        color: #ffffff;
+        color: #0096FF;
       }
       }
     .swiper-button-next{
@@ -96,15 +98,13 @@ export const Card = {
       left: auto;
       top: auto;
       bottom: 5%;
-      //transform: translateX(-60%);
       width: 44px;
       display: flex;
-      background-color: #326CE5;
+      background-color: #f5f5f5;
       border-radius: 50%;
-      box-shadow: 0 0 8px -3px #111111;
       &::after{
         font-size: 25px;
-        color: #ffffff;
+        color: #0096FF;
       }
     }
   `,
@@ -116,14 +116,14 @@ export const Card = {
     height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #bfbfbf;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     margin: 0 0 2rem 0;
     &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
-      box-shadow: 0 0 15px -5px #dbdbdb;
+      box-shadow: 0 0 15px -5px #bfbfbf;
     }
     @media ${device.tabletSM}{
       margin: 5px;
@@ -147,17 +147,7 @@ export const Card = {
       width: 95%;
       display: inline-block;
       height: 100%;
-      //margin: 0 auto;
     }
-       /* &::before{
-      position: absolute;
-      content: '';
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    } */
   `,
   CardLogo: styled.img`
     position: absolute;
@@ -168,17 +158,22 @@ export const Card = {
     margin: 0.5rem 0.5rem 0 0;
   `,
   CardBottomsection: styled.div`
-    height: ${({height}) => height };
+    height: ${({height}) => height?  'height' : '100%' };
     width: 90%;
     max-width: 261px;
     padding: 1rem;
     position: relative;
-    background-color: #326CE5;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 2px #bfbfbf;
   `,
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
     font-weight: 600;
-    color: #E5AB32;
+    color: #00518A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +188,7 @@ export const Card = {
   CardCourseSubTitle: styled.h4`
     font-size: 1.2rem;
     font-weight: 300; 
-    color: #ffffff;
+    color: #858585;
     text-align: center;
   `,
 
@@ -202,19 +197,20 @@ export const Card = {
     left: 0;
     bottom: 0;
     padding: 0.2rem 0;
-    margin: 2rem 0 0;
+    margin: 2rem auto 0;
     color: #ffffff;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     letter-spacing: 1px;
     overflow: hidden;
     font-weight: 600;
-    background-color: #326CE5;
-    width: 100%;
-    height: 50px;
+    background-color: #0096FF;
+    width: 40%;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     svg{
       visibility: hidden;
       width: 0;

@@ -1,6 +1,5 @@
 import { Course } from '../../styles/course.style';
-import HeadingComponent from '../sectionheading/sectionheading';
-import CourseCardComponentNew from './cardsnew';
+import CourseCardComponent from './cards';
 
 
 
@@ -9,10 +8,7 @@ const CourseComponent = () => {
   return(
     <Course.Wrapper name='courses'>
       <Course.Inner>
-      <HeadingComponent
-        text='Courses'
-      />
-      <CourseCardComponentNew />
+      <CourseCardComponent />
       </Course.Inner>
       
     </Course.Wrapper>

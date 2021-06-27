@@ -1,13 +1,18 @@
-import { Link } from "react-scroll";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { device } from "./devices";
+import { GrMail, GrLinkedin, GrYoutube } from "react-icons/gr";
+import { SiUdemy } from 'react-icons/si';
 
 export const Contact = {
   Wrapper: styled.section`
-  padding: 10vh 0;
+  padding: 10vh 0 0;
   position: relative;
   width: 100%;
-  background-color: #f5f7fa;
+  height: 100vh;
+  background-color: #ffffff;
+  @media ${device.tabletSM}{
+    height: 50vh;
+  }
 `,
 Inner: styled.div`
   width: 100%;
@@ -22,97 +27,74 @@ Inner: styled.div`
 `,
 }
 
-export const Form = {
-  Wrapper: styled.div`
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    @media ${device.laptop}{
-      width: 100%;
-    }
-  `,
-  Form: styled.form`
+export const Connect = {
+  Wrapper: styled.section`
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 615px;
+    align-items: center;
+    justify-content: center;
   `,
-  InputLabel: styled.label`
-  color: #dddddd;
-  margin: 0 1rem 0 0;
-  width: 43px;
-  padding: 0.2rem;
-  @media ${device.tabletSM}{
-    padding: 0.5rem;
-  }
- `,
-  FieldWrapper: styled.div`
+  Inner: styled.div`
     display: flex;
-    flex-direction: ${({flexd}) => flexd? 'column' : 'row'};
-    margin: 0 0 1rem 0;
-    padding: ${({padding}) => padding? '0.5rem' : '0'};
-    background-color: #ffffff;
-    border: ${({border}) => border? '1px solid #dddddd' : 'none'};
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    `,
-  
-  InputName: styled.input`
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 0.2rem;
+    flex-direction: column;
     @media ${device.tabletSM}{
-      padding: 0.5rem;
+      flex-direction: row;
+      width: 70%;
+      a{
+        display: inline-block;
+        width: 100%;
+      }
     }
+    
   `,
-  InputEmail: styled.input`
-    border: none;
-    outline: none;
+  Header: styled.h3`
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    color: #bfbfbf;
   `,
-  Message: styled.textarea`
-    border: none;
-    outline: none;
+  IconWrapper: styled.div`
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    resize: none;
   `,
-  Button: styled.button`
-    width: 100%;
-    border: none;
-    padding: 0.3rem;
-    box-shadow: 1px 1px 4px #000000;
+  IconText: styled.h4`
+    color: #bfbfbf;
+    margin: 1rem 0 0 0;
   `
 }
 
-const bounce = keyframes`
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-10px);
-      }
-      60% {
-        transform: translateY(-15px);
-      }
-    }
-`
+export const Email = styled(GrMail)`
+  fill: #0095ff;
+  font-size: 2rem;
+  @media ${device.tabletSM}{
+    font-size: 4rem;
+  }
+  
+`;
 
-export const ScrollUp = styled(Link)`
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin: 0 0 0 -35px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
-    svg{
-      font-size: 4rem;
-      fill: #E5AB32;
-      @media ${device.laptop}{
-        font-size: 5rem;
-    }
-    }
+export const Linkedin = styled(GrLinkedin)`
+  fill: #0077b5;
+  font-size: 2rem;
+  @media ${device.tabletSM}{
+    font-size: 4rem;
+  }
+`;
+
+export const Youtube = styled(GrYoutube)`
+  fill: #FF0000;
+  font-size: 2rem;
+  @media ${device.tabletSM}{
+    font-size: 4rem;
+  }
+`;
+export const Udemy = styled(SiUdemy)`
+  fill: #ea5252;
+  font-size: 2rem;
+  @media ${device.tabletSM}{
+    font-size: 4rem;
+  }
 `;

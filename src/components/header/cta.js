@@ -1,6 +1,7 @@
 import { Links} from '../../styles/header.style';
 
 const CtaComponent = () => {
+
   return(
     <Links
       to="courses"

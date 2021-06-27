@@ -31,7 +31,6 @@ const MailListComponent = () => {
     <Footer.FormWrapper>
       <Footer.FormHeader>Subscribe to our mailing list</Footer.FormHeader>
       <Footer.Form onSubmit={handleSubmit(SubmitForm)}>
-        <div>
         <Footer.Input 
           type='email' 
           {...register('email', {
@@ -44,7 +43,6 @@ const MailListComponent = () => {
           placeholder='Email Address'
         />
         <Footer.Button type='submit'>Subscribe</Footer.Button>
-        </div>
         {errors.email?.type === 'pattern' && <p>{errors.email.message}</p>}
         {errors.email?.type === 'required' && <p>{errors.email.message}</p>}
       </Footer.Form>

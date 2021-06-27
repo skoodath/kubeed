@@ -1,50 +1,41 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { device } from './devices';
+import { animated } from 'react-spring';
+
 
 export const Landing = {
   Wrapper: styled.section`
-    padding: 5vh 0 10vh 0;
+    padding: 0;
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: #fcfdff;
+    height: 90vh;
+    background-color: #ffffff;
     @media ${device.mobileSM}{
-      height: 100vh;
-      padding: 5vh 0;
+      height: 80vh;
     }
     @media ${device.tabletSM}{
-      height: auto;
+      height: 90vh;
     }
-    @media ${device.tabletLG}{
-      height: 60vh;
-    }
-
     @media ${device.laptop}{
-      height: auto;
+      height: 100vh;
     }
-  `,
+   `,
   Inner: styled.div`
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 0;
-    @media ${device.mobileSM}{
-      padding: 5vh 0 0 0;
-      flex-direction: row;
-    }
     @media ${device.tabletSM}{
-      padding: 0;
       height: 100%;
       flex-direction: column;
     }
     @media ${device.tabletLG}{
-      padding: 5vh 0 0 0;
       flex-direction: row;
       }
     @media ${device.laptop}{
-      padding: 10vh 0;
+      padding: 0;
       flex-direction: row;
       max-width: 1366px;
       margin: 0 auto;
@@ -52,117 +43,57 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: auto;
-    margin: 0;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    padding: 0 0 10% 10%;
-    @media ${device.tabletSM}{
-      padding: 0 0 10% 10%;
-      height: 90%;
+    padding: 0;
+    align-items: center;
+    .mytypist{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     @media ${device.tabletLG}{
-      padding: 0 0 0 10%;
       height: 100%;
-      width: 80%;
     }
     @media ${device.laptop}{
-      padding: 0 0 0 10%;
-      width: 50%;
-    }
-  `,
-  Title:styled.h1`
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    letter-spacing: 1px;
-    line-height: 1;
-    margin: 0;
-    @media ${device.mobileSM}{
-      margin: 0;
-    }
-    @media ${device.tabletLG}{
       width: 100%;
     }
   `,
   TitleOne: styled.span`
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 600;
     height: 50px;
-    @media ${device.mobileSM}{
-      font-size: 2.2rem;
-    }
+    text-align: center;
+    letter-spacing: 1px;
     @media ${device.tabletSM}{
       font-size: 4rem;
       height: 60px;
     }
     @media ${device.tabletSM}{
-      font-size: 4.5rem;
+      font-size: 4rem;
       height: 75px;
     }
 
   `,
   TitleTwo: styled.span`
-    font-size: 3rem;
-    @media ${device.mobileSM}{
-      font-size: 2.5rem;
-    }
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
     @media ${device.tabletSM}{
-      font-size: 5rem;
+      font-size: 4rem;
     }
   `,
-  TitleThree: styled.span`
-    font-size: 2.3rem;
-    @media ${device.mobileSM}{
-      font-size: 2.2rem;
-    }
-    @media ${device.tabletSM}{
-      font-size: 3rem;
-    }
-    @media ${device.tabletLG}{
-      font-size: 3.5rem;
-    }
-  `,
-  TitleStrike: styled.span`
-    font-size: 2.3rem;
-    position: relative;
-    &::before{
-      position: absolute;
-      content: '';
-      width: 100%;
-      background-color: red;
-      border-top: 4px solid lightgreen;
-      z-index: 1;
-      left: 0;
-      top: 50%;
-    }
-    @media ${device.mobileSM}{
-      font-size: 1.5rem;
-    }
-    @media ${device.tabletSM}{
-      font-size: 2.2rem;
-    }
-    @media ${device.tabletLG}{
-      font-size: 3rem;
-    }
-  `,
-  Pointer: styled.img`
-    width: 250px;
-    height: 10px;
-    margin: 0 0 0 -15px;
-    @media ${device.tabletSM}{
-      height: 15px;
-      margin: 0 0 0 5px;
-    }
-  `,
-  Subtitle: styled.h2`
-    margin: 0 0 0 4px;
-    width: 80%;
-    padding: 0 10vw 0 0;
-    font-size: 0.9rem;
+  Subtitle: styled(animated.h2)`
+    margin: 1rem 0 0;
+    padding: 0;
+    font-size: 1.2rem;
     font-weight: 300;
+    text-align: center;
     @media ${device.tabletSM}{
       font-size: 1.5rem;
     }
@@ -175,76 +106,31 @@ export const Landing = {
       padding: 0;
     }
   `,
-  Image: styled.div`
-    width: 74%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    @media ${device.tabletLG}{
-      height: 100%;
-    }
-    img{
-      width: 95%;
-      max-width: 615px;
-      height: 100%;
-      @media ${device.tabletSM}{
-        max-width: 550px;
-      }
-      @media ${device.tabletLG}{
-        width: 90%;
-      }
-    }
-  `
+
 };
 
-const bounce = keyframes`
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-10px);
-      }
-      60% {
-        transform: translateY(-10px);
-      }
-    }
-`
 export const CtaLink = styled(Link)`
     display: flex;
-    color: #1D51BF;
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #0096FF, #008cee, #0096FF);
     justify-content: center;
-    border-radius: 3px;
+    align-items: center;
+    border-radius: 5px;
     padding: 0.3rem 0.5rem;
-    border: 1px solid #CC9D3B;
     cursor: pointer;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
     font-weight: 600;
-    margin: 1rem 0 0 10%;
+    margin: 2.5rem auto 0;
     width: 150px;
-    svg{
-      visibility: hidden;
-      width: 0;
-      transform: translateY(-100%);
-      fill: #326CE5;
-      transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
-    }
-    &:hover{
-      color: #326CE5;
-      svg{
-      visibility: visible;
-      width: 100%;
-      transform: translateY(0);
-      fill: #326CE5;
-      animation: 1.5s ${bounce} cubic-bezier(0.0075, 0.52, 0.0095, 0.6) infinite;
-    }
+    height: 40px;
+    font-size: 1.1rem;
+     &:hover{
+      color: #fcfdff;
     }
     @media ${device.tabletLG}{
-      align-items: center;
       height: 40px;
       font-size: 1.2rem;
+      width: 180px;
     }
     
 `;

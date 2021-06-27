@@ -1,5 +1,5 @@
 import { Brand, LogoLink } from '../../styles/header.style';
-import logoblack from '../../illustrations/logoblack.png';
+import logo from '../../illustrations/kubexlogo.svg';
 
 const BrandComponent = () => {
   return(
@@ -8,11 +8,12 @@ const BrandComponent = () => {
             to="landing"
             spy={true} 
             smooth={true} 
-            offset={-100} 
-            duration={300}
+            offset={-50} 
+            duration={500}
+            role='button'
             tabIndex='0'
             >
-              <Brand.ImageSmall src={logoblack} alt='Kubex logo' />
+              <Brand.ImageSmall src={logo} alt='Kubex logo' />
             </LogoLink>
         </Brand.Wrapper>
   )

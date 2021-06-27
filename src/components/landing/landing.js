@@ -1,31 +1,30 @@
-import { Landing } from "../../styles/landing.style";
-import kubexbg from '../../illustrations/kubbgnew.svg';
-import arrow from '../../illustrations/arrow.svg';
-
+import { Landing } from '../../styles/landing.style';
+import CtaComponent from './cta';
+import Typist from 'react-typist';
+import { useSpring} from 'react-spring';
 
 const LandingSection = () => {
+
+  const props = useSpring({ to: { opacity: 1, scale: 1 }, from: { opacity: 0, scale: 0.9 }, delay: 3200 })
+
   return(
     <Landing.Wrapper name='landing'>
       <Landing.Inner>
-        <Landing.Text>
-          <Landing.TitleOne>
-            Learn
-          </Landing.TitleOne>
-          <Landing.TitleOne>
-            Kubernetes
-          </Landing.TitleOne>
-          <Landing.TitleOne>
-            The <Landing.TitleStrike>Hard</Landing.TitleStrike> Easy
-          </Landing.TitleOne>
-          <Landing.TitleOne>
-            Way
-          </Landing.TitleOne>
-          <Landing.Pointer src={arrow} alt='pointer arrow above subtitle' />
-          <Landing.Subtitle>Be a kubernetes Pro!</Landing.Subtitle>
-        </Landing.Text>
-        <Landing.Image>
-          <img src={kubexbg} alt='background' />
-        </Landing.Image>
+          <Landing.Text>
+            <Typist
+              className='mytypist'
+              cursor= {{
+                show: false,
+                hideWhenDone: true
+              }}
+              >
+              <Typist.Delay ms={600} />
+              <Landing.TitleOne>Learn kubernetes</Landing.TitleOne>
+              <Landing.TitleTwo>The Easy Way</Landing.TitleTwo>
+            </Typist>
+            <Landing.Subtitle style={props}>Be a kubernetes Pro!</Landing.Subtitle>
+            <CtaComponent />
+          </Landing.Text>
       </Landing.Inner>
     </Landing.Wrapper>
     

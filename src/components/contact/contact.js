@@ -1,16 +1,11 @@
 import { Contact } from '../../styles/contact.style';
-import HeadingComponent from '../sectionheading/sectionheading';
-import FormComponent from './form';
-
+import ConnectComponent from './form';
 
 const ContactComponent = () => {
   return(
-    <Contact.Wrapper name='contact'>
+    <Contact.Wrapper name='connect'>
       <Contact.Inner>
-      <HeadingComponent
-        text='Get In Touch'
-      />
-      <FormComponent />
+        <ConnectComponent />
       </Contact.Inner>
       
     </Contact.Wrapper>
