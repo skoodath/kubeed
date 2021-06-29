@@ -5,15 +5,17 @@ import { SiUdemy } from 'react-icons/si';
 
 export const Contact = {
   Wrapper: styled.section`
-  padding: 10vh 0;
-  margin: 10vh 0;
+  padding: 10rem 0;
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
   @media ${device.tabletSM}{
-    height: 50vh;
+    height: 100vh;
   }
+  @media ${device.laptop}{
+      height: 100vh;
+    }
 `,
 Inner: styled.div`
   width: 100%;

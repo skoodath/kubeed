@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Faq, PlusButton, MinusButton } from '../../styles/faq.style';
+import HeadingComponent from '../sectionheading/sectionheading';
 import faqs from './faqs';
 
 const FaqComponent = () => {
@@ -14,7 +15,12 @@ const FaqComponent = () => {
   }
   
   return(
+    <>
+      
       <Faq.Wrapper name='faq'>
+      <HeadingComponent
+        text={'Frequently Asked Questions'}
+        />
       <Faq.Inner>
         {faqs.map(faq => (
           <Faq.FaqWrapper key={faq.id} >
@@ -39,7 +45,7 @@ const FaqComponent = () => {
         ) )}
         </Faq.Inner>
       </Faq.Wrapper>
-    
+    </>
   )
 }
 

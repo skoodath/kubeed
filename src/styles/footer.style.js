@@ -53,7 +53,7 @@ export const Footer = {
   Logo: styled.img`
     width: 100%;
     @media ${device.tabletLG}{
-      width: 40% ;
+      width: 20% ;
     }
   `
 
@@ -78,10 +78,10 @@ export const Social = {
       margin: 0 0.2rem;
     }
     svg{
-      font-size: 2rem;
+      font-size: 1rem;
       fill: #bfbfbf;
       @media ${device.tabletLG}{
-      font-size: 3rem;
+      font-size: 2rem;
     }
     }
     

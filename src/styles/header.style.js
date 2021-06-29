@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { device } from './devices';
-import { animated } from '@react-spring/web';
 
 export const Header = {
-  Wrapper: styled(animated.header)`
+  Wrapper: styled.header`
     width: 100%;
     height: 10vh;
     max-height: 75px;
@@ -113,22 +112,27 @@ export const Navbar = {
 
 export const Links = styled(Link)`
     display: flex;
-    color: #858585;
-    border:2px solid #0096FF;
+    position: relative;
+    color: #ffffff;
+    background-color: #0096FF;
     justify-content: center;
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
     margin: 0 0.5rem 0 auto;
     cursor: pointer;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-size: 0.85rem;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
     width: 25%;
     max-width: 150px;
+    border: 2px solid transparent;
+    overflow: hidden;
     &:hover{
-      color: #0096FF;
+      background-color: #0096ff90;
+      transform-origin: top center;
+    }
+        
     }
     @media ${device.tabletSM}{
       font-size: 1.2rem;
@@ -152,7 +156,6 @@ export const Nav = styled(Link)`
     margin: 0 0;
     cursor: pointer;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
     &::after{

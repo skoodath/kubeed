@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { device } from './devices';
-import { animated } from 'react-spring';
 
 
 export const Landing = {
@@ -88,11 +87,11 @@ export const Landing = {
       font-size: 4rem;
     }
   `,
-  Subtitle: styled(animated.h2)`
+  Subtitle: styled.h2`
     margin: 1rem 0 0;
     padding: 0;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     @media ${device.tabletSM}{
       font-size: 1.5rem;
@@ -112,7 +111,7 @@ export const Landing = {
 export const CtaLink = styled(Link)`
     display: flex;
     color: #ffffff;
-    background-image: linear-gradient(45deg, #0096FF, #008cee, #0096FF);
+    background-color: #0096FF;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -121,11 +120,12 @@ export const CtaLink = styled(Link)`
     letter-spacing: 1px;
     font-weight: 600;
     margin: 2.5rem auto 0;
-    width: 150px;
+    width: 130px;
     height: 40px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    transition: background-color 0.5s ease-in-out;
      &:hover{
-      color: #fcfdff;
+      background-color: #0096ff90;
     }
     @media ${device.tabletLG}{
       height: 40px;

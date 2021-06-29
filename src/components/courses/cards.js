@@ -29,11 +29,11 @@ const CourseCardComponent = (props) => {
               },
               992: {
                 width: 992,
-                slidesPerView: 3
+                slidesPerView: 2
               },
               1366: {
-                width: 1366,
-                slidesPerView: 4
+                width: 992,
+                slidesPerView: 3
               }
             }}
           >

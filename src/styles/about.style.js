@@ -4,8 +4,7 @@ import { GrAddCircle, GrSubtractCircle } from 'react-icons/gr';
 
 export const About = {
   Wrapper: styled.section`
-  padding: 10vh 0;
-  margin: 10vh 0;
+  padding: 10rem 0;
   position: relative;
   width: 100%;
   background-color: #ffffff;
@@ -38,7 +37,6 @@ ShortText: styled.p`
   width: 80%;
   margin: 0.5rem auto;
   text-align: center;
-  letter-spacing: 1px;
   @media ${device.tabletSM}{
     font-size: 1.2rem;
     b{
@@ -57,7 +55,6 @@ LongTextContainer: styled.div`
   margin: 1rem auto 0;
   display: flex;
   flex-direction: column;
-  letter-spacing: 1px;
   opacity: ${({show}) => show? 1: 0};
   visibility: ${({show}) => show? 'visible': 'hidden'};
   height: ${({show}) => show? 'auto': 0};

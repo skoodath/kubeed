@@ -4,8 +4,7 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 
 export const Faq = {
   Wrapper: styled.section`
-    padding: 10vh 0;
-    margin: 10vh 0;
+    padding: 10rem 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
@@ -41,16 +40,17 @@ export const Faq = {
   QuestionWrapper: styled.div`
     display: flex;
     justify-content: space-between;
+    @media ${device.laptop}{
     align-items: center;
+    }
   `,
   Question: styled.div`
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1rem;
     margin: 0 auto rem;
     padding: 0 1rem 0 0;
     width: 85%;
     cursor: pointer;
-    letter-spacing: 1px;
     @media ${device.tabletSM}{
       font-size: 1.2rem;
     }
@@ -59,9 +59,9 @@ export const Faq = {
     }
   `,
   Answer: styled.div`
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1rem;
-    margin: 0 auto 3rem;
+    margin: 0 0 3rem;
     padding: 0 3rem 0 0;
     @media ${device.tabletSM}{
       font-size: 1.1rem;
@@ -76,6 +76,7 @@ export const PlusButton = styled(FaPlus)`
   cursor: pointer;
   font-size: 16px;
   width: 16px;
+  margin: 0.5rem 0 0 0;
 `;
 export const MinusButton = styled(FaMinus)`
   fill: #bfbfbf;

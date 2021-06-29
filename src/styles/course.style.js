@@ -4,7 +4,7 @@ import { device } from './devices';
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 10vh 0 0;
+    padding: 10rem 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
@@ -46,15 +46,21 @@ export const Card = {
       .swiper-container{
         width: 992px;
       }
+      .swiper-wrapper{
+        width: 992px;
+      }
     }
     @media ${device.laptop}{
-      width: 1200px;
-      max-width: 1366px;
+        width: 992px;
+        max-width: 992px;
       .swiper-container{
-        width: 1366px;
-        max-width: 1366px;
+        width: 992px;
+        max-width: 992px;
         margin: 0 auto;
-    }
+      }
+      .swiper-wrapper{
+        width: 992px;
+      }
     }
     .swiper-container{
       width: 100%;
@@ -122,7 +128,8 @@ export const Card = {
     margin: 0 0 2rem 0;
     &:hover{
       transform: scale3d(1.02, 1.02, 1.02);
-      box-shadow: 0 0 15px -5px #bfbfbf;
+      transform-style: preserve-3d;
+      box-shadow: 0 0 3px -1px #858585;
     }
     @media ${device.tabletSM}{
       margin: 5px;
@@ -141,7 +148,6 @@ export const Card = {
     position: relative;
     align-items: center;
     margin: 0 auto;
-    border-radius: 5px 5px 0 0;
     img{
       width: 95%;
       display: inline-block;
@@ -167,7 +173,25 @@ export const Card = {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 1px 1px 2px #bfbfbf;
+    overflow: hidden;
+    box-shadow: 0 0 3px -1px #858585;
+    &::after{
+      position: absolute;
+      content: '';
+      height: 0;
+      width: 100%;
+      background-color: #0095ff;
+      left: 0;
+      bottom: 0;
+      transform-origin: bottom center;
+      transition: height 0.5s cubic-bezier(0.9, 0.610, 0.000355, 0.0001);
+      }
+    &:hover{
+      &::after{
+        height: 5px;
+      }
+    }
+    
   `,
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
@@ -210,6 +234,7 @@ export const Card = {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    transition: background-color 0.5s ease-in-out;
     svg{
       visibility: hidden;
       width: 0;
@@ -228,8 +253,9 @@ export const Card = {
         font-size: 20px;
     }
     }
-    &::before{
-
+    &:hover{
+      background-color: #0096ff90;
+      transform-origin: top center;
     }
   `,
 
