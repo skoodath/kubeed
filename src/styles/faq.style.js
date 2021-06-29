@@ -9,9 +9,8 @@ export const Faq = {
     width: 100%;
     background-color: #ffffff;
     font-family: 'DM Sans', sans-serif;
-    @media ${device.laptop}{
-      height: 100vh;
-      max-height: 768px;
+    @media ${device.desktopLg}{
+      max-height: 868px;
     }
   `,
   Inner: styled.div`

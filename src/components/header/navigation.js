@@ -12,7 +12,7 @@ const NavbarComponent = () => {
           to="about"
           spy={true} 
           smooth={true} 
-          offset={-140} 
+          offset={0} 
           duration={500}
           role='button'
           tabIndex='0'
@@ -24,7 +24,7 @@ const NavbarComponent = () => {
           to="faq"
           spy={true} 
           smooth={true} 
-          offset={-140} 
+          offset={0} 
           duration={500}
           role='button'
           tabIndex='0'
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
           to="connect"
           spy={true} 
           smooth={true} 
-          offset={-140} 
+          offset={0} 
           duration={400}
           role='button'
           tabIndex='0'
