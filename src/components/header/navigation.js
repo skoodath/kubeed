@@ -9,10 +9,22 @@ const NavbarComponent = () => {
       <Navbar.Menu>
         <Nav
           activeClass='active'
+          to="home"
+          spy={true} 
+          smooth={true} 
+          offset={-75} 
+          duration={500}
+          role='button'
+          tabIndex='0'
+        >
+          Home
+        </Nav>
+        <Nav
+          activeClass='active'
           to="about"
           spy={true} 
           smooth={true} 
-          offset={0} 
+          offset={-30} 
           duration={500}
           role='button'
           tabIndex='0'
@@ -24,7 +36,7 @@ const NavbarComponent = () => {
           to="faq"
           spy={true} 
           smooth={true} 
-          offset={0} 
+          offset={-30} 
           duration={500}
           role='button'
           tabIndex='0'
@@ -36,16 +48,15 @@ const NavbarComponent = () => {
           to="connect"
           spy={true} 
           smooth={true} 
-          offset={0} 
+          offset={-30} 
           duration={400}
           role='button'
           tabIndex='0'
         >
           Connect 
         </Nav>
+        <CtaComponent />
       </Navbar.Menu>
-      
-      <CtaComponent />
     </Navbar.Wrapper>
   )
 }

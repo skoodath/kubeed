@@ -11,7 +11,7 @@ const CourseComponent = () => {
       
       <Course.Wrapper name='courses'>
       <HeadingComponent
-        text={'Courses'}
+        text={'Check out the courses'}
         />
         <Course.Inner>
         <CourseCardComponent />

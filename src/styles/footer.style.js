@@ -43,15 +43,20 @@ export const Footer = {
   `,
   LogoWrapper: styled.div`
     width: 150px;
+    display: flex;
+    justify-content: center;
     @media ${device.tabletSM}{
       width: 200px;
     }
     @media ${device.tabletLG}{
       width: 100% ;
     }
+    @media ${device.laptop}{
+      justify-content: flex-start;
+    }
   `,
   Logo: styled.img`
-    width: 100%;
+    width: 50%;
     @media ${device.tabletLG}{
       width: 20% ;
     }

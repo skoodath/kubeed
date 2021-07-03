@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { device } from './devices';
+import next from '../illustrations/next.svg';
+import prev from '../illustrations/prev.svg';
 
 
 export const Course = {
@@ -85,31 +87,53 @@ export const Card = {
       }
     }
     .swiper-button-prev{
-      left: 5%;
+      background-image: url(${prev});
+      background-size: 60%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      left: 30%;
+      transform: translateX(-30%);
       right: auto;
       top: auto;
       bottom: 5%;
       width: 44px;
-      display: flex;
-      background-color: #f5f5f5;
+      border: 1px solid #858585;
       border-radius: 50%;
+      @media ${device.laptop}{
+        left: 40%;
+        transform: translateX(-40%);  
+      }
+      svg{
+        width: 20px
+      }
       &::after{
         font-size: 25px;
         color: #0096FF;
-      }
+        display: none;
+        }
       }
     .swiper-button-next{
-      right: 5%;
+      background-image: url(${next});
+      background-size: 60%;
+      background-position: center center;
+      background-repeat: no-repeat;
       left: auto;
       top: auto;
+      right: 30%;
+      transform: translateX(30%);
       bottom: 5%;
       width: 44px;
       display: flex;
-      background-color: #f5f5f5;
+      border: 1px solid #858585;
       border-radius: 50%;
+      @media ${device.laptop}{
+        right: 40%;
+        transform: translateX(40%);
+      }
       &::after{
         font-size: 25px;
         color: #0096FF;
+        display: none;
       }
     }
   `,
@@ -184,7 +208,7 @@ export const Card = {
       left: 0;
       bottom: 0;
       transform-origin: bottom center;
-      transition: height 0.5s cubic-bezier(0.9, 0.610, 0.000355, 0.0001);
+      transition: height 0.2s ease-in;
       }
     &:hover{
       &::after{
@@ -260,5 +284,3 @@ export const Card = {
   `,
 
 }
-
-

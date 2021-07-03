@@ -47,6 +47,7 @@ const CourseCardComponent = (props) => {
                     </Card.CardCourseSubTitle>
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/kubernetes-made-easy/'
+                      target='blank'
                       >
                       Start
                       </Card.CourseButton>
@@ -62,6 +63,7 @@ const CourseCardComponent = (props) => {
                     </Card.CardCourseSubTitle>
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/'
+                      target='blank'
                       >
                       Start
                       </Card.CourseButton>
@@ -77,6 +79,7 @@ const CourseCardComponent = (props) => {
                     </Card.CardCourseSubTitle>
                     <Card.CourseButton 
                       href='https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/'
+                      target='blank'
                       >
                       Start
                       </Card.CourseButton>
@@ -95,10 +98,6 @@ const CourseCardComponent = (props) => {
           </Swiper>
             
       </Card.Wrapper>
-      {/* <Card.NavContainer>
-        <PrevArrow onClick={onClick} className={className} style={{...style}} >Previous</PrevArrow>
-        <NextArrow onClick={onClick} className={className}>Next</NextArrow>
-      </Card.NavContainer> */}
     </>
     )
   }

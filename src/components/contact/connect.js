@@ -1,4 +1,4 @@
-import { Connect, Email, Linkedin, Udemy, Youtube } from '../../styles/contact.style';
+import { Connect, Email, Linkedin, Youtube } from '../../styles/contact.style';
 
 const ConnectComponent = () => {
   return(
@@ -23,13 +23,7 @@ const ConnectComponent = () => {
             <Connect.IconText>Subscribe</Connect.IconText>
           </Connect.IconWrapper>
         </a>
-        <a href='https://www.udemy.com/user/srinathchalla/' target='_blank' rel="noreferrer">
-          <Connect.IconWrapper>
-            <Udemy />
-            <Connect.IconText>Learn</Connect.IconText>
-          </Connect.IconWrapper>
-        </a>
-          
+        
       </Connect.Inner>      
     </Connect.Wrapper>
   )

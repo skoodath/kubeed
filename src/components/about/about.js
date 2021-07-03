@@ -18,7 +18,7 @@ const AboutComponent = () => {
       
       <About.Wrapper name='about'>
       <HeadingComponent
-        text={'About Instructor'}
+        text={'Know Your Instructor'}
       />
         <About.Inner>
         

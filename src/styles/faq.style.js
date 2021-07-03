@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from './devices';
-import { FaPlus, FaMinus } from 'react-icons/fa';
+import { FaPlus, FaMinus, FaQuestionCircle } from 'react-icons/fa';
 
 export const Faq = {
   Wrapper: styled.section`
@@ -9,9 +9,6 @@ export const Faq = {
     width: 100%;
     background-color: #ffffff;
     font-family: 'DM Sans', sans-serif;
-    @media ${device.desktopLg}{
-      max-height: 868px;
-    }
   `,
   Inner: styled.div`
     width: 100%;
@@ -44,11 +41,8 @@ export const Faq = {
     }
   `,
   Question: styled.div`
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.1rem;
-    margin: 0 auto rem;
-    padding: 0 1rem 0 0;
-    width: 85%;
     cursor: pointer;
     @media ${device.tabletSM}{
       font-size: 1.2rem;
@@ -60,8 +54,7 @@ export const Faq = {
   Answer: styled.div`
     font-weight: 300;
     font-size: 1rem;
-    margin: 0 0 3rem;
-    padding: 0 3rem 0 0;
+    margin: 0 0 2rem;
     @media ${device.tabletSM}{
       font-size: 1.1rem;
     }
@@ -81,3 +74,30 @@ export const MinusButton = styled(FaMinus)`
   fill: #bfbfbf;
   cursor: pointer;
 `;
+
+export const FAQHeader = {
+  Title: styled.h2`
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 2rem;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    @media ${device.tabletLG}{
+      font-size: 2.5rem;
+    }
+    @media ${device.laptop}{
+      width: 100%;
+      max-width: 1366px;
+      margin: 0 0 4rem 1rem;
+    }
+  `,
+  FAQLogo: styled(FaQuestionCircle)`
+    fill: #063347;
+    font-size: 2rem;
+    margin: 0 0.5rem 0;
+  `
+}

@@ -41,12 +41,9 @@ export const Brand = {
     align-items: center;
     justify-content: center;
 
-    @media ${device.tabletSM}{
-      width: 70%;
-    }
     @media ${device.laptop}{
-      width: 20%;
       justify-content: flex-start;
+      width: 70%;
     }
   `,
   ImageLarge: styled.img`
@@ -90,21 +87,24 @@ export const Navbar = {
     align-items: center;
     padding: 0 0.5rem;
     z-index: 99;
+    @media ${device.tabletSM}{
+      padding: 0 1rem;
+    }
     @media ${device.laptop}{
       position: relative;
       display: flex;
       width: 100%;
-      justify-content: center;
+      justify-content: flex-end;
+      padding: 0;
     }
   `,
   Menu: styled.div`
     display: flex;
-    width: 80%;
-    justify-self: center;
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     @media ${device.laptop}{
-      justify-content: center;
+      justify-content: flex-end;
     }
   `
 }
@@ -118,7 +118,6 @@ export const Links = styled(Link)`
     justify-content: center;
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
-    margin: 0 0.5rem 0 auto;
     cursor: pointer;
     letter-spacing: 1px;
     font-size: 0.85rem;
@@ -132,17 +131,14 @@ export const Links = styled(Link)`
       background-color: #0096ff90;
       transform-origin: top center;
     }
-        
-    }
+
     @media ${device.tabletSM}{
       font-size: 1.2rem;
       width: 20%;
-      margin: 0 3rem 0 auto;
     }
     @media ${device.tabletLG}{
       align-items: center;
       height: 40px;
-      //width: 150px;
       font-size: 1.2rem;
     }
     

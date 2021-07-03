@@ -6,13 +6,13 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Kubex: Become a Kubernetes Pro!</title>
-          <meta name="description" content="Enhance cognitive functions of children using network representations from real world experiences." />
+        <title>KubeX: Become a Kubernetes Pro!</title>
+          <meta name="description" content="KubeX offers premium Kubernetes Courses. Join 50000+ Students. We have a 30 day 100% refund policy." />
           <meta property="og:title" content="Kubex: Become a Kubernetes Pro!" />
-          <meta property="og:description" content="Enhance cognitive functions of children using network representations from real world experiences." />
+          <meta property="og:description" content="KubeX offers premium Kubernetes Courses. Join 50000+ Students. We have a 30 day 100% refund policy." />
           <meta property="og:type" content="website" />
-       {/*  <meta property="og:url" content="https://www.networked.in/" />
-        <meta property="twitter:site" content="https://www.networked.in/" /> */}
+          <meta property="og:url" content="https://www.kubex.co/" />
+          <meta property="twitter:site" content="https://www.networked.in/" />
       </Helmet>
       <GlobalStyle />
       <Header />

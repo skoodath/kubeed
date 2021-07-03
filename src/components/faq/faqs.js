@@ -40,7 +40,7 @@ const faqs = [
       },
       {
         id: 8,
-        question: "Purchasing courses from here (kubex) vs Udemy?",
+        question: "Difference between purchasing courses from here (kubeX) vs Udemy?",
         answer: `There are two advantages. One for you and other for us. If you click on any of the above course, It will directly take you to
         the course page on Udemy and automatically apply the
         "coupon" code. And for me, but if you go via one of the links here then we can save on the Udemy commission`

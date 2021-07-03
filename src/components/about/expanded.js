@@ -6,10 +6,10 @@ const AboutTextComponent = ({show}) => {
   return(
          <About.LongTextContainer show={show}>
             <About.LongText>
-            I've started “Kubex” with a passion for teaching Technology, especially Kubernetes. I've helped thousands of students learn Kubernetes and change their lives by becoming a DevOps Engineer/SREs with building a solid foundation in Kubernetes. 
+            I've started “Kubex” with a passion for teaching technology, especially Kubernetes. I've helped thousands of students learn Kubernetes and change their lives by becoming DevOps Engineers/SREs building a solid foundation in Kubernetes. 
             </About.LongText>
             <About.LongText>
-            I've started my professional career as a Systems Analyst, then promoted to a Systems Engineer and to a Systems Architect over the past ten years. I hold a Bachelor's and Master's degree in Computer Science Engineering. Most importantly, I realized that, my greatest passion is teaching. 
+            I started my professional career as a Systems Analyst and was promoted as a Systems Engineer and later to a Systems Architect over the past ten years. I hold a Master's degree in Computer Science Engineering. Most importantly, I realized that, my greatest passion is teaching. 
             </About.LongText>
             <About.LongText>
             I spend most of my time researching how to make complex concepts easy to understand. With that thought in mind, I have created various Kubernetes courses with their unique purpose. If you are -

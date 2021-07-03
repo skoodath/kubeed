@@ -7,11 +7,11 @@ const CtaComponent = () => {
       to="courses"
       spy={true} 
       smooth={true} 
-      offset={-100} 
+      offset={90} 
       duration={300}
       role='button'
       >
-        Start Learning
+        Hurry! Just $12.99 today
       </CtaLink>
     
   )

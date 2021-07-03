@@ -100,7 +100,7 @@ PlusButton: styled(GrAddCircle)`
   margin: 0.5rem auto 0;
   cursor: pointer;
   path{
-    stroke: #bfbfbf;
+    stroke: #0096ff;
   }
 `,
 MinusButton: styled(GrSubtractCircle)`

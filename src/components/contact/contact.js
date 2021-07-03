@@ -1,5 +1,5 @@
 import { Contact } from '../../styles/contact.style';
-import ConnectComponent from './form';
+import ConnectComponent from './connect';
 
 const ContactComponent = () => {
   return(

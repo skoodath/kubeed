@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+:root{
+  --swiper-theme-color: #0096ff;
+}
 * {
     
   padding: 0;

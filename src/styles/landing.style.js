@@ -21,11 +21,11 @@ export const Landing = {
     }
    `,
   Inner: styled.div`
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    margin: 0 auto;
     @media ${device.tabletSM}{
       height: 100%;
       flex-direction: column;
@@ -42,32 +42,22 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     padding: 0;
-    align-items: center;
-    .mytypist{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    @media ${device.tabletLG}{
+    justify-content: center;
+    @media ${device.laptop}{
+      padding: 0 0 0 1rem;
+      width: 50%;
       height: 100%;
     }
-    @media ${device.laptop}{
-      width: 100%;
-    }
   `,
-  TitleOne: styled.span`
+  TitleOne: styled.h1`
     font-size: 2.2rem;
     font-weight: 600;
     height: 50px;
-    text-align: center;
-    letter-spacing: 1px;
     @media ${device.tabletSM}{
       font-size: 4rem;
       height: 60px;
@@ -78,21 +68,18 @@ export const Landing = {
     }
 
   `,
-  TitleTwo: styled.span`
+  TitleTwo: styled.h1`
     font-size: 2.1rem;
     font-weight: 700;
-    text-align: center;
-    letter-spacing: 1px;
     @media ${device.tabletSM}{
       font-size: 4rem;
     }
   `,
-  Subtitle: styled.h2`
+  Subtitle: styled.p`
     margin: 1rem 0 0;
     padding: 0;
     font-size: 1.2rem;
     font-weight: 400;
-    text-align: center;
     @media ${device.tabletSM}{
       font-size: 1.5rem;
     }
@@ -105,32 +92,50 @@ export const Landing = {
       padding: 0;
     }
   `,
+  ImageWrapper: styled.div`
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    align-items: center;
+    @media ${device.tabletSM}{
+      width: 40%;
+    }
+    @media ${device.tabletLG}{
+      height: 100%;
+    }
+    @media ${device.laptop}{
+      //width: 100%;
+    }
+  `
 
 };
 
 export const CtaLink = styled(Link)`
     display: flex;
     color: #ffffff;
-    background-color: #0096FF;
+    background-color: #ed6709;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+    padding: 0.2rem;
     cursor: pointer;
-    letter-spacing: 1px;
     font-weight: 600;
-    margin: 2.5rem auto 0;
-    width: 130px;
-    height: 40px;
-    font-size: 1rem;
-    transition: background-color 0.5s ease-in-out;
+    margin: 1rem 0 0;
+    width: 180px;
+    height: 30px;
+    font-size: 0.85rem;
      &:hover{
-      background-color: #0096ff90;
+      background-color: #c55303;
     }
     @media ${device.tabletLG}{
       height: 40px;
-      font-size: 1.2rem;
-      width: 180px;
+      font-size: 1.1rem;
+      width: 220px;
     }
     
 `;

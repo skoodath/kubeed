@@ -44,7 +44,7 @@ export const Connect = {
     flex-direction: column;
     @media ${device.tabletSM}{
       flex-direction: row;
-      width: 70%;
+      width: 60%;
       a{
         display: inline-block;
         width: 100%;

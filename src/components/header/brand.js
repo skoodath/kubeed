@@ -5,7 +5,7 @@ const BrandComponent = () => {
   return(
         <Brand.Wrapper>
           <LogoLink 
-            to="landing"
+            to="home"
             spy={true} 
             smooth={true} 
             offset={-50} 
