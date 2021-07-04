@@ -15,7 +15,7 @@ const CtaComponent = () => {
       to="courses"
       spy={true} 
       smooth={true} 
-      offset={30} 
+      offset={0} 
       duration={300}
       role='button'
       onMouseEnter={changeBg}

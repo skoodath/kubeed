@@ -4,6 +4,7 @@ import ConnectComponent from './connect';
 const ContactComponent = () => {
   return(
     <Contact.Wrapper name='connect'>
+      
       <Contact.Inner>
         <ConnectComponent />
       </Contact.Inner>

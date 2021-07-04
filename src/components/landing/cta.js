@@ -7,7 +7,7 @@ const CtaComponent = () => {
       to="courses"
       spy={true} 
       smooth={true} 
-      offset={90} 
+      offset={0} 
       duration={300}
       role='button'
       >

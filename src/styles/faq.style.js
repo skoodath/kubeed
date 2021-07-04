@@ -79,7 +79,7 @@ export const FAQHeader = {
   Title: styled.h2`
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 0 0 2rem;
+    margin: 0 auto 2rem;
     position: relative;
     padding: 0;
     display: flex;
@@ -92,7 +92,7 @@ export const FAQHeader = {
     @media ${device.laptop}{
       width: 100%;
       max-width: 1366px;
-      margin: 0 0 4rem 1rem;
+      margin: 0 auto 4rem;
     }
   `,
   FAQLogo: styled(FaQuestionCircle)`

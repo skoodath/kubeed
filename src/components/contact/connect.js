@@ -1,9 +1,12 @@
 import { Connect, Email, Linkedin, Youtube } from '../../styles/contact.style';
+import HeadingComponent from '../sectionheading/sectionheading';
 
 const ConnectComponent = () => {
   return(
     <Connect.Wrapper>
-      <Connect.Header>Let's Connect!</Connect.Header>
+      <HeadingComponent
+        text={`Let's Connect`}
+      />
       <Connect.Inner>
         <a href='mailto:srinath@kubex.co' target='_blank' rel="noreferrer">
           <Connect.IconWrapper>

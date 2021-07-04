@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "./devices";
-import { GrMail, GrLinkedin, GrYoutube } from "react-icons/gr";
-import { SiUdemy } from 'react-icons/si';
+import { FaEnvelope, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 export const Contact = {
   Wrapper: styled.section`
@@ -70,7 +69,7 @@ export const Connect = {
   `
 }
 
-export const Email = styled(GrMail)`
+export const Email = styled(FaEnvelope)`
   fill: #0095ff;
   font-size: 2rem;
   @media ${device.tabletSM}{
@@ -79,7 +78,7 @@ export const Email = styled(GrMail)`
   
 `;
 
-export const Linkedin = styled(GrLinkedin)`
+export const Linkedin = styled(FaLinkedinIn)`
   fill: #0077b5;
   font-size: 2rem;
   @media ${device.tabletSM}{
@@ -87,15 +86,8 @@ export const Linkedin = styled(GrLinkedin)`
   }
 `;
 
-export const Youtube = styled(GrYoutube)`
+export const Youtube = styled(FaYoutube)`
   fill: #FF0000;
-  font-size: 2rem;
-  @media ${device.tabletSM}{
-    font-size: 4rem;
-  }
-`;
-export const Udemy = styled(SiUdemy)`
-  fill: #ea5252;
   font-size: 2rem;
   @media ${device.tabletSM}{
     font-size: 4rem;
