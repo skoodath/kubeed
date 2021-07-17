@@ -1,9 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-:root{
-  --swiper-theme-color: #0096ff;
-}
 * {
     
   padding: 0;
@@ -14,11 +11,10 @@ const GlobalStyle = createGlobalStyle`
   line-height: 1.6;
   scroll-behavior: smooth;
   font-size: 14px;
-  color: #063347;
 }
 
 body {
-  font-family: Raleway, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
 }
 `;

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { Link } from 'react-scroll';
-import { device } from './devices';
-
+import styled from "styled-components";
+import { Link } from "react-scroll";
+import { device } from "./devices";
+import landing from "./../assets/images/landing.png";
 
 export const Landing = {
   Wrapper: styled.section`
@@ -10,30 +10,44 @@ export const Landing = {
     width: 100%;
     height: 90vh;
     background-color: #ffffff;
-    @media ${device.mobileSM}{
+    background-image: linear-gradient(125deg, #d2edff, #ffffff 60%);
+    @media ${device.mobileSM} {
       height: 80vh;
     }
-    @media ${device.tabletSM}{
+    @media ${device.tabletSM} {
       height: 90vh;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       height: 100vh;
     }
-   `,
+  `,
+  BackgroundLayer: styled.div`
+    width: 100%;
+    height: 100%;
+    background-image: url(${landing});
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    @media ${device.tabletLG} {
+      background-position: center right;
+      background-size: 60%;
+    }
+  `,
+
   Inner: styled.div`
     width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    @media ${device.tabletSM}{
+    @media ${device.tabletSM} {
       height: 100%;
       flex-direction: column;
     }
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       flex-direction: row;
-      }
-    @media ${device.laptop}{
+    }
+    @media ${device.laptop} {
       padding: 0;
       flex-direction: row;
       max-width: 1366px;
@@ -45,10 +59,9 @@ export const Landing = {
     height: 50%;
     display: flex;
     flex-direction: column;
-    font-family: 'DM Sans', sans-serif;
     padding: 0;
     justify-content: center;
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       padding: 0 0 0 1rem;
       width: 50%;
       height: 100%;
@@ -57,22 +70,23 @@ export const Landing = {
   TitleOne: styled.h1`
     font-size: 2.2rem;
     font-weight: 600;
+    color: #002d46;
     height: 50px;
-    @media ${device.tabletSM}{
-      font-size: 4rem;
+    @media ${device.tabletSM} {
+      font-size: 3rem;
       height: 60px;
     }
-    @media ${device.tabletSM}{
-      font-size: 4rem;
+    @media ${device.tabletLG} {
+      font-size: 3rem;
       height: 75px;
     }
-
   `,
   TitleTwo: styled.h1`
     font-size: 2.1rem;
     font-weight: 700;
-    @media ${device.tabletSM}{
-      font-size: 4rem;
+    color: #002d46;
+    @media ${device.tabletSM} {
+      font-size: 3rem;
     }
   `,
   Subtitle: styled.p`
@@ -80,14 +94,14 @@ export const Landing = {
     padding: 0;
     font-size: 1.2rem;
     font-weight: 400;
-    @media ${device.tabletSM}{
+    @media ${device.tabletSM} {
       font-size: 1.5rem;
     }
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       font-size: 1.8rem;
       padding: 0;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       font-size: 1.8rem;
       padding: 0;
     }
@@ -99,43 +113,42 @@ export const Landing = {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
     padding: 0;
     align-items: center;
-    @media ${device.tabletSM}{
+
+    @media ${device.tabletSM} {
       width: 40%;
     }
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       height: 100%;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       //width: 100%;
     }
-  `
-
+  `,
 };
 
 export const CtaLink = styled(Link)`
-    display: flex;
-    color: #ffffff;
-    background-color: #ed6709;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    padding: 0.2rem;
-    cursor: pointer;
-    font-weight: 600;
-    margin: 1rem 0 0;
-    width: 180px;
-    height: 30px;
-    font-size: 0.85rem;
-     &:hover{
-      background-color: #c55303;
-    }
-    @media ${device.tabletLG}{
-      height: 40px;
-      font-size: 1.1rem;
-      width: 220px;
-    }
-    
+  display: flex;
+  color: #ffffff;
+  background-color: #ec5252;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 1rem 0 0;
+  width: 180px;
+  height: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: #ec525291;
+  }
+  @media ${device.tabletLG} {
+    height: 40px;
+    font-size: 1.1rem;
+    width: 220px;
+  }
 `;

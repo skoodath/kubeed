@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { device } from './devices';
+import styled from "styled-components";
+import { device } from "./devices";
 
 export const Footer = {
   Wrapper: styled.section`
@@ -7,16 +7,15 @@ export const Footer = {
     margin: 0 0 60px 0;
     position: relative;
     width: 100%;
-    background-color: #f5f5f5;
-    @media ${device.tabletLG}{
+    background-color: #fafafb;
+    @media ${device.tabletLG} {
       padding: 1rem 0;
       height: auto;
       margin: 0 0 60px 0;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       margin: 0;
     }
-    
   `,
   Inner: styled.div`
     width: 100%;
@@ -24,14 +23,14 @@ export const Footer = {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       flex-direction: row;
       margin: 0 auto;
       padding: 0 3vw;
       justify-content: space-around;
       align-items: center;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       height: 100%;
       max-width: 1366px;
       margin: 0 auto;
@@ -45,58 +44,20 @@ export const Footer = {
     width: 150px;
     display: flex;
     justify-content: center;
-    @media ${device.tabletSM}{
+    @media ${device.tabletSM} {
       width: 200px;
     }
-    @media ${device.tabletLG}{
-      width: 100% ;
+    @media ${device.tabletLG} {
+      width: 100%;
     }
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       justify-content: flex-start;
     }
   `,
   Logo: styled.img`
-    width: 50%;
-    @media ${device.tabletLG}{
-      width: 20% ;
-    }
-  `
-
-};
-
-
-
-export const Social = {
-  Wrapper: styled.section`
-    width: 80%;
-    margin: 2rem auto 0;
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    @media ${device.tabletLG}{
-      margin: 0;
-      justify-content: center;
-      width: 100%;
-    }
-    a{
-      text-decoration: none;
-      margin: 0 0.2rem;
-    }
-    svg{
-      font-size: 1rem;
-      fill: #bfbfbf;
-      @media ${device.tabletLG}{
-      font-size: 2rem;
-    }
-    }
-    
+    width: 12%;
   `,
-  Inner: styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  `
-}
+};
 
 export const CopyRight = {
   Wrapper: styled.section`
@@ -106,13 +67,13 @@ export const CopyRight = {
     padding: 0;
     color: #bfbfbf;
     justify-content: center;
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       font-size: 1.2rem;
     }
-    @media ${device.tabletLG}{
+    @media ${device.tabletLG} {
       margin: 0;
       justify-content: flex-end;
       width: 100%;
     }
-  `
-}
+  `,
+};
