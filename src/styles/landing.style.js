@@ -52,12 +52,13 @@ export const Landing = {
     display: flex;
     flex-direction: column-reverse;
     background-image: url(${landing});
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
-    background-position: 80% 10%;
+    background-position: 80% 20%;
     margin: 0 auto;
     @media ${device.tabletSM} {
       height: 100%;
+      background-size: 100%;
     }
     @media ${device.tabletLG} {
       flex-direction: row;
