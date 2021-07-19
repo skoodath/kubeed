@@ -17,7 +17,17 @@ const AboutTextComponent = ({ show }) => {
         He has a Masters in Computer Science with Summa Cum Laude from Purdue
         University.
       </About.LongText>
-      <About.Connect to="connect">Connect with Srinath</About.Connect>
+      <About.Connect
+        to="connect"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        role="button"
+        tabIndex="0"
+      >
+        Connect with Srinath
+      </About.Connect>
     </About.LongTextContainer>
   );
 };

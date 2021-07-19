@@ -10,7 +10,7 @@ export const Landing = {
     width: 100%;
     height: 90vh;
     background-color: #ffffff;
-    background-image: linear-gradient(125deg, #d2edff, #ffffff 60%);
+    //background-image: linear-gradient(125deg, #d2edff, #ffffff 60%);
     @media ${device.mobileSM} {
       height: 80vh;
     }
@@ -26,7 +26,7 @@ export const Landing = {
     height: 100%;
     background-image: url(${landing});
     background-size: 100%;
-    background-position: center bottom;
+    background-position: 40% 90%;
     background-repeat: no-repeat;
     @media ${device.tabletLG} {
       background-position: center right;
@@ -61,6 +61,9 @@ export const Landing = {
     flex-direction: column;
     padding: 0;
     justify-content: center;
+    @media ${device.tabletLG} {
+      height: 95%;
+    }
     @media ${device.laptop} {
       padding: 0 0 0 1rem;
       width: 50%;
@@ -79,6 +82,9 @@ export const Landing = {
     @media ${device.tabletLG} {
       font-size: 3rem;
       height: 75px;
+    }
+    @media ${device.laptop} {
+      font-size: 4rem;
     }
   `,
   TitleTwo: styled.h1`

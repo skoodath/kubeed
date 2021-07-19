@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { device } from "./devices";
-import { FaEnvelope, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedinIn,
+  FaRegClipboard,
+  FaYoutube,
+} from "react-icons/fa";
 
 export const Contact = {
   Wrapper: styled.section`
@@ -60,6 +65,7 @@ export const Connect = {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: relative;
   `,
   IconText: styled.h4`
     color: #bfbfbf;
@@ -86,6 +92,7 @@ export const Connect = {
 export const Email = styled(FaEnvelope)`
   fill: #ffffff;
   font-size: 1.6rem;
+  cursor: pointer;
   @media ${device.tabletSM} {
     font-size: 2rem;
   }
@@ -106,3 +113,34 @@ export const Youtube = styled(FaYoutube)`
     font-size: 2rem;
   }
 `;
+
+export const EmailPop = {
+  Wrapper: styled.div`
+    width: 200px;
+    height: 60px;
+    box-shadow: 1px 0 3px #aaaaaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: ${({ show }) => (show ? "visible" : "hidden")};
+    opacity: ${({ show }) => (show ? 1 : 0)};
+    transform: ${({ show }) => (show ? "translateY(100%)" : "translateY(0)")};
+    transition-property: visibility, opacity, transform;
+    transition: 0.3s cubic-bezier(0.95, 0.00061, 0.355, 1);
+    border-radius: 4px;
+    position: absolute;
+    background-color: #f2f2f2;
+  `,
+  Text: styled.input`
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 80%;
+    background-color: #f2f2f2;
+  `,
+  Copy: styled(FaRegClipboard)`
+    margin: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+  `,
+};

@@ -13,7 +13,7 @@ const BrandComponent = () => {
         role="button"
         tabIndex="0"
       >
-        <Brand.ImageSmall src={logo} alt="Kubex logo" />
+        <Brand.ImageSmall src={logo} alt="KubeEd logo" />
       </LogoLink>
     </Brand.Wrapper>
   );

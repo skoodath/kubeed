@@ -1,14 +1,12 @@
 import GlobalStyle from "./styles/global.style";
-import {
-  About,
-  Contact,
-  Courses,
-  Faq,
-  Footer,
-  Header,
-  Landing,
-} from "./components";
+import { Header, Landing } from "./components";
 import { Helmet } from "react-helmet";
+import { lazy, Suspense } from "react";
+const Courses = lazy(() => import("./components/courses"));
+const About = lazy(() => import("./components/about"));
+const Faq = lazy(() => import("./components/faq"));
+const Contact = lazy(() => import("./components/contact"));
+const Footer = lazy(() => import("./components/footer"));
 
 const App = () => {
   return (
@@ -31,11 +29,13 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Landing />
-      <Courses />
-      <About />
-      <Faq />
-      <Contact />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Courses />
+        <About />
+        <Faq />
+        <Contact />
+        <Footer />
+      </Suspense>
     </>
   );
 };

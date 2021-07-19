@@ -5,14 +5,15 @@ import { device } from "./devices";
 export const Header = {
   Wrapper: styled.header`
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     max-height: 75px;
     min-height: 50px;
     z-index: 99;
     background-color: #ffffff;
-    //border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #f2f2f2;
     padding: 0 5%;
     @media ${device.laptop} {
+      height: 10vh;
       padding: 0;
       position: fixed;
       top: 0;
@@ -61,10 +62,10 @@ export const Brand = {
   `,
 };
 export const LogoLink = styled(Link)`
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   display: inline-block;
-  width: 110px;
+  width: 85px;
   @media ${device.tabletSM} {
     width: 120px;
   }

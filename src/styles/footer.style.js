@@ -49,13 +49,17 @@ export const Footer = {
     }
     @media ${device.tabletLG} {
       width: 100%;
+      justify-content: flex-start;
     }
     @media ${device.laptop} {
       justify-content: flex-start;
     }
   `,
   Logo: styled.img`
-    width: 12%;
+    width: 30%;
+    @media ${device.tabletLG} {
+      width: 12%;
+    }
   `,
 };
 
