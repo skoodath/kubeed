@@ -88,6 +88,7 @@ export const About = {
     text-align: center;
     color: #424242;
     @media ${device.tabletSM} {
+      width: 70%;
       font-size: 1.2rem;
       b {
         font-size: 1.2rem;
@@ -154,6 +155,9 @@ export const About = {
     border: 1px solid transparent;
     @media ${device.tabletLG} {
       font-size: 1.3rem;
+    }
+    &:hover {
+      background-color: #eaeaea;
     }
   `,
 };

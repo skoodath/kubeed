@@ -46,13 +46,6 @@ export const Brand = {
       width: 70%;
     }
   `,
-  ImageLarge: styled.img`
-    width: 100%;
-    display: flex;
-    @media ${device.laptop} {
-      display: flex;
-    }
-  `,
   ImageSmall: styled.img`
     width: 100%;
     display: flex;
@@ -71,6 +64,11 @@ export const LogoLink = styled(Link)`
   }
   @media ${device.tabletLG} {
     width: 130px;
+    margin: 0 0 0 2rem;
+  }
+  @media ${device.laptop} {
+    width: 130px;
+    margin: 0;
   }
 `;
 
@@ -153,7 +151,6 @@ export const Nav = styled(Link)`
       position: absolute;
       width: 100%;
       z-index: 100;
-      //border-bottom: 4px solid #5e30e8;
     }
   }
   @media ${device.tabletSM} {
@@ -164,5 +161,12 @@ export const Nav = styled(Link)`
     height: 40px;
     font-size: 1.2rem;
     margin: 0 2rem 0 0;
+    padding: 0.4rem 0.5rem;
+  }
+  @media ${device.laptop} {
+    margin: 0 2rem 0 0;
+    &:last-child {
+      margin: 0;
+    }
   }
 `;

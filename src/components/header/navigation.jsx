@@ -21,7 +21,7 @@ const NavbarComponent = () => {
           to="courses"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-80}
           duration={500}
           role="button"
           tabIndex="0"
@@ -33,7 +33,7 @@ const NavbarComponent = () => {
           to="about"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-80}
           duration={500}
           role="button"
           tabIndex="0"
