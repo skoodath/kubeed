@@ -3,7 +3,7 @@ import { device } from "./devices";
 
 export const Footer = {
   Wrapper: styled.section`
-    padding: 5vh 0 0 0;
+    padding: 3vh 0 0 0;
     margin: 0 0 60px 0;
     position: relative;
     width: 100%;
@@ -56,9 +56,9 @@ export const Footer = {
     }
   `,
   Logo: styled.img`
-    width: 30%;
+    width: 35%;
     @media ${device.tabletLG} {
-      width: 12%;
+      width: 11%;
     }
   `,
 };
@@ -71,8 +71,9 @@ export const CopyRight = {
     padding: 0;
     color: #bfbfbf;
     justify-content: center;
+    font-size: 0.8rem;
     @media ${device.tabletLG} {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     @media ${device.tabletLG} {
       margin: 0;

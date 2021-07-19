@@ -10,8 +10,9 @@ export const Header = {
     min-height: 50px;
     z-index: 99;
     background-color: #ffffff;
-    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 2px 1px 2px #eee;
     padding: 0 5%;
+    position: fixed;
     @media ${device.laptop} {
       height: 10vh;
       padding: 0;
@@ -58,16 +59,15 @@ export const LogoLink = styled(Link)`
   font-size: 1rem;
   cursor: pointer;
   display: inline-block;
-  width: 85px;
+  width: 75px;
   @media ${device.tabletSM} {
-    width: 120px;
+    width: 90px;
   }
   @media ${device.tabletLG} {
-    width: 130px;
+    width: 100px;
     margin: 0 0 0 2rem;
   }
   @media ${device.laptop} {
-    width: 130px;
     margin: 0;
   }
 `;
@@ -85,7 +85,7 @@ export const Navbar = {
     padding: 0 0.5rem;
     z-index: 99;
     @media ${device.tabletSM} {
-      padding: 0 1rem;
+      padding: 0 3rem;
     }
     @media ${device.laptop} {
       position: relative;
@@ -109,14 +109,13 @@ export const Navbar = {
 export const Nav = styled(Link)`
   position: relative;
   display: flex;
-  color: #848181;
+  color: #6b6b6b;
   justify-content: center;
   padding: 0.4rem 0.3rem;
   margin: 0;
   cursor: pointer;
-  letter-spacing: 1px;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 400;
   border: 1px solid transparent;
   &::after {
     content: "";
@@ -126,11 +125,12 @@ export const Nav = styled(Link)`
     z-index: 100;
   }
   &.active {
-    background-color: #f2f2f2;
+    background-color: #387ed1;
     border-radius: 2px;
     border: 1px solid transparent;
     transform-origin: left center;
     transition: background-color 0.3s ease-in-out;
+    color: #ffffff;
     &::after {
       content: "";
       position: absolute;
@@ -143,7 +143,9 @@ export const Nav = styled(Link)`
     }
   }
   &:hover {
-    background-color: #f2f2f2;
+    background-color: #387ed1;
+    border-radius: 2px;
+    color: #ffffff;
     transform-origin: left center;
     transition: background-color 0.3s ease-in-out;
     &::after {
@@ -154,17 +156,16 @@ export const Nav = styled(Link)`
     }
   }
   @media ${device.tabletSM} {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
   }
   @media ${device.tabletLG} {
     align-items: center;
-    height: 40px;
-    font-size: 1.2rem;
-    margin: 0 2rem 0 0;
-    padding: 0.4rem 0.5rem;
+    margin: 0 1rem 0 0;
+    padding: 0.3rem 0.5rem;
   }
   @media ${device.laptop} {
-    margin: 0 2rem 0 0;
+    margin: 0 1rem 0 0;
     &:last-child {
       margin: 0;
     }

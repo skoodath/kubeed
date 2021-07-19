@@ -183,7 +183,7 @@ export const Card = {
     padding: 1rem;
     position: relative;
     background-image: ${({ bgimage }) =>
-      `linear-gradient(#ffffff00, #ffffffab 50%), url(${bgimage}) `};
+      `linear-gradient(#ffffff00, #ffffff20 50%), url(${bgimage}) `};
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -230,10 +230,11 @@ export const Card = {
     text-align: center;
   `,
   CardCourseSubTitle: styled.h4`
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #002d46;
-    text-align: center;
+    margin: 0 auto;
+    //text-align: center;
   `,
 
   CourseButton: styled.a`

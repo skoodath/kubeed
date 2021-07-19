@@ -31,6 +31,7 @@ export const Faq = {
     justify-content: center;
     @media ${device.laptop} {
       margin: 0 0 0.5rem;
+      width: 60%;
     }
   `,
 
@@ -42,26 +43,26 @@ export const Faq = {
     }
   `,
   Question: styled.div`
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
     cursor: pointer;
     color: #424242;
     @media ${device.tabletSM} {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     @media ${device.tabletLG} {
-      font-size: 1.6rem;
+      font-size: 1.45rem;
     }
   `,
   Answer: styled.div`
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0 0 2rem;
     color: #424242;
     @media ${device.tabletSM} {
       font-size: 1.1rem;
     }
     @media ${device.tabletLG} {
-      font-size: 1.4rem;
+      font-size: 1.15rem;
     }
   `,
 };
@@ -83,7 +84,7 @@ export const FAQHeader = {
     @media ${device.laptop} {
       width: 100%;
       max-width: 1366px;
-      margin: 0 auto 4rem;
+      margin: 0 auto 2rem;
     }
   `,
 };

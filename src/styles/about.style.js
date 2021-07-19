@@ -8,7 +8,7 @@ export const About = {
     padding: 5rem 0;
     position: relative;
     width: 100%;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     @media ${device.laptop} {
       padding: 10rem 0;
     }
@@ -41,10 +41,13 @@ export const About = {
     }
   `,
   Image: styled.img`
-    height: 350px;
+    height: 410px;
     width: auto;
+    position: relative;
+    top: -40px;
     @media ${device.tabletLG} {
-      height: 430px;
+      top: -50px;
+      height: 520px;
     }
   `,
   ShortText: styled.p`
@@ -59,22 +62,22 @@ export const About = {
     }
   `,
   ShortTextName: styled.span`
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5rem;
     color: #424242;
     @media ${device.tabletLG} {
-      font-size: 2rem;
+      font-size: 1.45rem;
     }
   `,
   ShortTextRole: styled.span`
-    font-size: 1.5rem;
-    color: #7f7f7f;
+    font-size: 1rem;
+    color: #666666;
     @media ${device.tabletLG} {
-      font-size: 2rem;
+      font-size: 1rem;
     }
   `,
   LongTextContainer: styled.div`
-    width: 80%;
+    width: 70%;
     margin: 1rem auto 0;
     display: flex;
     flex-direction: column;
@@ -85,39 +88,14 @@ export const About = {
   `,
   LongText: styled.p`
     margin: 0 auto 1rem;
-    text-align: center;
+    text-align: left;
     color: #424242;
     @media ${device.tabletSM} {
-      width: 70%;
-      font-size: 1.2rem;
-      b {
-        font-size: 1.2rem;
-      }
+      width: 50%;
+      font-size: 1rem;
     }
     @media ${device.tabletLG} {
-      font-size: 1.5rem;
-      b {
-        font-size: 1.5rem;
-      }
-    }
-  `,
-  LongTextList: styled.ul`
-    padding: 0 0 0 1.5rem;
-    margin: 0 0 1rem 0;
-  `,
-  LongTextListItem: styled.li`
-    list-style-type: disc;
-    @media ${device.tabletSM} {
-      font-size: 1.2rem;
-      b {
-        font-size: 1.2rem;
-      }
-    }
-    @media ${device.tabletLG} {
-      font-size: 1.5rem;
-      b {
-        font-size: 1.5rem;
-      }
+      font-size: 1.14rem;
     }
   `,
   ButtonWrap: styled.div`
@@ -128,17 +106,18 @@ export const About = {
     margin: 2rem auto 0;
   `,
   ButtonSpan: styled.span`
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
+    color: #424242;
   `,
   ShowButton: styled(IoChevronDown)`
-    font-size: 30px;
+    font-size: 20px;
     fill: #a5a5a5;
     stroke: #a5a5a5;
     cursor: pointer;
   `,
   HideButton: styled(IoChevronUp)`
-    font-size: 30px;
+    font-size: 20px;
     fill: #bfbfbf;
     stroke: #a5a5a5;
     cursor: pointer;
@@ -154,7 +133,7 @@ export const About = {
     border-radius: 3px;
     border: 1px solid transparent;
     @media ${device.tabletLG} {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     &:hover {
       background-color: #eaeaea;

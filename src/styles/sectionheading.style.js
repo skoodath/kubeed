@@ -4,8 +4,8 @@ import { device } from "./devices";
 export const SectionHeader = {
   Title: styled.h2`
     font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0 auto 1rem;
+    font-weight: 500;
+    margin: 0 auto 0.5rem;
     position: relative;
     padding: 0;
     display: flex;
@@ -14,12 +14,12 @@ export const SectionHeader = {
     user-select: none;
     color: #424242;
     @media ${device.tabletLG} {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
     }
     @media ${device.laptop} {
       width: 100%;
       max-width: 1366px;
-      margin: 0 auto 4rem;
+      margin: 0 auto 2rem;
     }
   `,
 };

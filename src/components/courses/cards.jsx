@@ -43,7 +43,7 @@ const CourseCardComponent = (props) => {
               </Card.CardTopSection>
               <Card.CardBottom>
                 <Card.CardCourseTitle>
-                  Kubernetes made easy
+                  Kubernetes Made Easy
                 </Card.CardCourseTitle>
                 <Card.CardCourseSubTitle>
                   Get your Kubernetes Journey Started with Kubernetes Made Easy
@@ -95,7 +95,7 @@ const CourseCardComponent = (props) => {
               <Card.CardBottom>
                 <Card.CardCourseTitle>Ultimate CKAD</Card.CardCourseTitle>
                 <Card.CardCourseSubTitle>
-                  Prepare for Certification with Ultimate CKAD and be a
+                  Prepare for CKAD Certification with Ultimate CKAD and be a
                   Certified Kubernetes Application Developer
                 </Card.CardCourseSubTitle>
                 <Card.CourseButton

@@ -1,11 +1,7 @@
 import styled from "styled-components";
 import { device } from "./devices";
-import {
-  FaEnvelope,
-  FaLinkedinIn,
-  FaRegClipboard,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaEnvelope, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { MdContentCopy, MdClose } from "react-icons/md";
 
 export const Contact = {
   Wrapper: styled.section`
@@ -13,7 +9,7 @@ export const Contact = {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
     @media ${device.tabletSM} {
       height: 100vh;
     }
@@ -47,7 +43,7 @@ export const Connect = {
     display: flex;
     @media ${device.tabletSM} {
       flex-direction: row;
-      width: 50%;
+      width: 40%;
       a {
         display: inline-block;
         width: 100%;
@@ -79,12 +75,17 @@ export const Connect = {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     &:hover {
-      background-color: ${({ bgcolor }) => `${bgcolor}ab`};
+      background-image: linear-gradient(#000000, #000000);
+    }
+    @media ${device.tabletSM} {
+      width: 55px;
+      height: 55px;
     }
     @media ${device.tabletLG} {
-      width: 50px;
-      height: 50px;
+      width: 65px;
+      height: 65px;
     }
   `,
 };
@@ -94,7 +95,7 @@ export const Email = styled(FaEnvelope)`
   font-size: 1.6rem;
   cursor: pointer;
   @media ${device.tabletSM} {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 `;
 
@@ -102,7 +103,7 @@ export const Linkedin = styled(FaLinkedinIn)`
   fill: #ffffff;
   font-size: 1.8rem;
   @media ${device.tabletSM} {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 `;
 
@@ -110,7 +111,7 @@ export const Youtube = styled(FaYoutube)`
   fill: #ffffff;
   font-size: 1.8rem;
   @media ${device.tabletSM} {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 `;
 
@@ -131,16 +132,22 @@ export const EmailPop = {
     position: absolute;
     background-color: #f2f2f2;
   `,
-  Text: styled.input`
-    text-align: center;
+  Text: styled.span`
     border: none;
     outline: none;
-    width: 80%;
     background-color: #f2f2f2;
+    color: #424242;
+    margin: 0 0.5rem 0 0;
   `,
-  Copy: styled(FaRegClipboard)`
-    margin: 0;
+  Copy: styled(MdContentCopy)`
+    margin: 0 0.5rem 0 0;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  `,
+  Close: styled(MdClose)`
+    color: #ff0000;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.2rem;
   `,
 };

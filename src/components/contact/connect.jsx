@@ -6,7 +6,7 @@ import EmailPopComponent from "./emailpop";
 const ConnectComponent = () => {
   const [show, setShow] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     setShow(!show);
   };
 
@@ -32,7 +32,7 @@ const ConnectComponent = () => {
           </Connect.IconWrapper>
         </a>
         <a
-          href="https://www.youtube.com/user/srinathrchalla1"
+          href="https://www.youtube.com/user/srinathrchalla1?sub_confirmation=1"
           target="_blank"
           rel="noreferrer"
         >

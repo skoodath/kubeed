@@ -10,7 +10,7 @@ const CtaComponent = () => {
       duration={300}
       role="button"
     >
-      Enroll for $12.99 today
+      Enroll for $12.99 Today
     </CtaLink>
   );
 };
