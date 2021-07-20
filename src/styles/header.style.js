@@ -179,7 +179,6 @@ export const NavbarSmall = {
   Wrapper: styled.nav`
     display: flex;
     width: ${({ open }) => (open ? "80%" : 0)};
-    border-radius: ${({ open }) => (open ? 0 : "50% 0 0 50%")};
     opacity: ${({ open }) => (open ? 1 : 0)};
     max-width: 768px;
     top: 0;
@@ -190,7 +189,7 @@ export const NavbarSmall = {
     background-color: #ffffff;
     box-shadow: 0 50px 100px -20px #00000020, 0 30px 60px -30px #00000010,
       0 -18px 60px -10px #00000010;
-    transition-property: border-radius, width;
+    transition-property: height, width, opacity;
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   `,
   MenuSmall: styled.div`
