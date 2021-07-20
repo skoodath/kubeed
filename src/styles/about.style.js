@@ -5,12 +5,15 @@ import { Link } from "react-scroll";
 
 export const About = {
   Wrapper: styled.section`
-    padding: 5rem 0;
+    padding: 5rem 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
+    @media ${device.tabletSM} {
+      padding: 8rem 0 0;
+    }
     @media ${device.laptop} {
-      padding: 10rem 0;
+      padding: 10rem 0 0;
     }
   `,
   Inner: styled.div`
@@ -21,13 +24,13 @@ export const About = {
     overflow: hidden;
     @media ${device.laptop} {
       padding: 0 3vw;
-      max-width: 1366px;
+      max-width: 1200px;
       margin: 0 auto;
     }
   `,
   ImageWrapper: styled.div`
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -36,18 +39,18 @@ export const About = {
     background-color: #f2f2f2;
     position: relative;
     @media ${device.tabletLG} {
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
     }
   `,
   Image: styled.img`
-    height: 410px;
+    height: 360px;
     width: auto;
     position: relative;
     top: -40px;
     @media ${device.tabletLG} {
       top: -50px;
-      height: 520px;
+      height: 480px;
     }
   `,
   ShortText: styled.p`
@@ -73,7 +76,7 @@ export const About = {
     font-size: 1rem;
     color: #666666;
     @media ${device.tabletLG} {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   `,
   LongTextContainer: styled.div`
@@ -106,7 +109,7 @@ export const About = {
     margin: 2rem auto 0;
   `,
   ButtonSpan: styled.span`
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #424242;
   `,
@@ -126,17 +129,18 @@ export const About = {
     margin: 0 auto;
     cursor: pointer;
     font-size: 1rem;
-    color: #002d46;
+    color: #ffffff;
     padding: 0.5rem;
-    background-color: #f2f2f2;
+    background-color: #387ed1;
     transform-origin: left center;
     border-radius: 3px;
     border: 1px solid transparent;
+    transition: background-color 0.3s ease-in-out;
     @media ${device.tabletLG} {
       font-size: 1rem;
     }
     &:hover {
-      background-color: #eaeaea;
+      background-color: #000000;
     }
   `,
 };

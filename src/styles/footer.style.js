@@ -4,14 +4,12 @@ import { device } from "./devices";
 export const Footer = {
   Wrapper: styled.section`
     padding: 3vh 0 0 0;
-    margin: 0 0 60px 0;
     position: relative;
     width: 100%;
     background-color: #fafafb;
     @media ${device.tabletLG} {
       padding: 1rem 0;
       height: auto;
-      margin: 0 0 60px 0;
     }
     @media ${device.laptop} {
       margin: 0;
@@ -32,7 +30,7 @@ export const Footer = {
     }
     @media ${device.laptop} {
       height: 100%;
-      max-width: 1366px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0 3vw;
       flex-direction: row;

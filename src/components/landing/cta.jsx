@@ -9,6 +9,7 @@ const CtaComponent = () => {
       offset={0}
       duration={300}
       role="button"
+      tabIndex="0"
     >
       Enroll for $12.99 Today
     </CtaLink>

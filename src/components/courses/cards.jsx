@@ -36,10 +36,13 @@ const CourseCardComponent = (props) => {
           }}
         >
           <SwiperSlide>
-            <Card.CardSection bgimage={easybg}>
-              <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
-              <Card.CardTopSection>
-                <img src={easy} alt="Course one. Kubernetes made easy" />
+            <Card.CardSection>
+              <Card.CardTopSection bgimage={easybg}>
+                <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
+                <Card.CourseImage
+                  src={easy}
+                  alt="Course one. Kubernetes made easy"
+                />
               </Card.CardTopSection>
               <Card.CardBottom>
                 <Card.CardCourseTitle>
@@ -59,10 +62,10 @@ const CourseCardComponent = (props) => {
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection bgimage={ckabg}>
-              <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
-              <Card.CardTopSection>
-                <img
+            <Card.CardSection>
+              <Card.CardTopSection bgimage={ckabg}>
+                <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
+                <Card.CourseImage
                   src={cka}
                   alt="Course two. Certified kubernetes administrator"
                 />
@@ -84,10 +87,10 @@ const CourseCardComponent = (props) => {
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection bgimage={ckadbg}>
-              <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
-              <Card.CardTopSection>
-                <img
+            <Card.CardSection>
+              <Card.CardTopSection bgimage={ckadbg}>
+                <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
+                <Card.CourseImage
                   src={ckad}
                   alt="Course three. Certified Kubernetes Application developer"
                 />

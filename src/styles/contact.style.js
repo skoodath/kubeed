@@ -8,13 +8,12 @@ export const Contact = {
     padding: 5rem 0;
     position: relative;
     width: 100%;
-    height: 100vh;
     background-color: #ffffff;
     @media ${device.tabletSM} {
-      height: 100vh;
+      padding: 8rem 0;
     }
     @media ${device.laptop} {
-      height: 100vh;
+      padding: 10rem 0;
     }
   `,
   Inner: styled.div`
@@ -24,7 +23,7 @@ export const Contact = {
     flex-direction: column;
     @media ${device.laptop} {
       padding: 0 3vw;
-      max-width: 1366px;
+      max-width: 1200px;
       margin: 0 auto;
     }
   `,

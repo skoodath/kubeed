@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
+  overflow: ${({ open }) => (open ? "hidden" : "auto")};
 }
 `;
 

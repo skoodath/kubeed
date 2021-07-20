@@ -5,21 +5,23 @@ import prev from "../assets/images/prev.svg";
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 4rem 0;
+    padding: 5rem 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
+    @media ${device.tabletSM} {
+      padding: 8rem 0 0;
+    }
     @media ${device.laptop} {
-      max-height: 768px;
-      padding: 7rem 0;
+      padding: 10rem 0 0;
     }
   `,
   Inner: styled.div`
     width: 100%;
     height: 100%;
     @media ${device.laptop} {
-      max-width: 1366px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 3vw;
     }
@@ -31,7 +33,7 @@ export const Card = {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0;
     position: relative;
     width: 80%;
     @media ${device.tabletSM} {
@@ -96,7 +98,8 @@ export const Card = {
       right: auto;
       top: auto;
       bottom: 5%;
-      width: 44px;
+      width: 40px;
+      height: 40px;
       border: 1px solid #aba8a8;
       border-radius: 50%;
       @media ${device.laptop} {
@@ -122,7 +125,8 @@ export const Card = {
       right: 30%;
       transform: translateX(30%);
       bottom: 5%;
-      width: 44px;
+      width: 40px;
+      height: 40px;
       display: flex;
       border: 1px solid #aba8a8;
       border-radius: 50%;
@@ -163,28 +167,29 @@ export const Card = {
     }
   `,
   CardTopSection: styled.div`
-    height: 40%;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     align-items: center;
     margin: 0 auto;
-    img {
-      display: inline-block;
-      width: auto;
-      height: 100%;
-    }
+    background-image: ${({ bgimage }) => `url(${bgimage})`};
   `,
+  CourseImage: styled.img`
+    display: inline-block;
+    width: auto;
+    height: 100%;
+  `,
+
   CardSection: styled.div`
     height: ${({ height }) => (height ? "height" : "100%")};
-    width: 90%;
+    width: 100%;
     max-width: 261px;
-    padding: 1rem;
     position: relative;
-    background-image: ${({ bgimage }) =>
-      `linear-gradient(#ffffff00, #ffffff20 50%), url(${bgimage}) `};
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,21 +214,22 @@ export const Card = {
   `,
   CardLogo: styled.img`
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 15px;
-    margin: 0.5rem 0.5rem 0 0;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    margin: 0 0 0.5rem 0.5rem;
   `,
   CardBottom: styled.div`
     height: 50%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    padding: 1.5rem;
   `,
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
     font-weight: 600;
-    color: #002d46;
+    color: #424242;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,7 +238,7 @@ export const Card = {
   CardCourseSubTitle: styled.h4`
     font-size: 0.9rem;
     font-weight: 400;
-    color: #002d46;
+    color: #424242;
     margin: 0 auto;
     //text-align: center;
   `,

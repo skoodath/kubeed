@@ -3,12 +3,15 @@ import { device } from "./devices";
 
 export const Faq = {
   Wrapper: styled.section`
-    padding: 5rem 0;
+    padding: 5rem 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
+    @media ${device.tabletSM} {
+      padding: 8rem 0 0;
+    }
     @media ${device.laptop} {
-      padding: 10rem 0;
+      padding: 10rem 0 0;
     }
   `,
   Inner: styled.div`
@@ -18,7 +21,7 @@ export const Faq = {
     flex-direction: column;
     align-items: center;
     @media ${device.laptop} {
-      max-width: 1366px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 3vw;
     }
@@ -31,7 +34,7 @@ export const Faq = {
     justify-content: center;
     @media ${device.laptop} {
       margin: 0 0 0.5rem;
-      width: 60%;
+      width: 70%;
     }
   `,
 

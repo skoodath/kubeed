@@ -15,7 +15,11 @@ const ConnectComponent = () => {
       <HeadingComponent text={`Let's Connect`} />
       <Connect.Inner>
         <Connect.IconWrapper>
-          <Connect.IconLogoWrapper bgcolor={"#01937c"} onClick={handleClick}>
+          <Connect.IconLogoWrapper
+            bgcolor={"#01937c"}
+            onClick={handleClick}
+            tabIndex="0"
+          >
             <Email title="email" />
           </Connect.IconLogoWrapper>
           <EmailPopComponent show={show} setShow={setShow} />

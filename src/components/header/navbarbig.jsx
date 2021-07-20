@@ -1,6 +1,6 @@
 import { Navbar, Nav } from "../../styles/header.style";
 
-const NavbarComponent = () => {
+const NavbarBigComponent = () => {
   return (
     <Navbar.Wrapper>
       <Navbar.Menu>
@@ -17,7 +17,6 @@ const NavbarComponent = () => {
           Home
         </Nav>
         <Nav
-          activeClass="active"
           to="courses"
           spy={true}
           smooth={true}
@@ -29,7 +28,6 @@ const NavbarComponent = () => {
           Courses
         </Nav>
         <Nav
-          activeClass="active"
           to="about"
           spy={true}
           smooth={true}
@@ -41,9 +39,7 @@ const NavbarComponent = () => {
           Instructor
         </Nav>
         <Nav
-          activeClass="active"
           to="faq"
-          spy={true}
           smooth={true}
           offset={0}
           duration={500}
@@ -53,11 +49,8 @@ const NavbarComponent = () => {
           FAQs
         </Nav>
         <Nav
-          activeClass="active"
           to="connect"
-          spy={true}
           smooth={true}
-          offset={0}
           duration={400}
           role="button"
           tabIndex="0"
@@ -69,4 +62,4 @@ const NavbarComponent = () => {
   );
 };
 
-export default NavbarComponent;
+export default NavbarBigComponent;
