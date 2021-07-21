@@ -11,7 +11,7 @@ export const Faq = {
       padding: 8vh 0;
     }
     @media ${device.laptop} {
-      padding: 10vh 0;
+      padding: 8vh 0 5vh;
     }
   `,
   Inner: styled.div`

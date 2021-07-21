@@ -12,9 +12,14 @@ export const Landing = {
     @media ${device.tabletSM} {
       height: auto;
     }
+    @media ${device.tabletLG} {
+      padding: 8vh 0 0;
+    }
     @media ${device.laptop} {
       padding: 8vh 0 0;
       margin: 0;
+      height: 100vh;
+      max-height: 750px;
     }
   `,
 
@@ -32,12 +37,12 @@ export const Landing = {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      max-width: 1080px;
+      max-width: 1060px;
       padding: 0;
     }
     @media ${device.laptop} {
       margin: 0 auto;
-      padding: 3rem 1rem 0;
+      padding: 1rem 0 0;
     }
   `,
   BackgroundLayer: styled.div`
@@ -48,12 +53,9 @@ export const Landing = {
     @media ${device.tabletLG} {
       width: 50%;
     }
-    @media ${device.laptop} {
-      padding: 0 0 12rem 0;
-    }
     img {
-      width: 290px;
-      height: 196px;
+      width: 330px;
+      height: 226px;
       @media ${device.tabletSM} {
         width: 615px;
         height: 416px;
@@ -70,7 +72,6 @@ export const Landing = {
   `,
   Text: styled.div`
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,41 +85,42 @@ export const Landing = {
       padding: 0 0 1rem 0;
     }
     @media ${device.laptop} {
-      padding: 0 0 12rem 0;
+      padding: 11rem 0 0;
+      height: 100%;
     }
   `,
   TitleOne: styled.h1`
     font-size: 2.1rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #1a1d1f;
+    height: 40px;
     @media ${device.tabletSM} {
       font-size: 3rem;
-      font-weight: 600;
+      height: 50px;
     }
     @media ${device.tabletLG} {
-      font-weight: 700;
+      height: 60px;
     }
     @media ${device.laptop} {
       font-size: 3.5rem;
+      height: 70px;
     }
   `,
   TitleTwo: styled.h1`
     font-size: 2.1rem;
-    font-weight: 600;
+    font-weight: 800;
+    height: 40px;
     color: #1a1d1f;
     @media ${device.tabletSM} {
       font-size: 3rem;
-      font-weight: 700;
-    }
-    @media ${device.tabletLG} {
-      font-weight: 800;
+      height: 50px;
     }
     @media ${device.laptop} {
       font-size: 3.5rem;
+      height: 70px;
     }
   `,
   Subtitle: styled.p`
-    margin: 1rem 0 -10px;
     padding: 0;
     font-size: 1.2rem;
     font-weight: 500;
@@ -145,7 +147,7 @@ export const CtaLink = styled(Link)`
   font-weight: 500;
   margin: 1rem 0 0;
   width: 180px;
-  height: 40px;
+  height: 38px;
   font-size: 0.85rem;
   letter-spacing: 1px;
   outline-color: transparent;

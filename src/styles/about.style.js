@@ -15,7 +15,9 @@ export const About = {
       height: auto;
     }
     @media ${device.laptop} {
-      padding: 10vh 0 5vh;
+      padding: 8vh 0 0;
+      height: ${({ show }) => (show ? "auto" : "100vh")};
+      max-height: 750px;
     }
   `,
   Inner: styled.div`
@@ -27,14 +29,13 @@ export const About = {
     justify-content: center;
     overflow: hidden;
     @media ${device.laptop} {
-      padding: 4rem 3vw;
       max-width: 1200px;
       margin: 0 auto;
     }
   `,
   ImageWrapper: styled.div`
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -48,10 +49,10 @@ export const About = {
     }
   `,
   Image: styled.img`
-    height: 360px;
+    height: 300px;
     width: auto;
     position: relative;
-    top: -40px;
+    top: -32px;
     @media ${device.tabletLG} {
       top: -50px;
       height: 480px;
@@ -84,7 +85,7 @@ export const About = {
     }
   `,
   LongTextContainer: styled.div`
-    width: 70%;
+    width: 80%;
     margin: 1rem auto 0;
     display: flex;
     flex-direction: column;

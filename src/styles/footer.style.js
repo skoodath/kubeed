@@ -18,6 +18,7 @@ export const Footer = {
   `,
   Inner: styled.div`
     width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +42,7 @@ export const Footer = {
   `,
   LogoWrapper: styled.div`
     width: 150px;
+    height: 16px;
     display: flex;
     justify-content: center;
     @media ${device.tabletSM} {
@@ -65,6 +67,7 @@ export const Footer = {
 export const CopyRight = {
   Wrapper: styled.section`
     width: 80%;
+    height: 17px;
     margin: 1rem auto 0;
     display: flex;
     color: #bfbfbf;

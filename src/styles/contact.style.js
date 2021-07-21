@@ -100,8 +100,8 @@ export const Connect = {
   `,
 
   IconLogoWrapper: styled.span`
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background-color: ${({ bgcolor }) => bgcolor};
     display: flex;
@@ -127,12 +127,12 @@ export const Connect = {
       }
     }
     @media ${device.tabletSM} {
-      width: 50px;
-      height: 50px;
+      width: 48px;
+      height: 48px;
     }
     @media ${device.tabletLG} {
-      width: 55px;
-      height: 55px;
+      width: 53px;
+      height: 53px;
     }
   `,
 };
