@@ -73,6 +73,7 @@ export const Landing = {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 2rem 0;
     @media ${device.tabletSM} {
       padding: 0;
     }
