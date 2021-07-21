@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 export const About = {
   Wrapper: styled.section`
-    padding: ${({ show }) => (show ? "5vh 0" : "0")};
+    padding: ${({ show }) => (show ? "10vh 0" : "0")};
     position: relative;
     width: 100%;
     height: ${({ show }) => (show ? "auto" : "100vh")};

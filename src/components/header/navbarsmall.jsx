@@ -41,7 +41,7 @@ const NavbarSmallComponent = () => {
         <NavbarSmall.Nav
           to="about"
           smooth={true}
-          offset={-50}
+          offset={0}
           duration={100}
           role="button"
           tabIndex="0"
