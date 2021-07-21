@@ -4,10 +4,13 @@ import { device } from "./devices";
 
 export const Landing = {
   Wrapper: styled.section`
-    padding: 12vh 0 0;
+    padding: 12vh 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
+    @media ${device.laptop} {
+      padding: 8vh 0 0;
+    }
   `,
 
   Inner: styled.div`
@@ -16,7 +19,7 @@ export const Landing = {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
-    padding: 5rem 0 2rem;
+    padding: 4rem 0 2rem;
     @media ${device.tabletSM} {
       padding: 5rem 0 2rem;
     }
@@ -25,11 +28,11 @@ export const Landing = {
       justify-content: center;
       align-items: center;
       max-width: 1080px;
-      padding: 5rem 0 0;
+      padding: 0;
     }
     @media ${device.laptop} {
       margin: 0 auto;
-      padding: 5rem 1rem 0;
+      padding: 3rem 1rem 0;
     }
   `,
   BackgroundLayer: styled.div`
@@ -40,16 +43,23 @@ export const Landing = {
     @media ${device.tabletLG} {
       width: 50%;
     }
+    @media ${device.laptop} {
+      padding: 0 0 12rem 0;
+    }
     img {
       width: 290px;
+      height: 196px;
       @media ${device.tabletSM} {
         width: 615px;
+        height: 416px;
       }
       @media ${device.tabletLG} {
-        width: 560px;
+        width: 600px;
+        height: 406px;
       }
       @media ${device.laptop} {
-        width: 792px;
+        width: 800px;
+        height: 542px;
       }
     }
   `,
@@ -65,18 +75,19 @@ export const Landing = {
     @media ${device.tabletLG} {
       width: 50%;
       align-items: flex-start;
-      padding: 0 0 6rem 0;
+      padding: 0 0 1rem 0;
+    }
+    @media ${device.laptop} {
+      padding: 0 0 12rem 0;
     }
   `,
   TitleOne: styled.h1`
     font-size: 2.1rem;
     font-weight: 500;
     color: #1a1d1f;
-    height: 50px;
     @media ${device.tabletSM} {
       font-size: 3rem;
       font-weight: 600;
-      height: 60px;
     }
     @media ${device.tabletLG} {
       font-weight: 700;
@@ -101,7 +112,7 @@ export const Landing = {
     }
   `,
   Subtitle: styled.p`
-    margin: 1rem 0 0;
+    margin: 1rem 0 -10px;
     padding: 0;
     font-size: 1.2rem;
     font-weight: 500;
@@ -131,6 +142,7 @@ export const CtaLink = styled(Link)`
   height: 40px;
   font-size: 0.85rem;
   letter-spacing: 1px;
+  outline-color: transparent;
   &:hover {
     background-color: #387ed1;
     transition: background-color 0.3s cubic-bezier(0.955, 0.00003, 0.515, 0.955);

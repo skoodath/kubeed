@@ -59,7 +59,7 @@ export const Faq = {
   `,
   Answer: styled.div`
     font-size: 0.9rem;
-    margin: 0 0 2rem;
+    margin: ${({ margins }) => (margins ? `0 0 0.7rem` : `0 0 2rem`)};
     color: #424242;
     @media ${device.tabletSM} {
       font-size: 1.1rem;

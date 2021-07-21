@@ -3,13 +3,14 @@ import { device } from "./devices";
 
 export const Footer = {
   Wrapper: styled.section`
-    padding: 3vh 0 0 0;
+    padding: 2vh 0;
     position: relative;
     width: 100%;
+    height: 80px;
     background-color: #f2f2f2;
     @media ${device.tabletLG} {
       padding: 1rem 0;
-      height: auto;
+      height: 50px;
     }
     @media ${device.laptop} {
       margin: 0;
@@ -64,9 +65,8 @@ export const Footer = {
 export const CopyRight = {
   Wrapper: styled.section`
     width: 80%;
-    margin: 1rem auto 1rem;
+    margin: 1rem auto 0;
     display: flex;
-    padding: 0;
     color: #bfbfbf;
     justify-content: center;
     font-size: 0.8rem;

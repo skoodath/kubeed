@@ -10,7 +10,7 @@ const MenuComponent = () => {
   };
 
   return (
-    <Hamburger.Wrapper onClick={handleClick} tabIndex="0">
+    <Hamburger.Wrapper onClick={handleClick}>
       <Hamburger.HamburgerLines open={open}></Hamburger.HamburgerLines>
       <Hamburger.HamburgerLines open={open}></Hamburger.HamburgerLines>
       <Hamburger.HamburgerLines open={open}></Hamburger.HamburgerLines>

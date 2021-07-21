@@ -57,7 +57,7 @@ export const LogoLink = styled(Link)`
   font-size: 1rem;
   cursor: pointer;
   display: inline-block;
-  width: 75px;
+  width: 70px;
   @media ${device.tabletSM} {
     width: 90px;
   }
@@ -107,6 +107,7 @@ export const Hamburger = {
     right: 0;
     cursor: pointer;
     position: relative;
+    outline: none;
     @media ${device.laptop} {
       display: none;
     }
@@ -135,21 +136,15 @@ export const Hamburger = {
 export const Nav = styled(Link)`
   position: relative;
   display: flex;
-  color: #6b6b6b;
+  color: ${({ color }) => color};
   justify-content: center;
   padding: 0.4rem 0.3rem;
   margin: 0;
   cursor: pointer;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: ${({ fontWeight }) => fontWeight};
   border: 1px solid transparent;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    z-index: 100;
-  }
+  outline-color: transparent;
   &:hover {
     background-color: #ffffff;
     border-radius: 2px;
@@ -178,53 +173,47 @@ export const Nav = styled(Link)`
 export const NavbarSmall = {
   Wrapper: styled.nav`
     display: flex;
-    width: ${({ open }) => (open ? "50%" : 0)};
+    width: 50%;
     opacity: ${({ open }) => (open ? 1 : 0)};
     transform: ${({ open }) => (open ? `translateX(0%)` : `translateX(100%)`)};
     top: 0;
     right: 0;
-    height: ${({ open }) => (open ? "60vh" : 0)};
+    height: 60vh;
     position: fixed;
     z-index: 99;
     background-color: #ffffff;
     box-shadow: 0 50px 100px -20px #00000020, 0 30px 60px -30px #00000010,
       0 -18px 60px -10px #00000010;
-    transition-property: height, width, opacity;
+    transition-property: transform, opacity;
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    @media ${device.tabletSM} {
+      width: 30%;
+    }
   `,
   MenuSmall: styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 4rem 3rem;
+    padding: 4rem 3.5rem;
     align-items: flex-start;
     justify-content: space-around;
     @media ${device.tabletSM} {
-      padding: 6rem 0;
-    }
-    @media ${device.tabletLG} {
-      padding: 8rem 0;
+      padding: 6rem 5rem;
     }
   `,
   Nav: styled(Link)`
     position: relative;
     display: flex;
-    color: #6b6b6b;
+    color: ${({ color }) => color};
     justify-content: center;
     align-self: flex-start;
     padding: 0.4rem 0.3rem;
     text-align: right;
     cursor: pointer;
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: ${({ fontWeight }) => fontWeight};
     border: 1px solid transparent;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 100%;
-      z-index: 100;
-    }
+    outline-color: transparent;
     &:hover {
       background-color: #ffffff;
       border-radius: 2px;
@@ -238,14 +227,6 @@ export const NavbarSmall = {
       align-items: center;
       margin: 0 1rem 0 0;
       padding: 0.3rem 0.5rem;
-    }
-    @media ${device.laptop} {
-      font-size: 1.05rem;
-      margin: 0 4rem 0 0;
-      adding: 0.3rem 0.6rem;
-      &:last-child {
-        margin: 0;
-      }
     }
   `,
 };

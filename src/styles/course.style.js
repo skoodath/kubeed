@@ -14,7 +14,7 @@ export const Course = {
       padding: 8vh 0 0;
     }
     @media ${device.laptop} {
-      padding: 10vh 0 0;
+      padding: 10vh 0 5vh;
     }
   `,
   Inner: styled.div`
@@ -240,7 +240,6 @@ export const Card = {
     font-weight: 400;
     color: #424242;
     margin: 0 auto;
-    //text-align: center;
   `,
 
   CourseButton: styled.a`
@@ -263,7 +262,8 @@ export const Card = {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    outline-color: transparent;
     &:hover {
       background-color: #ec525290;
       transform-origin: top center;

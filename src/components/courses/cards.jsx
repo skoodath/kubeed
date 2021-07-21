@@ -52,7 +52,7 @@ const CourseCardComponent = (props) => {
                   Get your Kubernetes Journey Started with Kubernetes Made Easy
                 </Card.CardCourseSubTitle>
                 <Card.CourseButton
-                  href="https://www.udemy.com/course/kubernetes-made-easy/"
+                  href="https://www.udemy.com/course/kubernetes-made-easy/?couponCode=KME-JULAUG21"
                   target="blank"
                   title="Link to Kubernetes made easy"
                 >
@@ -77,7 +77,7 @@ const CourseCardComponent = (props) => {
                   Certified Kubernetes Administrator
                 </Card.CardCourseSubTitle>
                 <Card.CourseButton
-                  href="https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/"
+                  href="https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/?couponCode=CKA-JULAUG21"
                   target="blank"
                   title="Link to Certified Kubernetes administrator course"
                 >
@@ -102,7 +102,7 @@ const CourseCardComponent = (props) => {
                   Certified Kubernetes Application Developer
                 </Card.CardCourseSubTitle>
                 <Card.CourseButton
-                  href="https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/"
+                  href="https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/?couponCode=CKAD-JULAUG21"
                   target="blank"
                   title="Link to Certified Kubernetes application developergxh course"
                 >

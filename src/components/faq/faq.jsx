@@ -35,7 +35,7 @@ const FaqsComponent = () => {
           What are the prices of these courses?
         </Faq.Question>
       </Faq.QuestionWrapper>
-      <Faq.Answer>
+      <Faq.Answer margins>
         Since these courses are hosted on Udemy, so pricing varies based on
         where you are located. However, I tried making it economical and
         consistent by creating a special price for students accessing the above

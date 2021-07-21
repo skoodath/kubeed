@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 export const About = {
   Wrapper: styled.section`
-    padding: 5vh 0 0;
+    padding: 5vh 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
@@ -13,7 +13,7 @@ export const About = {
       padding: 8vh 0 0;
     }
     @media ${device.laptop} {
-      padding: 10vh 0 0;
+      padding: 10vh 0 5vh;
     }
   `,
   Inner: styled.div`
@@ -23,7 +23,7 @@ export const About = {
     flex-direction: column;
     overflow: hidden;
     @media ${device.laptop} {
-      padding: 0 3vw;
+      padding: 4rem 3vw;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -67,7 +67,7 @@ export const About = {
   ShortTextName: styled.span`
     font-weight: 500;
     font-size: 1.5rem;
-    color: #002d46;
+    color: #1a1d1f;
     @media ${device.tabletLG} {
       font-size: 1.45rem;
     }

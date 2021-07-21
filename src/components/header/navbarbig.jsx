@@ -10,9 +10,11 @@ const NavbarBigComponent = () => {
           spy={true}
           smooth={true}
           offset={-75}
-          duration={500}
+          duration={100}
           role="button"
           tabIndex="0"
+          fontWeight={400}
+          color={"#6b6b6b"}
         >
           Home
         </Nav>
@@ -20,10 +22,12 @@ const NavbarBigComponent = () => {
           to="courses"
           spy={true}
           smooth={true}
-          offset={0}
-          duration={500}
+          offset={-50}
+          duration={100}
           role="button"
           tabIndex="0"
+          fontWeight={600}
+          color={"#1a1d1f"}
         >
           Courses
         </Nav>
@@ -31,29 +35,35 @@ const NavbarBigComponent = () => {
           to="about"
           spy={true}
           smooth={true}
-          offset={0}
-          duration={500}
+          offset={-60}
+          duration={100}
           role="button"
           tabIndex="0"
+          fontWeight={400}
+          color={"#6b6b6b"}
         >
           Instructor
         </Nav>
         <Nav
           to="faq"
           smooth={true}
-          offset={0}
-          duration={500}
+          offset={-60}
+          duration={100}
           role="button"
           tabIndex="0"
+          fontWeight={400}
+          color={"#6b6b6b"}
         >
           FAQs
         </Nav>
         <Nav
           to="connect"
           smooth={true}
-          duration={400}
+          duration={100}
           role="button"
           tabIndex="0"
+          fontWeight={400}
+          color={"#6b6b6b"}
         >
           Connect
         </Nav>

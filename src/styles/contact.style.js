@@ -77,6 +77,7 @@ export const Connect = {
       a {
         display: inline-block;
         width: 100%;
+        outline-color: #fafafb;
       }
     }
   `,
@@ -110,6 +111,7 @@ export const Connect = {
     border-color: 1px;
     border-style: solid;
     border-color: transparent;
+    outline-style: none;
     &:hover {
       background-color: transparent;
       border-color: ${({ bordercolor }) => bordercolor};
@@ -137,8 +139,8 @@ export const Connect = {
 
 export const EmailPop = {
   Wrapper: styled.div`
-    width: 200px;
-    height: 60px;
+    width: 180px;
+    height: 40px;
     box-shadow: 1px 0 3px #aaaaaa;
     display: flex;
     justify-content: center;
@@ -147,10 +149,15 @@ export const EmailPop = {
     opacity: ${({ show }) => (show ? 1 : 0)};
     transform: ${({ show }) => (show ? "translateY(100%)" : "translateY(0)")};
     transition-property: visibility, opacity, transform;
-    transition: 0.3s cubic-bezier(0.95, 0.00061, 0.355, 1);
+    transition: 0.3s ease-in-out;
     border-radius: 4px;
     position: absolute;
     background-color: #f2f2f2;
+    z-index: 99;
+    @media ${device.tabletLG} {
+      width: 200px;
+      height: 50px;
+    }
   `,
   Text: styled.span`
     border: none;
@@ -158,6 +165,10 @@ export const EmailPop = {
     background-color: #f2f2f2;
     color: #424242;
     margin: 0 0.5rem 0 0;
+    font-size: 0.8rem;
+    @media ${device.tabletLG} {
+      font-size: 1rem;
+    }
   `,
   Copy: styled(MdContentCopy)`
     margin: 0 0.5rem 0 0;
