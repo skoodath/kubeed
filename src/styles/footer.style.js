@@ -8,6 +8,8 @@ export const Footer = {
     width: 100%;
     height: 80px;
     background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
     @media ${device.tabletLG} {
       padding: 1rem 0;
       height: 50px;
@@ -29,6 +31,7 @@ export const Footer = {
       padding: 0 3vw;
       justify-content: space-around;
       align-items: center;
+      height: 100%;
     }
     @media ${device.laptop} {
       height: 100%;

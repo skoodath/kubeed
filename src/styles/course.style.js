@@ -13,7 +13,7 @@ export const Course = {
     overflow: hidden;
     @media ${device.tabletSM} {
       padding: 8vh 0 0;
-      //height: auto;
+      height: auto;
     }
     @media ${device.laptop} {
       padding: 8vh 0 0;

@@ -14,6 +14,10 @@ export const About = {
       padding: 8vh 0 0;
       height: auto;
     }
+    @media ${device.tabletLG} {
+      padding: 8vh 0 0;
+      height: auto;
+    }
     @media ${device.laptop} {
       padding: 8vh 0 0;
       height: ${({ show }) => (show ? "auto" : "100vh")};
