@@ -107,7 +107,7 @@ export const Landing = {
     }
   `,
   TitleTwo: styled.h1`
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 800;
     height: 40px;
     color: #1a1d1f;
@@ -122,7 +122,7 @@ export const Landing = {
   `,
   Subtitle: styled.p`
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #1a1d1f;
     @media ${device.tabletSM} {

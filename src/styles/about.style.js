@@ -48,8 +48,8 @@ export const About = {
     background-color: #f2f2f2;
     position: relative;
     @media ${device.tabletLG} {
-      width: 220px;
-      height: 220px;
+      width: 180px;
+      height: 180px;
     }
   `,
   Image: styled.img`
@@ -58,8 +58,8 @@ export const About = {
     position: relative;
     top: -32px;
     @media ${device.tabletLG} {
-      top: -50px;
-      height: 480px;
+      top: -40px;
+      height: 390px;
     }
   `,
   ShortText: styled.p`
