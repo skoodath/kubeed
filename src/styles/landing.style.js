@@ -5,21 +5,22 @@ import { device } from "./devices";
 export const Landing = {
   Wrapper: styled.section`
     padding: 12vh 0;
+    margin: 0 0 5vh 0;
     position: relative;
     width: 100%;
-    height: 100vh;
     background-color: #ffffff;
     @media ${device.tabletSM} {
       height: auto;
     }
     @media ${device.laptop} {
       padding: 8vh 0 0;
+      margin: 0;
     }
   `,
 
   Inner: styled.div`
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
