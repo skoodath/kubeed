@@ -19,10 +19,10 @@ export const Landing = {
 
   Inner: styled.div`
     width: 80%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column-reverse;
-    margin: 0 auto;
+    margin: auto;
     padding: 4rem 0 2rem;
     @media ${device.tabletSM} {
       padding: 5rem 0 2rem;
