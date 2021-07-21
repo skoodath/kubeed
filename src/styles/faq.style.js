@@ -3,15 +3,15 @@ import { device } from "./devices";
 
 export const Faq = {
   Wrapper: styled.section`
-    padding: 5vh 0 0;
+    padding: 5vh 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
     @media ${device.tabletSM} {
-      padding: 8vh 0 0;
+      padding: 8vh 0;
     }
     @media ${device.laptop} {
-      padding: 10vh 0 0;
+      padding: 10vh 0;
     }
   `,
   Inner: styled.div`
