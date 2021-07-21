@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 export const About = {
   Wrapper: styled.section`
-    padding: 5vh 0;
+    padding: ${({ show }) => (show ? "5vh 0" : "0")};
     position: relative;
     width: 100%;
     height: ${({ show }) => (show ? "auto" : "100vh")};
@@ -110,7 +110,7 @@ export const About = {
     justify-content: center;
     align-items: center;
     width: 120px;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
   `,
   ButtonSpan: styled.span`
     font-size: 1.1rem;
