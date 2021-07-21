@@ -8,10 +8,12 @@ export const Course = {
     padding: 5vh 0 0;
     position: relative;
     width: 100%;
+    height: 100vh;
     background-color: #ffffff;
     overflow: hidden;
     @media ${device.tabletSM} {
       padding: 8vh 0 0;
+      height: auto;
     }
     @media ${device.laptop} {
       padding: 10vh 0 5vh;

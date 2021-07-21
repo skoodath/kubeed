@@ -7,7 +7,11 @@ export const Landing = {
     padding: 12vh 0;
     position: relative;
     width: 100%;
+    height: 100vh;
     background-color: #ffffff;
+    @media ${device.tabletSM} {
+      height: auto;
+    }
     @media ${device.laptop} {
       padding: 8vh 0 0;
     }
