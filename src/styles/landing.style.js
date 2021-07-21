@@ -54,8 +54,8 @@ export const Landing = {
       width: 50%;
     }
     img {
-      width: 330px;
-      height: 226px;
+      width: 335px;
+      height: 227px;
       @media ${device.tabletSM} {
         width: 615px;
         height: 416px;
@@ -90,10 +90,10 @@ export const Landing = {
     }
   `,
   TitleOne: styled.h1`
-    font-size: 2.75rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #1a1d1f;
-    height: 40px;
+    /* height: 40px; */
     @media ${device.tabletSM} {
       font-size: 3rem;
       height: 50px;
@@ -107,7 +107,7 @@ export const Landing = {
     }
   `,
   TitleTwo: styled.h1`
-    font-size: 2.75rem;
+    font-size: 3rem;
     font-weight: 800;
     height: 40px;
     color: #1a1d1f;
