@@ -46,7 +46,7 @@ export const Faq = {
     }
   `,
   Question: styled.div`
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     color: #1a1d1f;

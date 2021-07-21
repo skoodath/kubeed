@@ -58,6 +58,7 @@ export const LogoLink = styled(Link)`
   cursor: pointer;
   display: inline-block;
   width: 70px;
+  outline: none;
   @media ${device.tabletSM} {
     width: 90px;
   }
@@ -170,6 +171,7 @@ export const Nav = styled(Link)`
     }
   }
 `;
+
 export const NavbarSmall = {
   Wrapper: styled.nav`
     display: flex;
@@ -201,6 +203,7 @@ export const NavbarSmall = {
       padding: 6rem 5rem;
     }
   `,
+
   Nav: styled(Link)`
     position: relative;
     display: flex;

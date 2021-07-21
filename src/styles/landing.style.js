@@ -94,17 +94,15 @@ export const Landing = {
     font-weight: 700;
     color: #1a1d1f;
     text-align: center;
-    /* height: 40px; */
+    display: flex;
+    flex-wrap: wrap;
     @media ${device.tabletSM} {
       font-size: 3rem;
-      //height: 50px;
-    }
-    @media ${device.tabletLG} {
-      height: 60px;
     }
     @media ${device.laptop} {
       font-size: 3.5rem;
-      height: 70px;
+      text-align: left;
+      padding: 0 1rem 0 0;
     }
   `,
   TitleTwo: styled.h1`
