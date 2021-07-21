@@ -93,7 +93,7 @@ export const Landing = {
     font-size: 2.75rem;
     font-weight: 700;
     color: #1a1d1f;
-
+    text-align: center;
     /* height: 40px; */
     @media ${device.tabletSM} {
       font-size: 3rem;
