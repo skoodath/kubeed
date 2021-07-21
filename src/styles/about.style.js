@@ -5,15 +5,15 @@ import { Link } from "react-scroll";
 
 export const About = {
   Wrapper: styled.section`
-    padding: 5rem 0 0;
+    padding: 5vh 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
     @media ${device.tabletSM} {
-      padding: 8rem 0 0;
+      padding: 8vh 0 0;
     }
     @media ${device.laptop} {
-      padding: 10rem 0 0;
+      padding: 10vh 0 0;
     }
   `,
   Inner: styled.div`
@@ -67,7 +67,7 @@ export const About = {
   ShortTextName: styled.span`
     font-weight: 500;
     font-size: 1.5rem;
-    color: #424242;
+    color: #002d46;
     @media ${device.tabletLG} {
       font-size: 1.45rem;
     }
@@ -130,7 +130,7 @@ export const About = {
     cursor: pointer;
     font-size: 1rem;
     color: #ffffff;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     background-color: #387ed1;
     transform-origin: left center;
     border-radius: 3px;
@@ -140,7 +140,7 @@ export const About = {
       font-size: 1rem;
     }
     &:hover {
-      background-color: #000000;
+      background-color: #2a5f9f;
     }
   `,
 };

@@ -5,16 +5,16 @@ import prev from "../assets/images/prev.svg";
 
 export const Course = {
   Wrapper: styled.section`
-    padding: 5rem 0 0;
+    padding: 5vh 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
     @media ${device.tabletSM} {
-      padding: 8rem 0 0;
+      padding: 8vh 0 0;
     }
     @media ${device.laptop} {
-      padding: 10rem 0 0;
+      padding: 10vh 0 0;
     }
   `,
   Inner: styled.div`
@@ -229,7 +229,7 @@ export const Card = {
   CardCourseTitle: styled.h3`
     font-size: 1.4rem;
     font-weight: 600;
-    color: #424242;
+    color: #1a1d1f;
     display: flex;
     justify-content: center;
     align-items: center;

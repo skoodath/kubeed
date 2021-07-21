@@ -3,15 +3,15 @@ import { device } from "./devices";
 
 export const Faq = {
   Wrapper: styled.section`
-    padding: 5rem 0 0;
+    padding: 5vh 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
     @media ${device.tabletSM} {
-      padding: 8rem 0 0;
+      padding: 8vh 0 0;
     }
     @media ${device.laptop} {
-      padding: 10rem 0 0;
+      padding: 10vh 0 0;
     }
   `,
   Inner: styled.div`
@@ -49,7 +49,7 @@ export const Faq = {
     font-weight: 500;
     font-size: 1rem;
     cursor: pointer;
-    color: #424242;
+    color: #1a1d1f;
     @media ${device.tabletSM} {
       font-size: 1.1rem;
     }
@@ -66,28 +66,6 @@ export const Faq = {
     }
     @media ${device.tabletLG} {
       font-size: 1.15rem;
-    }
-  `,
-};
-
-export const FAQHeader = {
-  Title: styled.h2`
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0 auto 1rem;
-    position: relative;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    @media ${device.tabletLG} {
-      font-size: 2.5rem;
-    }
-    @media ${device.laptop} {
-      width: 100%;
-      max-width: 1366px;
-      margin: 0 auto 2rem;
     }
   `,
 };

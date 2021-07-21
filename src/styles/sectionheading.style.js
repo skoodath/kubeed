@@ -12,7 +12,7 @@ export const SectionHeader = {
     align-items: center;
     justify-content: center;
     user-select: none;
-    color: #424242;
+    color: #1a1d1f;
     @media ${device.tabletLG} {
       font-size: 2.3rem;
     }

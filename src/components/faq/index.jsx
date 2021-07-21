@@ -1,11 +1,12 @@
-import { Faq, FAQHeader } from "../../styles/faq.style";
+import { Faq } from "../../styles/faq.style";
+import HeadingComponent from "../sectionheading/sectionheading";
 import FaqsComponent from "./faq";
 
 const FaqComponent = () => {
   return (
     <>
       <Faq.Wrapper name="faq">
-        <FAQHeader.Title>FAQs</FAQHeader.Title>
+        <HeadingComponent text={`FAQs`} />
         <Faq.Inner>
           <FaqsComponent />
         </Faq.Inner>

@@ -6,7 +6,7 @@ export const Footer = {
     padding: 3vh 0 0 0;
     position: relative;
     width: 100%;
-    background-color: #fafafb;
+    background-color: #f2f2f2;
     @media ${device.tabletLG} {
       padding: 1rem 0;
       height: auto;

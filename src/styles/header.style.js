@@ -178,9 +178,9 @@ export const Nav = styled(Link)`
 export const NavbarSmall = {
   Wrapper: styled.nav`
     display: flex;
-    width: ${({ open }) => (open ? "80%" : 0)};
+    width: ${({ open }) => (open ? "50%" : 0)};
     opacity: ${({ open }) => (open ? 1 : 0)};
-    max-width: 768px;
+    transform: ${({ open }) => (open ? `translateX(0%)` : `translateX(100%)`)};
     top: 0;
     right: 0;
     height: ${({ open }) => (open ? "60vh" : 0)};
@@ -196,8 +196,8 @@ export const NavbarSmall = {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 4rem 0;
-    align-items: center;
+    padding: 4rem 3rem;
+    align-items: flex-start;
     justify-content: space-around;
     @media ${device.tabletSM} {
       padding: 6rem 0;
@@ -211,8 +211,9 @@ export const NavbarSmall = {
     display: flex;
     color: #6b6b6b;
     justify-content: center;
+    align-self: flex-start;
     padding: 0.4rem 0.3rem;
-    margin: 0;
+    text-align: right;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 400;
@@ -228,7 +229,6 @@ export const NavbarSmall = {
       background-color: #ffffff;
       border-radius: 2px;
       color: #387ed1;
-      transform-origin: left center;
       transition: background-color 0.3s ease-in-out;
     }
     @media ${device.tabletSM} {

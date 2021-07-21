@@ -4,7 +4,7 @@ import { device } from "./devices";
 
 export const Landing = {
   Wrapper: styled.section`
-    padding: 10vh 0;
+    padding: 12vh 0 0;
     position: relative;
     width: 100%;
     background-color: #ffffff;
@@ -24,7 +24,7 @@ export const Landing = {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      max-width: 992px;
+      max-width: 1080px;
       padding: 5rem 0 0;
     }
     @media ${device.laptop} {
@@ -41,15 +41,15 @@ export const Landing = {
       width: 50%;
     }
     img {
-      width: 100%;
+      width: 290px;
       @media ${device.tabletSM} {
         width: 615px;
       }
       @media ${device.tabletLG} {
-        width: 512px;
+        width: 560px;
       }
       @media ${device.laptop} {
-        width: 750px;
+        width: 792px;
       }
     }
   `,
@@ -65,15 +65,16 @@ export const Landing = {
     @media ${device.tabletLG} {
       width: 50%;
       align-items: flex-start;
+      padding: 0 0 6rem 0;
     }
   `,
   TitleOne: styled.h1`
     font-size: 2.1rem;
     font-weight: 500;
-    color: #002d46;
+    color: #1a1d1f;
     height: 50px;
     @media ${device.tabletSM} {
-      font-size: 3.22rem;
+      font-size: 3rem;
       font-weight: 600;
       height: 60px;
     }
@@ -87,9 +88,9 @@ export const Landing = {
   TitleTwo: styled.h1`
     font-size: 2.1rem;
     font-weight: 600;
-    color: #002d46;
+    color: #1a1d1f;
     @media ${device.tabletSM} {
-      font-size: 3.22rem;
+      font-size: 3rem;
       font-weight: 700;
     }
     @media ${device.tabletLG} {
@@ -104,13 +105,11 @@ export const Landing = {
     padding: 0;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #002d46;
+    color: #1a1d1f;
     @media ${device.tabletSM} {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
-    @media ${device.tabletLG} {
-      font-size: 1.8rem;
-    }
+
     @media ${device.laptop} {
       font-size: 1.45rem;
     }
@@ -133,11 +132,12 @@ export const CtaLink = styled(Link)`
   font-size: 0.85rem;
   letter-spacing: 1px;
   &:hover {
-    background-color: #000000;
+    background-color: #387ed1;
+    transition: background-color 0.3s cubic-bezier(0.955, 0.00003, 0.515, 0.955);
   }
   @media ${device.tabletLG} {
-    height: 45px;
+    height: 42px;
     font-size: 1.2rem;
-    width: 250px;
+    width: 235px;
   }
 `;

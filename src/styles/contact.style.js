@@ -5,15 +5,15 @@ import { MdContentCopy, MdClose } from "react-icons/md";
 
 export const Contact = {
   Wrapper: styled.section`
-    padding: 5rem 0;
+    padding: 5vh 0;
     position: relative;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fafafb;
     @media ${device.tabletSM} {
-      padding: 8rem 0;
+      padding: 8vh 0;
     }
     @media ${device.laptop} {
-      padding: 10rem 0;
+      padding: 10vh 0;
     }
   `,
   Inner: styled.div`
@@ -28,6 +28,37 @@ export const Contact = {
     }
   `,
 };
+
+export const Email = styled(FaEnvelope)`
+  fill: #ffffff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  &:hover {
+    fill: #01937c;
+  }
+  @media ${device.tabletSM} {
+    font-size: 2.2rem;
+  }
+`;
+
+export const Linkedin = styled(FaLinkedinIn)`
+  fill: #ffffff;
+  font-size: 1.6rem;
+  @media ${device.tabletSM} {
+    font-size: 2.2rem;
+  }
+`;
+
+export const Youtube = styled(FaYoutube)`
+  fill: #ffffff;
+  font-size: 1.6rem;
+  &:hover {
+    fill: #ff0000;
+  }
+  @media ${device.tabletSM} {
+    font-size: 2.2rem;
+  }
+`;
 
 export const Connect = {
   Wrapper: styled.section`
@@ -66,6 +97,7 @@ export const Connect = {
     color: #bfbfbf;
     margin: 1rem 0 0 0;
   `,
+
   IconLogoWrapper: styled.span`
     width: 40px;
     height: 40px;
@@ -75,44 +107,33 @@ export const Connect = {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-color: 1px;
+    border-style: solid;
+    border-color: transparent;
     &:hover {
-      background-image: linear-gradient(#000000, #000000);
+      background-color: transparent;
+      border-color: ${({ bordercolor }) => bordercolor};
+      transition: background-color 0.3s ease-in-out;
+      ${Linkedin} {
+        fill: #0077b5;
+      }
+      ${Youtube} {
+        fill: #ff0000;
+      }
+      ${Email} {
+        fill: #01937c;
+      }
     }
     @media ${device.tabletSM} {
+      width: 50px;
+      height: 50px;
+    }
+    @media ${device.tabletLG} {
       width: 55px;
       height: 55px;
     }
-    @media ${device.tabletLG} {
-      width: 65px;
-      height: 65px;
-    }
   `,
 };
-
-export const Email = styled(FaEnvelope)`
-  fill: #ffffff;
-  font-size: 1.6rem;
-  cursor: pointer;
-  @media ${device.tabletSM} {
-    font-size: 2.4rem;
-  }
-`;
-
-export const Linkedin = styled(FaLinkedinIn)`
-  fill: #ffffff;
-  font-size: 1.8rem;
-  @media ${device.tabletSM} {
-    font-size: 2.4rem;
-  }
-`;
-
-export const Youtube = styled(FaYoutube)`
-  fill: #ffffff;
-  font-size: 1.8rem;
-  @media ${device.tabletSM} {
-    font-size: 2.4rem;
-  }
-`;
 
 export const EmailPop = {
   Wrapper: styled.div`

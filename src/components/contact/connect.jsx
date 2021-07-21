@@ -17,6 +17,7 @@ const ConnectComponent = () => {
         <Connect.IconWrapper>
           <Connect.IconLogoWrapper
             bgcolor={"#01937c"}
+            bordercolor={"#01937c"}
             onClick={handleClick}
             tabIndex="0"
           >
@@ -30,7 +31,10 @@ const ConnectComponent = () => {
           rel="noreferrer"
         >
           <Connect.IconWrapper>
-            <Connect.IconLogoWrapper bgcolor={"#0077b5"}>
+            <Connect.IconLogoWrapper
+              bgcolor={"#0077b5"}
+              bordercolor={"#0077b5"}
+            >
               <Linkedin title="linkedin" />
             </Connect.IconLogoWrapper>
           </Connect.IconWrapper>
@@ -41,7 +45,10 @@ const ConnectComponent = () => {
           rel="noreferrer"
         >
           <Connect.IconWrapper>
-            <Connect.IconLogoWrapper bgcolor={"#ff0000"}>
+            <Connect.IconLogoWrapper
+              bgcolor={"#ff0000"}
+              bordercolor={"#ff0000"}
+            >
               <Youtube title="youtube" />
             </Connect.IconLogoWrapper>
           </Connect.IconWrapper>
