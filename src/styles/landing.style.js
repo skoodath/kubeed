@@ -90,13 +90,14 @@ export const Landing = {
     }
   `,
   TitleOne: styled.h1`
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: 700;
     color: #1a1d1f;
+
     /* height: 40px; */
     @media ${device.tabletSM} {
       font-size: 3rem;
-      height: 50px;
+      //height: 50px;
     }
     @media ${device.tabletLG} {
       height: 60px;
