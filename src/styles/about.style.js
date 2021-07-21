@@ -8,7 +8,7 @@ export const About = {
     padding: 5vh 0;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: ${({ show }) => (show ? "auto" : "100vh")};
     background-color: #ffffff;
     @media ${device.tabletSM} {
       padding: 8vh 0 0;
@@ -23,6 +23,8 @@ export const About = {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     @media ${device.laptop} {
       padding: 4rem 3vw;

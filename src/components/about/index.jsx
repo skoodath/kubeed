@@ -12,7 +12,7 @@ const AboutComponent = () => {
 
   return (
     <>
-      <About.Wrapper name="about">
+      <About.Wrapper name="about" show={show}>
         <About.Inner>
           <About.ImageWrapper>
             <About.Image
