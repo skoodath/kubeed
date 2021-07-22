@@ -6,10 +6,9 @@ const CtaComponent = () => {
       to="courses"
       spy={true}
       smooth={true}
-      offset={0}
-      duration={300}
+      offset={-50}
+      duration={100}
       role="button"
-      tabIndex="0"
     >
       Enroll for $12.99 Today
     </CtaLink>

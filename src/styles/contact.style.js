@@ -139,9 +139,9 @@ export const Connect = {
 
 export const EmailPop = {
   Wrapper: styled.div`
-    width: 180px;
+    width: 185px;
     height: 40px;
-    box-shadow: 1px 0 3px #aaaaaa;
+    box-shadow: 0 0 3px #aaaaaa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +175,7 @@ export const EmailPop = {
       right: 0;
     }
     @media ${device.tabletLG} {
-      width: 200px;
+      width: 220px;
       height: 50px;
     }
   `,

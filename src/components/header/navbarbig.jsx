@@ -5,14 +5,12 @@ const NavbarBigComponent = () => {
     <Navbar.Wrapper>
       <Navbar.Menu>
         <Nav
-          activeClass="active"
           to="home"
           spy={true}
           smooth={true}
           offset={-75}
           duration={100}
           role="button"
-          tabIndex="0"
           fontWeight={400}
           color={"#6b6b6b"}
         >
@@ -25,7 +23,6 @@ const NavbarBigComponent = () => {
           offset={-50}
           duration={100}
           role="button"
-          tabIndex="0"
           fontWeight={600}
           color={"#1a1d1f"}
         >
@@ -38,7 +35,6 @@ const NavbarBigComponent = () => {
           offset={-60}
           duration={100}
           role="button"
-          tabIndex="0"
           fontWeight={400}
           color={"#6b6b6b"}
         >
@@ -50,7 +46,6 @@ const NavbarBigComponent = () => {
           offset={-60}
           duration={100}
           role="button"
-          tabIndex="0"
           fontWeight={400}
           color={"#6b6b6b"}
         >
@@ -61,7 +56,6 @@ const NavbarBigComponent = () => {
           smooth={true}
           duration={100}
           role="button"
-          tabIndex="0"
           fontWeight={400}
           color={"#6b6b6b"}
         >

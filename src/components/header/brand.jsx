@@ -8,8 +8,8 @@ const BrandComponent = () => {
         to="home"
         spy={true}
         smooth={true}
-        offset={-50}
-        duration={500}
+        offset={-75}
+        duration={100}
         role="button"
         tabIndex="0"
       >

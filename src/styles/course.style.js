@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { device } from "./devices";
 import next from "../assets/images/next.svg";
 import prev from "../assets/images/prev.svg";
-import { FaChevronRight } from "react-icons/fa";
 
 export const Course = {
   Wrapper: styled.section`
@@ -32,25 +31,6 @@ export const Course = {
   `,
 };
 
-export const CourseButtonSpan = styled.span`
-  color: #ffffff;
-  font-size: inherit;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: right;
-  transition: all 0.3s linear;
-`;
-
-export const HoverArrow = styled(FaChevronRight)`
-  color: #ffffff;
-  width: 0;
-  display: flex;
-  transition: all 0.3s ease-in-out;
-  font-size: 0.8rem;
-  vertical-align: middle;
-`;
 export const Card = {
   Wrapper: styled.section`
     display: flex;
