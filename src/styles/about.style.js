@@ -19,7 +19,7 @@ export const About = {
       height: auto;
     }
     @media ${device.laptop} {
-      padding: 8vh 0 0;
+      padding: ${({ show }) => (show ? "8vh 0" : "0")};
       height: ${({ show }) => (show ? "auto" : "100vh")};
       max-height: 750px;
     }
