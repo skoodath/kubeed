@@ -271,6 +271,13 @@ export const Card = {
     &:hover {
       background-color: #ec525290;
       transform-origin: top center;
+      &::before {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        content: "\f054";
+        font-family: "fontawesome";
+      }
     }
   `,
 };

@@ -7,7 +7,7 @@ export const Footer = {
     position: relative;
     width: 100%;
     height: 80px;
-    background-color: #1a1d1f;
+    background-color: #252a2d;
     display: flex;
     justify-content: center;
     @media ${device.tabletLG} {
