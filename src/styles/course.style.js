@@ -216,17 +216,16 @@ export const Card = {
     &::after {
       position: absolute;
       content: "";
-      height: 3px;
-      width: 0;
+      height: 0;
+      width: 100%;
       background-color: #ec5252;
       left: 0;
       bottom: 0;
-      transform-origin: left center;
-      transition: width 0.3s ease-in;
+      transition: height 0.3s ease-in;
     }
     &:hover {
       &::after {
-        width: 100%;
+        height: 4px;
       }
     }
   `,
