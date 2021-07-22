@@ -56,8 +56,7 @@ const CourseCardComponent = (props) => {
                   target="blank"
                   title="Link to Kubernetes made easy"
                 >
-                  <CourseButtonSpan>Start</CourseButtonSpan>
-                  <HoverArrow />
+                  Start
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
@@ -82,8 +81,7 @@ const CourseCardComponent = (props) => {
                   target="blank"
                   title="Link to Certified Kubernetes administrator course"
                 >
-                  <CourseButtonSpan>Start</CourseButtonSpan>
-                  <HoverArrow />
+                  Start
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
@@ -108,8 +106,7 @@ const CourseCardComponent = (props) => {
                   target="blank"
                   title="Link to Certified Kubernetes application developer course"
                 >
-                  <CourseButtonSpan>Start</CourseButtonSpan>
-                  <HoverArrow />
+                  Start
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>

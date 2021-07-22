@@ -213,6 +213,7 @@ export const Card = {
     justify-content: center;
     overflow: hidden;
     box-shadow: 0 0 3px -1px #858585;
+    transition: 0.3s ease-in;
     &::after {
       position: absolute;
       content: "";
@@ -221,9 +222,10 @@ export const Card = {
       background-color: #ec5252;
       left: 0;
       bottom: 0;
-      transition: height 0.3s ease-in;
+      transition-property: height, transform;
     }
     &:hover {
+      transform: scale3d(1.01, 1.01, 1.01);
       &::after {
         height: 4px;
       }
@@ -280,15 +282,11 @@ export const Card = {
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
     outline-color: transparent;
+    border: 3px solid #ec5252;
     &:hover {
       background-color: #ffffff;
-      ${CourseButtonSpan} {
-        color: #ec5252;
-      }
-      ${HoverArrow} {
-        width: 20%;
-        color: #ec5252;
-      }
+      border: 3px solid #ec5252;
+      color: #ec5252;
     }
   `,
 };

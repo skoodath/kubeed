@@ -178,13 +178,13 @@ export const CtaLink = styled(Link)`
   letter-spacing: 1px;
   outline: none;
   transform-origin: left;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   transition: 0.3s cubic-bezier(0.955, 0.00003, 0.515, 0.955);
   &:hover {
     background-color: #ffffff;
     color: #ec5252;
     transition-property: height, background-color;
-    border: 1px solid #ec5252;
+    border: 3px solid #ec5252;
   }
   @media ${device.tabletLG} {
     height: 42px;
