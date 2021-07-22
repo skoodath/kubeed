@@ -54,8 +54,8 @@ export const Landing = {
       width: 50%;
     }
     img {
-      width: 335px;
-      height: 227px;
+      width: 350px;
+      height: 237px;
       @media ${device.tabletSM} {
         width: 615px;
         height: 416px;
@@ -75,7 +75,7 @@ export const Landing = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 2rem 0;
+    padding: 1rem 0 2rem 0;
     @media ${device.tabletSM} {
       padding: 0;
     }
@@ -100,7 +100,8 @@ export const Landing = {
     span {
       font-size: inherit;
       font-weight: 800;
-      text-align: inherit;
+      text-align: center;
+      margin: auto;
     }
     @media ${device.tabletSM} {
       font-size: 3rem;
@@ -111,6 +112,7 @@ export const Landing = {
       padding: 0 1rem 0 0;
       span {
         text-align: inherit;
+        margin: 0;
       }
     }
   `,
