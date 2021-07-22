@@ -41,7 +41,7 @@ const CourseCardComponent = (props) => {
           }}
         >
           <SwiperSlide>
-            <Card.CardSection mycolor={"#2dcce4"}>
+            <Card.CardSection>
               <Card.CardTopSection bgimage={easybg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -60,18 +60,15 @@ const CourseCardComponent = (props) => {
                   href="https://www.udemy.com/course/kubernetes-made-easy/?couponCode=KME-JULAUG21"
                   target="blank"
                   title="Link to Kubernetes made easy"
-                  mycolor={"#2dcce4"}
                 >
                   <CourseButtonSpan>Start</CourseButtonSpan>
-                  <CourseArrowSpan>
-                    <HoverArrow />
-                  </CourseArrowSpan>
+                  <HoverArrow />
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection mycolor={"#6970fd"}>
+            <Card.CardSection>
               <Card.CardTopSection bgimage={ckabg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -89,18 +86,15 @@ const CourseCardComponent = (props) => {
                   href="https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/?couponCode=CKA-JULAUG21"
                   target="blank"
                   title="Link to Certified Kubernetes administrator course"
-                  mycolor={"#6970fd"}
                 >
                   <CourseButtonSpan>Start</CourseButtonSpan>
-                  <CourseArrowSpan>
-                    <HoverArrow />
-                  </CourseArrowSpan>
+                  <HoverArrow />
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection mycolor={"#ff9264"}>
+            <Card.CardSection>
               <Card.CardTopSection bgimage={ckadbg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -118,12 +112,9 @@ const CourseCardComponent = (props) => {
                   href="https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/?couponCode=CKAD-JULAUG21"
                   target="blank"
                   title="Link to Certified Kubernetes application developer course"
-                  mycolor={"#ff9264"}
                 >
                   <CourseButtonSpan>Start</CourseButtonSpan>
-                  <CourseArrowSpan>
-                    <HoverArrow />
-                  </CourseArrowSpan>
+                  <HoverArrow />
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>

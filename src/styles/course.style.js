@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { device } from "./devices";
 import next from "../assets/images/next.svg";
 import prev from "../assets/images/prev.svg";
@@ -9,7 +9,6 @@ export const Course = {
     padding: 5vh 0 0;
     position: relative;
     width: 100%;
-    //height: 100vh;
     background-color: #ffffff;
     overflow: hidden;
     @media ${device.tabletSM} {
@@ -37,7 +36,6 @@ export const CourseButtonSpan = styled.span`
   color: #ffffff;
   font-size: inherit;
   font-weight: 600;
-  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,39 +43,13 @@ export const CourseButtonSpan = styled.span`
   transition: all 0.3s linear;
 `;
 
-const spring = keyframes`
-  0%{
-    transform: translateX(15%);
-  }
-  50%{
-    transform: translateX(10%);
-  }
-  100%{
-    transform: translateX(0);
-  }
-`;
-export const CourseArrowSpan = styled.span`
-  color: #ffffff;
-  font-size: inherit;
-  font-weight: 600;
-  width: 0;
-  position: relative;
-  right: -30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ec5252;
-  transition: all 0.3s linear;
-  transform-origin: right center;
-`;
-
 export const HoverArrow = styled(FaChevronRight)`
   color: #ffffff;
-  height: 100%;
+  width: 0;
   display: flex;
   transition: all 0.3s ease-in-out;
   font-size: 0.8rem;
+  vertical-align: middle;
 `;
 export const Card = {
   Wrapper: styled.section`
@@ -132,9 +104,6 @@ export const Card = {
       border-radius: 5px;
       padding: 0.5rem 0.2rem;
       transition: transform 0.3s ease-in-out;
-      &:hover {
-        transform: scale3d(1.02, 1.02, 1.02);
-      }
       @media ${device.tabletSM} {
         max-width: 280px;
       }
@@ -206,8 +175,6 @@ export const Card = {
     transition: transform 0.3s ease-in-out;
     margin: 0 0 2rem 0;
     &:hover {
-      transform: scale3d(1.02, 1.02, 1.02);
-      transform-style: preserve-3d;
       box-shadow: 0 0 3px -1px #858585;
     }
     @media ${device.tabletSM} {
@@ -249,17 +216,17 @@ export const Card = {
     &::after {
       position: absolute;
       content: "";
-      height: 0;
-      width: 100%;
-      background-color: ${({ mycolor }) => mycolor};
+      height: 3px;
+      width: 0;
+      background-color: #ec5252;
       left: 0;
       bottom: 0;
-      transform-origin: bottom center;
-      transition: height 0.3s ease-in;
+      transform-origin: left center;
+      transition: width 0.3s ease-in;
     }
     &:hover {
       &::after {
-        height: 5px;
+        width: 100%;
       }
     }
   `,
@@ -305,7 +272,7 @@ export const Card = {
     overflow: hidden;
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: ${({ mycolor }) => mycolor};
+    background-color: #ec5252;
     width: 80px;
     height: 30px;
     display: flex;
@@ -315,19 +282,13 @@ export const Card = {
     transition: all 0.3s ease-in-out;
     outline-color: transparent;
     &:hover {
-      transform-origin: top center;
-      bottom: 20px;
-      ${CourseArrowSpan} {
-        width: 30%;
-        right: 0;
-        transform-origin: right center;
-        ${HoverArrow} {
-          animation: ${spring} 1s infinite;
-          animation-delay: 0.6s;
-          animation-timing-function: cubic-bezier(1, 0.8, 0.65, 0.5);
-          animation-iteration-count: infinite;
-          anim
-        }
+      background-color: #ffffff;
+      ${CourseButtonSpan} {
+        color: #ec5252;
+      }
+      ${HoverArrow} {
+        width: 20%;
+        color: #ec5252;
       }
     }
   `,
