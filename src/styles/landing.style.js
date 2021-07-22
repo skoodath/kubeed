@@ -77,7 +77,7 @@ export const Landing = {
     align-items: center;
     padding: 1rem 0 2rem 0;
     @media ${device.tabletSM} {
-      padding: 0;
+      padding: 1 0 0;
     }
     @media ${device.tabletLG} {
       width: 50%;
@@ -98,12 +98,6 @@ export const Landing = {
     display: flex;
     flex-wrap: wrap;
     line-height: 1.3;
-    span {
-      font-size: inherit;
-      font-weight: 800;
-      text-align: center;
-      margin: auto;
-    }
     @media ${device.tabletSM} {
       font-size: 3rem;
     }
@@ -112,12 +106,31 @@ export const Landing = {
       text-align: left;
       padding: 0 1rem 0 0;
       margin: 0;
-      span {
-        text-align: inherit;
-        margin: 0;
-      }
     }
   `,
+  TitleSpan1: styled.span`
+    font-weight: 700;
+    font-size: inherit;
+    text-align: center;
+    margin: auto;
+    line-height: 1.3;
+    @media ${device.tabletLG} {
+      text-align: left;
+      margin: 0;
+    }
+  `,
+  TitleSpan2: styled.span`
+    font-weight: 800;
+    font-size: inherit;
+    text-align: center;
+    margin: auto;
+    line-height: 1.3;
+    @media ${device.tabletLG} {
+      text-align: left;
+      margin: 0;
+    }
+  `,
+
   TitleTwo: styled.h1`
     font-size: 3rem;
     font-weight: 800;
