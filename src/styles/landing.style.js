@@ -94,6 +94,7 @@ export const Landing = {
     font-weight: 700;
     color: #1a1d1f;
     text-align: center;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     line-height: 1.3;
@@ -110,6 +111,7 @@ export const Landing = {
       font-size: 3.5rem;
       text-align: left;
       padding: 0 1rem 0 0;
+      margin: 0;
       span {
         text-align: inherit;
         margin: 0;
