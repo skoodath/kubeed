@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { device } from "./devices";
 import next from "../assets/images/next.svg";
 import prev from "../assets/images/prev.svg";
+import { FaChevronRight } from "react-icons/fa";
 
 export const Course = {
   Wrapper: styled.section`
@@ -32,6 +33,52 @@ export const Course = {
   `,
 };
 
+export const CourseButtonSpan = styled.span`
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 600;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  transition: all 0.3s linear;
+`;
+
+const spring = keyframes`
+  0%{
+    transform: translateX(15%);
+  }
+  50%{
+    transform: translateX(10%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+`;
+export const CourseArrowSpan = styled.span`
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 600;
+  width: 0;
+  position: relative;
+  right: -30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec5252;
+  transition: all 0.3s linear;
+  transform-origin: right center;
+`;
+
+export const HoverArrow = styled(FaChevronRight)`
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.8rem;
+`;
 export const Card = {
   Wrapper: styled.section`
     display: flex;
@@ -204,11 +251,11 @@ export const Card = {
       content: "";
       height: 0;
       width: 100%;
-      background-color: #ec5252;
+      background-color: ${({ mycolor }) => mycolor};
       left: 0;
       bottom: 0;
       transform-origin: bottom center;
-      transition: height 0.2s ease-in;
+      transition: height 0.3s ease-in;
     }
     &:hover {
       &::after {
@@ -245,38 +292,42 @@ export const Card = {
     color: #424242;
     margin: 0 auto;
   `,
-
   CourseButton: styled.a`
-    display: inline-block;
+    display: flex;
     left: 50%;
     transform: translateX(-50%);
     bottom: 15px;
-    padding: 0.2rem 0;
+    padding: 0;
     margin: 1rem auto 0;
     color: #ffffff;
     cursor: pointer;
     position: absolute;
-    letter-spacing: 1px;
     overflow: hidden;
+    font-size: 1.1rem;
     font-weight: 600;
-    background-color: #ec5252;
-    width: 40%;
+    background-color: ${({ mycolor }) => mycolor};
+    width: 80px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline-color: transparent;
     &:hover {
-      background-color: #ec525290;
       transform-origin: top center;
-      &::before {
-        position: absolute;
-        width: 20%;
-        height: 100%;
-        content: "\f054";
-        font-family: "fontawesome";
+      bottom: 20px;
+      ${CourseArrowSpan} {
+        width: 30%;
+        right: 0;
+        transform-origin: right center;
+        ${HoverArrow} {
+          animation: ${spring} 1s infinite;
+          animation-delay: 0.6s;
+          animation-timing-function: cubic-bezier(1, 0.8, 0.65, 0.5);
+          animation-iteration-count: infinite;
+          anim
+        }
       }
     }
   `,

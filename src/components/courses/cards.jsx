@@ -1,4 +1,9 @@
-import { Card } from "../../styles/course.style";
+import {
+  Card,
+  CourseArrowSpan,
+  CourseButtonSpan,
+  HoverArrow,
+} from "../../styles/course.style";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.scss";
@@ -36,7 +41,7 @@ const CourseCardComponent = (props) => {
           }}
         >
           <SwiperSlide>
-            <Card.CardSection>
+            <Card.CardSection mycolor={"#2dcce4"}>
               <Card.CardTopSection bgimage={easybg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -55,14 +60,18 @@ const CourseCardComponent = (props) => {
                   href="https://www.udemy.com/course/kubernetes-made-easy/?couponCode=KME-JULAUG21"
                   target="blank"
                   title="Link to Kubernetes made easy"
+                  mycolor={"#2dcce4"}
                 >
-                  Start
+                  <CourseButtonSpan>Start</CourseButtonSpan>
+                  <CourseArrowSpan>
+                    <HoverArrow />
+                  </CourseArrowSpan>
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection>
+            <Card.CardSection mycolor={"#6970fd"}>
               <Card.CardTopSection bgimage={ckabg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -80,14 +89,18 @@ const CourseCardComponent = (props) => {
                   href="https://www.udemy.com/course/ultimate-cka-certified-kubernetes-administrator/?couponCode=CKA-JULAUG21"
                   target="blank"
                   title="Link to Certified Kubernetes administrator course"
+                  mycolor={"#6970fd"}
                 >
-                  Start
+                  <CourseButtonSpan>Start</CourseButtonSpan>
+                  <CourseArrowSpan>
+                    <HoverArrow />
+                  </CourseArrowSpan>
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
           </SwiperSlide>
           <SwiperSlide>
-            <Card.CardSection>
+            <Card.CardSection mycolor={"#ff9264"}>
               <Card.CardTopSection bgimage={ckadbg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
                 <Card.CourseImage
@@ -104,9 +117,13 @@ const CourseCardComponent = (props) => {
                 <Card.CourseButton
                   href="https://www.udemy.com/course/ultimate-ckad-certified-kubernetes-application-developer/?couponCode=CKAD-JULAUG21"
                   target="blank"
-                  title="Link to Certified Kubernetes application developergxh course"
+                  title="Link to Certified Kubernetes application developer course"
+                  mycolor={"#ff9264"}
                 >
-                  Start
+                  <CourseButtonSpan>Start</CourseButtonSpan>
+                  <CourseArrowSpan>
+                    <HoverArrow />
+                  </CourseArrowSpan>
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>

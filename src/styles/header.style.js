@@ -119,18 +119,23 @@ export const Hamburger = {
     height: 3px;
     border-radius: 50px;
     opacity: ${({ open }) => (open ? 0 : 1)};
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.2s ease-in;
     &:first-child {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0deg)")};
       opacity: 1;
       position: ${({ open }) => (open ? "absolute" : "relative")};
       transition: transform 0.3s ease-in-out;
+      transform-origin: ${({ open }) =>
+        open ? "center center" : "right center"};
+      transform-style: preserve-3d;
     }
     &:last-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0deg)")};
       opacity: 1;
       position: ${({ open }) => (open ? "absolute" : "relative")};
       transition: transform 0.3s ease-in-out;
+      transform-origin: ${({ open }) =>
+        open ? "center center" : "center right"};
     }
   `,
 };
