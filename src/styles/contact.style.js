@@ -154,6 +154,26 @@ export const EmailPop = {
     position: absolute;
     background-color: #f2f2f2;
     z-index: 99;
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+    &::before {
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      content: "";
+      background-color: #01937c;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      content: "";
+      background-color: #01937c;
+      top: 0;
+      right: 0;
+    }
     @media ${device.tabletLG} {
       width: 200px;
       height: 50px;
@@ -164,7 +184,7 @@ export const EmailPop = {
     outline: none;
     background-color: #f2f2f2;
     color: #424242;
-    margin: 0 0.5rem 0 0;
+    margin: 0 0.5rem 0;
     font-size: 0.8rem;
     @media ${device.tabletLG} {
       font-size: 1rem;
@@ -173,12 +193,13 @@ export const EmailPop = {
   Copy: styled(MdContentCopy)`
     margin: 0 0.5rem 0 0;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   `,
   Close: styled(MdClose)`
     color: #ff0000;
+    margin: 0 0.5rem 0 0;
     font-weight: 500;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   `,
 };
