@@ -8,7 +8,10 @@ const LandingSection = () => {
       <Landing.Inner>
         <Landing.Text>
           <Landing.Subtitle>Be a Kubernetes Pro!</Landing.Subtitle>
-          <Landing.TitleOne>Learn Kubernetes The Easy Way</Landing.TitleOne>
+          <Landing.TitleOne>
+            Learn Kubernetes
+            <span>The Easy Way</span>
+          </Landing.TitleOne>
           {/* <Landing.TitleTwo>The Easy Way</Landing.TitleTwo> */}
           <CtaComponent />
         </Landing.Text>

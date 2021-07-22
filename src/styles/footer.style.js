@@ -7,7 +7,7 @@ export const Footer = {
     position: relative;
     width: 100%;
     height: 80px;
-    background-color: #f2f2f2;
+    background-color: #1a1d1f;
     display: flex;
     justify-content: center;
     @media ${device.tabletLG} {
@@ -73,7 +73,7 @@ export const CopyRight = {
     height: 17px;
     margin: 1rem auto 0;
     display: flex;
-    color: #bfbfbf;
+    color: #ffffff;
     justify-content: center;
     font-size: 0.8rem;
     @media ${device.tabletLG} {

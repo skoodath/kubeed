@@ -19,7 +19,7 @@ export const Landing = {
       padding: 8vh 0 0;
       margin: 0;
       height: 100vh;
-      max-height: 750px;
+      max-height: 850px;
     }
   `,
 
@@ -42,7 +42,7 @@ export const Landing = {
     }
     @media ${device.laptop} {
       margin: 0 auto;
-      padding: 1rem 0 0;
+      padding: 6rem 0 0;
     }
   `,
   BackgroundLayer: styled.div`
@@ -85,17 +85,23 @@ export const Landing = {
       padding: 0 0 1rem 0;
     }
     @media ${device.laptop} {
-      padding: 11rem 0 0;
+      padding: 12rem 0 0;
       height: 100%;
     }
   `,
   TitleOne: styled.h1`
-    font-size: 2.75rem;
+    font-size: 2.6rem;
     font-weight: 700;
     color: #1a1d1f;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    line-height: 1.3;
+    span {
+      font-size: inherit;
+      font-weight: 800;
+      text-align: inherit;
+    }
     @media ${device.tabletSM} {
       font-size: 3rem;
     }
@@ -103,6 +109,9 @@ export const Landing = {
       font-size: 3.5rem;
       text-align: left;
       padding: 0 1rem 0 0;
+      span {
+        text-align: inherit;
+      }
     }
   `,
   TitleTwo: styled.h1`
@@ -124,6 +133,7 @@ export const Landing = {
     font-size: 1.5rem;
     font-weight: 500;
     color: #1a1d1f;
+    line-height: 1.3;
     @media ${device.tabletSM} {
       font-size: 1.4rem;
     }

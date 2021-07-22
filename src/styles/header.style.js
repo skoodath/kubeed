@@ -13,7 +13,7 @@ export const Header = {
     box-shadow: 2px 1px 2px #eee;
     position: fixed;
     @media ${device.laptop} {
-      height: 10vh;
+      height: 9vh;
       padding: 0;
       top: 0;
     }

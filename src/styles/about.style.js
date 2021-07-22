@@ -74,11 +74,11 @@ export const About = {
     }
   `,
   ShortTextName: styled.span`
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
     color: #1a1d1f;
     @media ${device.tabletLG} {
-      font-size: 1.45rem;
+      font-size: 1.5rem;
     }
   `,
   ShortTextRole: styled.span`
