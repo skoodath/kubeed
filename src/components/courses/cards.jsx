@@ -1,9 +1,4 @@
-import {
-  Card,
-  CourseArrowSpan,
-  CourseButtonSpan,
-  HoverArrow,
-} from "../../styles/course.style";
+import { Card, CourseButtonSpan, HoverArrow } from "../../styles/course.style";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.scss";
