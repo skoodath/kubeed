@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
-import { easy, easybg, cka, ckabg, ckad, ckadbg, kwatermark } from "./images";
+import { kwatermark } from "./images";
+import { courses } from "../../assets/data/carddata";
 
 SwiperCore.use(Navigation);
 
@@ -35,7 +36,32 @@ const CourseCardComponent = (props) => {
             },
           }}
         >
-          <SwiperSlide>
+          {courses.map((course) => (
+            <SwiperSlide key={course.key}>
+              <Card.CardSection>
+                <Card.CardTopSection bgimage={course.bgimage}>
+                  <Card.CardLogo src={kwatermark} alt="KubeEd watermark" />
+                  <Card.CourseImage src={course.src} alt={course.alt} />
+                </Card.CardTopSection>
+                <Card.CardBottom>
+                  <Card.CardCourseTitle>
+                    {course.coursename}
+                  </Card.CardCourseTitle>
+                  <Card.CardCourseSubTitle>
+                    {course.coursesubtitle}
+                  </Card.CardCourseSubTitle>
+                  <Card.CourseButton
+                    href={course.url}
+                    target="blank"
+                    title={course.title}
+                  >
+                    Start
+                  </Card.CourseButton>
+                </Card.CardBottom>
+              </Card.CardSection>
+            </SwiperSlide>
+          ))}
+          {/* <SwiperSlide>
             <Card.CardSection>
               <Card.CardTopSection bgimage={easybg}>
                 <Card.CardLogo src={kwatermark} alt="Kubex watermark" />
@@ -110,7 +136,7 @@ const CourseCardComponent = (props) => {
                 </Card.CourseButton>
               </Card.CardBottom>
             </Card.CardSection>
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <Card.CardSection>
               <Card.CardCourseTitle>New Courses</Card.CardCourseTitle>

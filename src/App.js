@@ -15,15 +15,18 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>KubeEd: Be a Kubernetes Pro!</title>
+        <title>Best Kubernetes Courses Online | KubeEd</title>
         <meta
           name="description"
-          content="KubeEd offers premium Kubernetes Courses. Join 50000+ Students. We have a 30 day 100% refund policy."
+          content="Enroll for best kubernetes courses online. Become a kubernetes expert using simple concepts and be prepared for kubernetes certifications"
         />
-        <meta property="og:title" content="KubeEd: Be a Kubernetes Pro!" />
+        <meta
+          property="og:title"
+          content="Best Kubernetes Courses Online | KubeEd"
+        />
         <meta
           property="og:description"
-          content="KubeEd offers premium Kubernetes Courses. Join 50000+ Students. We have a 30 day 100% refund policy."
+          content="Enroll for best kubernetes courses online. Become a kubernetes expert using simple concepts and be prepared for kubernetes certifications"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kubeed.com/" />
